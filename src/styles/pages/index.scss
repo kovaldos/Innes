@@ -1,0 +1,526 @@
+.main{
+	&-banner{
+		height: 100vh;
+		position: relative;
+		color: #F5F5F5;
+		margin-bottom: 120px;
+		margin-top: -185px;
+		.mycontainer{
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			position: absolute;
+			width: 100%;
+			left: 50%;
+    	transform: translateX(-50%);
+			top: 0;
+		}
+		&-slider{
+			opacity: 0;
+			transition: .3s;
+			&.slick-initialized{
+				opacity: 1;
+			}
+			.slick-dots{
+				left: 50%;
+				transform: translateX(-50%);
+				max-width: 1408px;
+				padding: 0 24px;
+				display: flex;
+				z-index: 2;
+				bottom: 80px;
+				margin-left: -8px;
+				li{
+					width: auto;
+					height: auto;
+					margin: 0;
+					&.slick-active{
+						button{
+							&:before{
+								opacity: 1;
+							}
+						}
+					}
+					button{
+						padding: 8px 4px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: auto;
+						height: auto;
+						&:before{
+							background: #F5F5F5;
+							display: block;
+							opacity: 0.5;
+							flex: 0 0 12px;
+							height: 12px;
+							font-size: 0;
+							position: static;
+							border-radius: 50%;					
+						}
+					}
+				}
+			}
+			&-item{
+				height: 100vh;
+				img{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+		&-info{
+			&__title{
+				margin-bottom: 24px;
+			}
+			&__text{
+				font-weight: 600;
+				margin-bottom: 48px;
+			}
+			&__btn{
+				width: 200px;
+				height: 48px;
+				color: #F5F5F5;
+				border: 1px solid #F5F5F5;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+	&-new{
+		.mycontainer{
+			display: flex;
+			align-items: center;
+		}
+		&__img{
+			flex: 0 0 40%;
+			margin-right: 10%;
+			img{
+				width: 100%;
+			}
+		}
+		&-info{
+			&__text{
+				margin-top: 8px;
+				max-width: 500px;
+				font-size: 20px;
+				line-height: 32px;
+			}
+		}
+	}
+	&-blogslider{
+		height: 480px;
+		overflow: hidden;
+		.mycontainer{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&-info{
+			width: 430px;
+			position: relative;
+			z-index: 3;
+			.title{
+				margin-bottom: 8px;
+			}
+			&__text{
+				margin-bottom: 24px;
+				font-size: 20px;
+				line-height: 32px;
+			}
+			&__btn{
+				width: 210px;
+				height: 48px;
+			}
+		}
+		&-slider{
+			width: 56%;
+			&:before{
+				content: '';
+				background: #fff;
+				width: 200%;
+				position: absolute;
+				z-index: 2;
+				right: 100%;
+				height: 100%;
+			}
+			.slick-prev, 
+			.slick-next{
+				height: 32px;
+				width: 32px;
+				z-index: 3;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				transform: none;
+				top: auto;
+				bottom: -50px;
+				&.slick-disabled{
+					opacity: 0.5;
+				}
+				&:before{
+					display: none;
+				}
+			}
+			.slick-list{
+				overflow: visible;
+			}
+			.slick-prev{
+				background-image: url('../images/arr-prev.svg');
+				left: auto;
+				right: 48px;
+			}
+			.slick-next{
+				background-image: url('../images/arr-next.svg');
+				right: 0;
+			}
+			&-item{
+				width: 640px;
+				margin-right: 16px;
+				&__img{
+					height: 350px;
+					margin-bottom: 24px;
+					img{
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+				&__title{
+					font-weight: 600;
+				}
+				&__text{
+					font-weight: 300;
+					font-size: 14px;
+					line-height: 16px;
+				}
+			}
+		}
+	}
+	&-about{
+		.mycontainer{
+			display: flex;
+			align-items: center;
+		}
+		&__img{
+			height: 416px;
+			margin-right: 16px;
+			img{
+				height: 100%;
+			}
+		}
+		&-info{
+			margin-left: auto;
+			max-width: 479px;
+			&__subtitle{
+				margin-bottom: 8px;
+				font-weight: 300;
+				font-size: 14px;
+				line-height: 16px;
+			}
+			.title{
+				margin-bottom: 8px;
+			}
+			&__text{
+				font-size: 20px;
+				line-height: 32px;
+				margin-bottom: 24px;
+			}
+			&__btn{
+				width: 175px;
+				height: 48px;
+			}
+		}
+	}
+	&-promo{
+		&-content{
+			border-top: 1px solid rgba(17, 17, 17, 0.5);
+			border-bottom: 1px solid rgba(17, 17, 17, 0.5);
+			padding: 40px 0;
+			.title{
+				text-align: center;
+				margin-bottom: 8px;
+			}
+			&__text{
+				font-size: 20px;
+				text-align: center;
+			}
+		}
+	}
+	&-bloggrid{
+		&-items{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 24px;
+			margin-bottom: 48px;
+			&-item{
+				&__img{
+					height: 288px;
+					margin-bottom: 24px;
+					img{
+						height: 100%;
+						width: 100%;
+						object-fit: cover;
+					}
+				}
+				&__title{
+					font-weight: 600;
+				}
+				&__text{
+					font-weight: 300;
+					font-size: 14px;
+				}
+			}
+		}
+		&__btn{
+			width: 170px;
+			height: 48px;
+			margin: 0 auto;
+		}
+	}
+}
+
+@include w1366{
+	.main{
+		&-about{
+			.mycontainer{
+				flex-wrap: wrap;
+			}
+			&-info{
+				max-width: none;
+				margin-top: 24px;
+			}
+		}
+	}
+}
+
+@include w1024{
+	.main{
+		&-banner{
+			margin-bottom: 104px;
+			.title{
+				font-size: 48px;
+				line-height: 64px;
+				max-width: 380px;
+			}
+		}
+		&-blogslider{
+			&-slider{
+				&-item{
+					width: 460px;
+				}
+			}
+		}
+	}
+}
+
+@include w768{
+	.main{
+		&-banner{
+			&-slider{
+				.slick-dots{
+					bottom: 24px;
+				}
+			}
+		}
+		&-new{
+			&__img{
+				margin-right: 19px;
+			}
+			&-info{
+				&__text{
+					font-size: 16px;
+    			line-height: 24px;
+				}
+			}
+		}
+		&-blogslider{
+			height: 580px;
+			.mycontainer{
+				display: block;
+			}
+			&-slider{
+				&-item{
+					width: 536px;
+					&__img{
+						height: 296px;
+						margin-bottom: 16px;
+					}
+				}
+			}
+			&-info{
+				position: relative;
+				width: 100%;
+				&__text{
+					max-width: 366px;
+					font-size: 16px;
+					line-height: 24px;
+					margin-bottom: 32px;
+				}
+				&__btn{
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+			}
+			&-slider{
+				width: 100%;
+			}
+		}
+		&-about{
+			&__img{
+				height: 395px;
+				&:nth-child(2){
+					margin-right: 0;
+				}
+			}
+			&-info{
+				margin-top: 40px;
+				&__text{
+					font-size: 16px;
+					line-height: 24px;
+				}
+			}
+		}
+		&-bloggrid{
+			&-items{
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 40px 16px;
+				margin-bottom: 40px;
+			}
+		}
+	}
+}
+
+@include w480{
+	.main{
+		&-banner{
+			max-height: 640px;
+			.mycontainer{
+				justify-content: flex-start;
+			}
+			&-slider{
+				&-item{
+					max-height: 640px;
+				}
+				.slick-dots{
+					flex-direction: column;
+					right: 0;
+					left: auto;
+					transform: none;
+					width: auto;
+					padding: 0 8px;
+					bottom: auto;
+    			top: 27%;
+					li button{
+						padding: 5px 4px;
+						&:before{
+							flex: 0 0 8px;
+							height: 8px;
+						}
+					}
+				}
+			}
+			&-info{
+				margin-top: 150px;
+				.title{
+					font-size: 32px;
+					line-height: 40px;
+					margin-bottom: 16px;
+					max-width: 280px;
+				}
+				&__btn{
+					position: absolute;
+					bottom: 40px;
+					width: calc(100% - 32px);
+					height: 40px;
+				}
+			}
+		}
+		&-new{
+			.mycontainer{
+				flex-direction: column;
+			}
+			&__img{
+				margin-right: 0;
+				margin-bottom: 24px;
+			}
+		}
+		&-blogslider{
+			height: auto;
+			.mycontainer{
+				position: relative;
+				padding-bottom: 72px;
+			}
+			&-slider{
+				&-item{
+					width: auto;
+					margin-right: 0;
+					&__img{
+						height: 184px;
+					}
+					&+&{
+						margin-top: 40px;
+					}
+				}
+			}
+			&-info{
+				position: static;
+				&__btn{
+					top: auto;
+					right: auto;
+					left: 16px;
+					bottom: 0;
+					width: calc(100% - 32px);
+					height: 40px;
+				}
+			}
+		}
+		&-about{
+			&__img{
+				max-width: 100%;
+				height: auto;
+				margin-right: 0;
+				margin-bottom: 8px;
+				img{
+					width: 100%;
+				}
+			}
+			&-info{
+				margin-top: 16px;
+				&__btn{
+					width: 100%;
+					height: 40px;
+				}
+			}
+		}
+		&-promo{
+			&-content{
+				padding: 24px 0;
+				&__text{
+					font-size: 16px;
+					line-height: 24px;
+				}
+			}
+		}
+		&-bloggrid{
+			&-items{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 32px 16px;
+				&-item{
+					&__img{
+						height: 216px;
+						margin-bottom: 16px;
+					}
+				}
+			}
+			&__btn{
+				height: 40px;
+				width: 100%;
+			}
+		}
+	}
+}

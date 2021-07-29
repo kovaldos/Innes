@@ -1,0 +1,266 @@
+extends ../template
+
+block variables
+	- var title = 'Каталог'
+
+block content
+	.catalog
+		.mycontainer
+			.catalog-top
+				.title Уходовая косметика для лица
+				.catalog-top__result Я ищу: <span>micellar aqua pure perfect clear</span>, <span>hydro superdefence day cream</span>, <span>hyaluronic lifting mask</span>
+				.catalog-top-btns
+					.catalog-top-btns__btn(data-type="filter") Фильтры
+					.catalog-top-btns__btn(data-type="sort") Сортировка 
+					form.catalog-top-mobilesort(action="#")
+						.catalog-top-mobilesort-category
+							.catalog-top-mobilesort-category__title Популярность
+							.catalog-top-mobilesort-category-options
+								label
+									input(type="radio" name="mobile-sort" value="Цена По возрастанию" checked)
+									<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 1H7" stroke="#111111"/>
+										<path d="M0 5H10" stroke="#111111"/>
+										<path d="M0 9H14" stroke="#111111"/>
+									</svg>
+									span По возрастанию
+								label
+									input(type="radio" name="mobile-sort" value="Цена По убыванию")
+									<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 9H7" stroke="#111111"/>
+										<path d="M0 5H10" stroke="#111111"/>
+										<path d="M0 1H14" stroke="#111111"/>
+									</svg>
+									span По убыванию
+						.catalog-top-mobilesort-category
+							.catalog-top-mobilesort-category__title Название
+						.catalog-top-mobilesort-category
+							.catalog-top-mobilesort-category__title Цена
+						.catalog-top-mobilesort-btns
+							button.catalog-top-mobilesort-btns__show.btn-border(type="submit") Применить
+							.catalog-top-mobilesort-btns__cancel 
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6 6L12 12M18 18L12 12M12 12L18 6M12 12L6 18" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+								</svg>
+								| Закрыть
+							
+				.catalog-top-sort
+					.catalog-top-sort__title 
+						<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 1H7" stroke="#111111"/>
+							<path d="M0 5H10" stroke="#111111"/>
+							<path d="M0 9H14" stroke="#111111"/>
+						</svg>
+						| Популярность
+					.catalog-top-sort__options
+						span.active
+							<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 1H7" stroke="#111111"/>
+								<path d="M0 5H10" stroke="#111111"/>
+								<path d="M0 9H14" stroke="#111111"/>
+							</svg>
+							| Популярность
+						span
+							<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 9H7" stroke="#111111"/>
+								<path d="M0 5H10" stroke="#111111"/>
+								<path d="M0 1H14" stroke="#111111"/>
+							</svg>
+							| Популярность
+						span
+							<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 1H7" stroke="#111111"/>
+								<path d="M0 5H10" stroke="#111111"/>
+								<path d="M0 9H14" stroke="#111111"/>
+							</svg>
+							| Цена
+						span
+							<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 9H7" stroke="#111111"/>
+								<path d="M0 5H10" stroke="#111111"/>
+								<path d="M0 1H14" stroke="#111111"/>
+							</svg>
+							| Цена
+			.catalog-main
+				form.catalog-main-filter.active(action="#")
+					.catalog-main-filter-col
+						.catalog-main-filter-col__title Лицо
+						.catalog-main-filter-col-items
+							input(type="text" placeholder="Поиск")
+							.catalog-main-filter-col-items-wrap
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Гаджеты")
+									span 
+									span Гаджеты
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Глаза и губы")
+									span
+									span Глаза и губы
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Защита от солнца")
+									span
+									span Защита от солнца
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Маски")
+									span
+									span Маски
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Ночные средства")
+									span
+									span Ночные средства
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Отшелушивание")
+									span
+									span Отшелушивание
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Оцищение")
+									span
+									span Оцищение
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Специальный уход")
+									span
+									span Специальный уход
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Увлажнение и питание")
+									span
+									span Увлажнение и питание
+
+					.catalog-main-filter-col
+						.catalog-main-filter-col__title Ингредиенты
+						.catalog-main-filter-col-items
+							input(type="text" placeholder="Поиск")
+							.catalog-main-filter-col-items-wrap
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="BHA (кислоты)")
+									span 
+									span BHA (кислоты)
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Антиоксиданты")
+									span
+									span Антиоксиданты
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Аргановое масло")
+									span
+									span Аргановое масло
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Без масел")
+									span
+									span Без масел
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Без отдушек / эфирных масел")
+									span
+									span Без отдушек / эфирных масел
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Без спирта")
+									span
+									span Без спирта
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Пептиды")
+									span
+									span Пептиды
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Витамин C")
+									span
+									span Витамин C
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Ретиноиды")
+									span
+									span Ретиноиды
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="BHA (кислоты)")
+									span 
+									span BHA (кислоты)
+								label.catalog-main-filter-col-items-item
+									input(type="checkbox" value="Антиоксиданты")
+									span
+									span Антиоксиданты
+				
+					.catalog-main-filter-col.range-wrap
+						.catalog-main-filter-col__title Цена, руб
+						.catalog-main-filter-col-items
+							input.catalog-main-filter-col-items__range(type="text" value="" data-min="0" data-max="15000" data-from="0" data-to="15000")
+							.catalog-main-filter-row
+								.catalog-main-filter-row-col
+									span От
+									input.range-from(type="text" name="range-input")
+								.catalog-main-filter-row-col
+									span До
+									input.range-to(type="text" name="range-input")
+
+					.catalog-main-filter-col.range-wrap
+						.catalog-main-filter-col__title Объём, мл
+						.catalog-main-filter-col-items
+							input.catalog-main-filter-col-items__range(type="text" value="" data-min="0" data-max="15000" data-from="0" data-to="15000")
+							.catalog-main-filter-row
+								.catalog-main-filter-row-col
+									span От
+									input.range-from(type="text" name="range-input")
+								.catalog-main-filter-row-col
+									span До
+									input.range-to(type="text" name="range-input")
+
+					.catalog-top-mobilesort-btns
+						button.catalog-top-mobilesort-btns__show.btn-border(type="submit") Применить
+						.catalog-top-mobilesort-btns__cancel 
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6 6L12 12M18 18L12 12M12 12L18 6M12 12L6 18" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+							</svg>
+							| Закрыть
+
+				.catalog-main-content.block-margin
+					.good-4items-items
+						.good-4items-items-item
+							a.good-4items-items-item__img(href="#")
+								img.lazy(data-src="assets/images/good1.png", alt="")
+							.good-4items-items-item__company Anti Age
+							.good-4items-items-item__name Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
+							.good-4items-items-item__price 250 руб.
+							a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
+						.good-4items-items-item
+							a.good-4items-items-item__img(href="#")
+								img.lazy(data-src="assets/images/good2.png", alt="")
+							.good-4items-items-item__company Intense Smoothing
+							.good-4items-items-item__name Шампунь из морских ежей, 250 мл
+							.good-4items-items-item__price 250 руб.
+							a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
+						.good-4items-items-item
+							a.good-4items-items-item__img(href="#")
+								img.lazy(data-src="assets/images/good3.png", alt="")
+							.good-4items-items-item__company Anti Age
+							.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
+							.good-4items-items-item__price 1 890 руб.
+							a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
+						.good-4items-items-item
+							a.good-4items-items-item__img(href="#")
+								img.lazy(data-src="assets/images/good4.png", alt="")
+							.good-4items-items-item__company Intense Smoothing
+							.good-4items-items-item__name Шампунь из морских ежей, 250 мл
+							.good-4items-items-item__price 250 руб.
+							a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
+						.good-4items-items-item
+							a.good-4items-items-item__img(href="#")
+								img.lazy(data-src="assets/images/good4.png", alt="")
+							.good-4items-items-item__company Intense Smoothing
+							.good-4items-items-item__name Шампунь из морских ежей, 250 мл
+							.good-4items-items-item__price 250 руб.
+							a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
+						.good-4items-items-item
+							a.good-4items-items-item__img(href="#")
+								img.lazy(src="assets/images/good4.png", alt="")
+							.good-4items-items-item__company Intense Smoothing
+							.good-4items-items-item__name Шампунь из морских ежей, 250 мл
+							.good-4items-items-item__price 250 руб.
+							a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
+
+					.catalog-main-content-pagination.block-margin
+						a.catalog-main-content-pagination__prev(href="#")
+						.catalog-main-content-pagination__page.current 1
+						a.catalog-main-content-pagination__page(href="#") 2
+						a.catalog-main-content-pagination__page(href="#") 3
+						.catalog-main-content-pagination__page.dots(href="#") . . .
+						a.catalog-main-content-pagination__page(href="#") 10
+						a.catalog-main-content-pagination__next(href="#")
+
+					.catalog-main-content-seo
+						h2.title Уход за кожей лица
+						.catalog-main-content-seo__text Уходовые средства предназначены для поддержания красоты и здоровья кожи, избавления от небольших косметических недостатков — высыпаний, жирности, сухости.</br>Очищение кожи начинается с отшелушивания ороговевших частиц и удаления остатков косметики.</br>С этой задачей отлично справляется очищающий гель для лица. Его мягкая текстура не травмирует поверхность дермы, деликатно абсорбируя и удаляя грязь.</br>Лосьоны и тоники восстанавливают нормальный РН баланс и подготавливают эпидермис к глубокому проникновению косметических средств.</br>Для того чтобы крем проявил свои свойства, предварительно на лицо наносят сыворотки, которые разделяются на увлажняющие, питательные, антивозрастные и прочие.</br>Ликвидируют проблемы кожи специальные маски.</br>Кремы в виде стиков разработаны для нанесения на кожу вокруг глаз.

@@ -1,0 +1,51 @@
+extends ../template
+
+block variables
+	- var title = 'Карта сайта'
+
+block content
+	.map
+		.mycontainer
+			.map-logo
+				img(src="assets/images/logo.svg")
+			table.map-table
+				tbody
+					tr
+						td
+							a.map-table__link(href="index.html" target="_blank") Главная
+					tr
+						td
+							a.map-table__link(href="catalog.html" target="_blank") Каталог
+						td
+							a.map-table__link(href="good.html" target="_blank") Страница товара
+					tr
+						td
+							a.map-table__link(href="about.html" target="_blank") О компании
+					tr
+						td
+							a.map-table__link(href="help.html" target="_blank") Помощь
+					tr
+						td
+							a.map-table__link(href="blog.html" target="_blank") Блог
+						td
+							a.map-table__link(href="article.html" target="_blank") Статья
+					tr
+						td
+							a.map-table__link(href="register.html" target="_blank") Регистрация
+						td
+							a.map-table__link(href="login.html" target="_blank") Вход
+					tr
+						td
+							a.map-table__link(href="basket.html" target="_blank") Корзина
+					tr
+						td
+							a.map-table__link(href="textpage.html" target="_blank") Текстовая страница
+					//tr
+						td
+							a.map-table__link(href="profile.html" target="_blank") Профиль
+						td
+							a.map-table__link(href="profile.html" target="_blank") Заказы
+						td
+							a.map-table__link(href="profile.html" target="_blank") Избранное
+						td
+							a.map-table__link(href="profile.html" target="_blank") Отзывы

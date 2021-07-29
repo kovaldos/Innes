@@ -1,0 +1,87 @@
+extends ../template
+
+block variables
+	- var title = 'Статья'
+
+block content
+	.article
+		
+		section.article-main
+			.mycontainer
+				h1.title Сила цвета
+				.article-main__date 30.10.2019
+				.article-main__banner
+					img.lazy(data-src="assets/images/main-blog-bot1.jpg", alt="")
+				.article-main-content
+					.article-main-content-text
+						p Две главные проблемы окрашенных волос — это ухудшение структуры и изменение цвета. У Davines есть линейка средств, которая восстанавливает волосы и помогает поддерживать яркость и нужный тон оттенка. Подберите пару «шампунь-кондиционер» своего цвета — от пепельного блонда до насыщенного черного. Рассказываем о некоторых продуктах оттеночной линейки Davines «Алхимик».
+						.article-main-content-text__title Как сохранить цвет волос?
+						img.lazy(data-src="assets/images/article-img.png", alt="")
+						.article-main-content-text__img Оттеночный шампунь «Алхимик» серебро
+						p Благодаря синему пигменту, шампунь убирает с осветленных волос желтизну, которая появляется со временем. Шампунь не содержит сульфатов, мягко очищает, увлажняет и питает волосы. Подходит для любого типа волос и частого применения.
+
+					.article-main-content-side
+						.article-main-content-side__img
+							img.lazy(data-src="assets/images/article-ava.jpg", alt="")
+						.article-main-content-side-wrap
+							.article-main-content-side__name Вика Лобанова
+							.article-main-content-side__text хочет сохранить цвет волос
+
+			
+		section.good-4items.block-margin
+			.mycontainer
+				.good-4items-items
+					.good-4items-items-item
+						a.good-4items-items-item__img(href="good.html")
+							img.lazy(data-src="assets/images/good1.png", alt="")
+						.good-4items-items-item__company Anti Age
+						.good-4items-items-item__name Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
+						.good-4items-items-item__price 250 руб.
+						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
+					.good-4items-items-item
+						a.good-4items-items-item__img(href="good.html")
+							img.lazy(data-src="assets/images/good2.png", alt="")
+						.good-4items-items-item__company Intense Smoothing
+						.good-4items-items-item__name Шампунь из морских ежей, 250 мл
+						.good-4items-items-item__price 250 руб.
+						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
+					.good-4items-items-item
+						a.good-4items-items-item__img(href="good.html")
+							img.lazy(data-src="assets/images/good3.png", alt="")
+						.good-4items-items-item__company Anti Age
+						.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
+						.good-4items-items-item__price 1 890 руб.
+						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
+					.good-4items-items-item
+						a.good-4items-items-item__img(href="good.html")
+							img.lazy(data-src="assets/images/good4.png", alt="")
+						.good-4items-items-item__company Intense Smoothing
+						.good-4items-items-item__name Шампунь из морских ежей, 250 мл
+						.good-4items-items-item__price 250 руб.
+						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
+		
+		.article-share
+			.mycontainer
+				span Поделиться:
+				<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+				<script src="https://yastatic.net/share2/share.js"></script>
+				<div class="ya-share2" data-services="vkontakte,facebook"></div>
+
+		section.main-bloggrid.block-margin 
+			.mycontainer
+				.main-bloggrid-items
+					a.main-bloggrid-items-item(href="#")
+						.main-bloggrid-items-item__img
+							img.lazy(data-src="assets/images/main-blog-bot1.jpg", alt="")
+						.main-bloggrid-items-item__title Сила цвета
+						.main-bloggrid-items-item__text Оттеночные средства Davines
+					a.main-bloggrid-items-item(href="#")
+						.main-bloggrid-items-item__img
+							img.lazy(data-src="assets/images/main-blog-bot2.jpg", alt="")
+						.main-bloggrid-items-item__title Раздражённая кожа. Как ей помочь?
+						.main-bloggrid-items-item__text Средства и приёмы, которые ей помогут
+					a.main-bloggrid-items-item(href="#")
+						.main-bloggrid-items-item__img
+							img.lazy(data-src="assets/images/main-blog-bot3.jpg", alt="")
+						.main-bloggrid-items-item__title COOLA
+						.main-bloggrid-items-item__text Эксперт по защите от солнца

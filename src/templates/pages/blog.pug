@@ -1,0 +1,35 @@
+extends ../template
+
+block variables
+	- var title = 'Блог'
+
+block content
+	.blog
+		.mycontainer
+			h1.title Блог
+			.blog-items
+				a.blog-items-item(href="#")
+					.blog-items-item__img
+						img.lazy(data-src="assets/images/main-blog-bot1.jpg", alt="")
+					.blog-items-item-info
+						.blog-items-item-info__date 30.10.2019
+						.blog-items-item-info__title Сила цвета
+						.blog-items-item-info__text Две главные проблемы окрашенных волос — это ухудшение структуры и изменение цвета. У Davines есть линейка средств, которая восстанавливает волосы и помогает поддерживать яркость и нужный тон оттенка. Подберите пару «шампунь-кондиционер» своего цвета — от пепельного блонда до насыщенного черного.
+						.blog-items-item-info__btn Читать дальше
+				a.blog-items-item(href="#")
+					.blog-items-item__img
+						img.lazy(data-src="assets/images/main-blog-bot2.jpg", alt="")
+					.blog-items-item-info
+						.blog-items-item-info__date 30.10.2019
+						.blog-items-item-info__title Сила цвета
+						.blog-items-item-info__text Две главные проблемы окрашенных волос — это ухудшение структуры и изменение цвета. У Davines есть линейка средств, которая восстанавливает волосы и помогает поддерживать яркость и нужный тон оттенка. Подберите пару «шампунь-кондиционер» своего цвета — от пепельного блонда до насыщенного черного.
+						.blog-items-item-info__btn Читать дальше
+
+			.catalog-main-content-pagination.block-margin
+				a.catalog-main-content-pagination__prev(href="#")
+				.catalog-main-content-pagination__page.current 1
+				a.catalog-main-content-pagination__page(href="#") 2
+				a.catalog-main-content-pagination__page(href="#") 3
+				.catalog-main-content-pagination__page.dots(href="#") . . .
+				a.catalog-main-content-pagination__page(href="#") 10
+				a.catalog-main-content-pagination__next(href="#")

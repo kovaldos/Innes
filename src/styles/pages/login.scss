@@ -1,0 +1,143 @@
+.login{
+	display: flex;
+	align-items: center;
+	&-img{
+		width: 50%;
+		margin-right: 8%;
+		img{
+			width: 100%;
+		}
+	}
+	&-auth{
+		width: 462px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.title{
+			margin-bottom: 16px;
+		}
+		&-socials{
+			margin-bottom: 24px;
+			display: flex;
+			align-items: center;
+			span{
+				margin-right: 10px;
+			}
+			a{
+				display: flex;
+				padding: 8px;
+			}
+		}
+		hr{
+			width: 100%;
+			border-top-color: rgba(17, 17, 17, 0.25)
+		}
+		> span{
+			padding: 0 16px;
+			background: #fff;
+			margin-top: -22px;
+			margin-bottom: 10px;
+		}
+		&__input{
+			width: 100%;
+			height: 48px;
+			margin-bottom: 16px;
+			&[data-type="pass"]{
+				position: relative;
+				span{
+					display: block;
+					height: 100%;
+					width: 50px;
+					background: url('../images/input-pass.svg') center no-repeat;
+					position: absolute;
+					top: 0;
+					right: 0;
+					cursor: pointer;
+				}
+			}
+			input{
+				width: 100%;
+				height: 100%;
+				border: 1px solid rgba(17, 17, 17, 0.25);
+				padding: 0 16px;
+			}
+		}
+		button{
+			width: 100%;
+			height: 48px;
+			cursor: pointer;
+			background: #fff;
+			margin: 8px 0;
+		}
+		p{
+			width: 100%;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 16px;
+			margin-bottom: 24px;
+			a{
+				display: inline;
+				font-weight: normal;
+			}
+		}
+		&__other{
+			margin-top: 16px;
+			a{
+				margin-left: 4px;
+				position: relative;
+				display: inline;
+				&:before{
+					content: '';
+					width: 100%;
+					height: 1px;
+					background: #111;
+					position: absolute;
+					left: 0;
+					bottom: -3px;
+				}
+			}
+		}
+	}
+}
+
+@include w768{
+	.login{
+		justify-content: center;
+		&-img{
+			display: none;
+		}
+		&-auth{
+			width: 407px;
+			p{
+				text-align: center;
+			}
+		}
+	}
+}
+
+@include w480{
+	.login{
+		&-auth{
+			.title{
+				margin-bottom: 8px;
+			}
+			&-socials{
+				margin-bottom: 16px;
+			}
+			&__input{
+				height: 40px;
+				margin-bottom: 8px;
+			}
+			p{
+				margin-bottom: 16px;
+			}
+			button{
+				height: 40px;
+				margin-top: 16px;
+			}
+			&__other{
+				margin-top: 8px;
+			}
+		}
+	}
+}

@@ -1,0 +1,124 @@
+header.header
+	.header-wrap
+		.mycontainer
+			.header-row.row-top
+				.row-left-box
+					a.header__link.phone-link(href="tel:88006000001") 8&nbsp;800&nbsp;600&nbsp;00&nbsp;01
+					.social-box
+						a.social-link(href="https://www.instagram.com/" target="_blanc")
+							img(src="./assets/images/header_social_inst.svg" alt="instagram-icon")
+						a.social-link(href="https://vk.com/" target="_blanc")
+							img(src="./assets/images/header_social_vk.svg" alt="vk-icon") 					
+				a.header__logo(href="index.html")
+					.logo-box
+						picture.logo-pic
+							source(srcset="./assets/images/logo1.webp" type="image/webp") 
+							img(src="./assets/images/logo1.svg" alt="logo")
+						.logo-text Intuitive Cosmetics
+				.header__icon-box 
+					.header__search#header-popup-menu
+						img(src="./assets/images/header_search.svg" alt="search-icon")
+					.header__log-in 
+						img(src="./assets/images/log_in.svg" alt="log_in-icon")
+					.header__cart
+						img(src="./assets/images/header_cart.svg", alt="cart-icon")
+			.header-row.row-bottom
+				a.header__link.active(href="#") Бестселлеры
+				a.header__link(href="#") Для лица
+				a.header__link(href="#") Для тела
+				a.header__link(href="#") Для волос
+				a.header__link(href="#") Наборы
+				a.header__link(href="#") Акции
+				a.header__link(href="#") О нас
+				a.header__link(href="#") Блог
+	.header-popup#header-popup-menu
+		.mycontainer
+			.header-popup-col
+				.header-popup-col-menu
+					.header-popup-col-menu-col
+						.header-popup-col-menu-col__title.active Каталог
+						.header-popup-col-menu-col-items
+							a.header-popup-col-menu-col-items__link(href="#") Новинки
+							a.header-popup-col-menu-col-items__link(href="#") Лицо
+							a.header-popup-col-menu-col-items__link(href="#") Волосы
+							a.header-popup-col-menu-col-items__link(href="#") Тело
+							a.header-popup-col-menu-col-items__link(href="#") Солнце
+							a.header-popup-col-menu-col-items__link(href="#") Акции
+					.header-popup-col-menu-col
+						.header-popup-col-menu-col__title Проблематика
+						.header-popup-col-menu-col-items 
+							a.header-popup-col-menu-col-items__link(href="#") Себорейный дерматит
+							a.header-popup-col-menu-col-items__link(href="#") Жирная перхоть
+							a.header-popup-col-menu-col-items__link(href="#") Атопичная кожа
+							a.header-popup-col-menu-col-items__link(href="#") Сухость и шелушение
+							a.header-popup-col-menu-col-items__link(href="#") Обежвоженность
+							a.header-popup-col-menu-col-items__link(href="#") Пигментация
+							a.header-popup-col-menu-col-items__link(href="#") Повреждённая кожа
+							a.header-popup-col-menu-col-items__link(href="#") Акне
+							a.header-popup-col-menu-col-items__link(href="#") Купероз, розацеа
+							a.header-popup-col-menu-col-items__link(href="#") Целлюлит
+					.header-popup-col-menu-col
+						.header-popup-col-menu-col__title Серии
+						.header-popup-col-menu-col-items
+							a.header-popup-col-menu-col-items__link(href="#") Perfect Clear/Remover
+							a.header-popup-col-menu-col-items__link(href="#") Anti-Age
+							a.header-popup-col-menu-col-items__link(href="#") Superdefence
+							a.header-popup-col-menu-col-items__link(href="#") Color Boost
+							a.header-popup-col-menu-col-items__link(href="#") Intense Smoothing
+							a.header-popup-col-menu-col-items__link(href="#") Liquid Keratin
+				.header-popup-col-menu
+					a.header-popup-col-menu__link(href="#") Вход/регистрация
+					a.header-popup-col-menu__link(href="#") Избранное
+					a.header-popup-col-menu__link(href="#") Об Innes
+					a.header-popup-col-menu__link(href="#") Адреса магазинов
+					a.header-popup-col-menu__link(href="#") Блог
+					a.header-popup-col-menu__link(href="#") Помощь
+			.header-popup-col
+				.header-popup-col__title Бестселлер
+				.good-4items-items-item
+					a.good-4items-items-item__img(href="#")
+						img.lazy(data-src="assets/images/good1.png", alt="")
+					.good-4items-items-item__company Anti Age
+					.good-4items-items-item__name Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
+					.good-4items-items-item__price 250 руб.
+
+	form.header-popup#header-popup-search(action="#")
+		.mycontainer
+			.header-popup-input
+				input(type="text" placeholder="Начните вводить название продукта")
+			.header-popup-tags
+				p Популярные запросы:
+				span micellar aqua pure perfect clear,
+				span hydro superdefence day cream,
+				span hyaluronic lifting mask
+
+			//Следующий блок изначально скрыт
+			.header-popup-result
+				.header-popup-result__title Найдено 4 позиции
+				.good-4items-items
+					.good-4items-items-item
+						a.good-4items-items-item__img(href="good.html")
+							img.lazy(data-src="assets/images/good1.png", alt="")
+						.good-4items-items-item__company Anti Age
+						.good-4items-items-item__name Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
+						.good-4items-items-item__price 250 руб.
+					.good-4items-items-item
+						a.good-4items-items-item__img(href="good.html")
+							img.lazy(data-src="assets/images/good2.png", alt="")
+						.good-4items-items-item__company Intense Smoothing
+						.good-4items-items-item__name Шампунь из морских ежей, 250 мл
+						.good-4items-items-item__price 250 руб.
+					.good-4items-items-item
+						a.good-4items-items-item__img(href="good.html")
+							img.lazy(data-src="assets/images/good3.png", alt="")
+						.good-4items-items-item__company Anti Age
+						.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
+						.good-4items-items-item__price 1 890 руб.
+					.good-4items-items-item
+						a.good-4items-items-item__img(href="good.html")
+							img.lazy(data-src="assets/images/good4.png", alt="")
+						.good-4items-items-item__company Intense Smoothing
+						.good-4items-items-item__name Шампунь из морских ежей, 250 мл
+						.good-4items-items-item__price 250 руб.
+				a.header-popup-result__btn.btn-border(href="#") Показать все
+					

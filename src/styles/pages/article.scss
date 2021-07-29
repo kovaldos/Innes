@@ -1,0 +1,168 @@
+.article{
+	&-main{
+		max-width: 1016px;
+		margin: 0 auto 80px;
+		.title{
+			text-align: center;
+			margin-bottom: 8px;
+		}
+		&__date{
+			text-align: center;
+			font-size: 20px;
+			margin-bottom: 40px;
+		}
+		&__banner{
+			width: 100%;
+			margin-bottom: 64px;
+			img{
+				width: 100%;
+			}
+		}
+		&-content{
+			display: flex;
+			align-items: flex-start;
+			position: relative;
+			&-text{
+				margin-right: 19%;
+				p{
+					margin-bottom: 40px;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+				&__title{
+					font-weight: 600;
+					font-size: 24px;
+					margin-bottom: 40px;
+				}
+				img{
+					margin-bottom: 8px;
+					max-width: 100%;
+				}
+				&__img{
+					font-weight: 600;
+					margin-bottom: 8px;
+				}
+			}
+			&-side{
+				position: sticky;
+				top: 40px;
+				flex: 0 0 150px;
+				&__img{
+					width: 80px;
+					height: 80px;
+					margin-bottom: 16px;
+					img{
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+				&__name{
+					font-weight: 600;
+				}
+				&__text{
+					font-weight: 300;
+					font-size: 14px;
+					line-height: 16px;
+				}
+			}
+		}
+	}
+	&-share{
+		margin-top: -80px;
+		border-top: 1px solid rgba(17, 17, 17, 0.25);
+		padding: 40px 0;
+		.mycontainer{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			> span{
+				font-weight: 600;
+				font-size: 24px;
+				margin-right: 30px;
+			}
+			.ya-share2{
+				a{
+					padding: 10px;
+				}
+				.ya-share2__item_service_vkontakte .ya-share2__badge,
+				.ya-share2__item_service_facebook .ya-share2__badge{
+					background: none;
+				}
+				.ya-share2__item_service_vkontakte .ya-share2__icon{
+					background-image: url('../images/social-vk.svg');
+					background-size: auto;
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+				.ya-share2__item_service_facebook .ya-share2__icon{
+					background-image: url('../images/social-fb.svg');
+					background-size: auto;
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+	}
+}
+
+@include w768{
+	.article{
+		&-main{
+			&__date{
+				margin-bottom: 24px;
+				font-weight: 300;
+				font-size: 14px;
+				line-height: 16px;
+			}
+			&__banner{
+				height: 392px;
+				margin-bottom: 40px;
+				img{
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			&-content{
+				flex-direction: column-reverse;
+				&-text{
+					margin-right: 0;
+					&__title{
+						margin-bottom: 16px;
+					}
+					p{
+						margin-bottom: 32px;
+					}
+				}
+				&-side{
+					position: static;
+					flex: auto;
+					display: flex;
+					&__img{
+						margin-right: 16px;
+					}
+					&-wrap{
+						&__text{
+							max-width: 200px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include w480{
+	.article{
+		&-main{
+			&__banner{
+				height: 216px;
+				margin-bottom: 24px;
+			}
+		}
+		&-share{
+			margin-top: -30px;
+		}
+	}
+}

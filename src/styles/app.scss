@@ -1,0 +1,154 @@
+@import 'common/normalize';
+
+html,
+body{
+	display: block;
+	color: #111111;
+	margin: 0;
+	font-family: 'Gilroy';
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.005em;
+}
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+	flex-direction: column;
+}
+.content {
+	flex: 1;
+	padding-top: 185px;
+}
+.mycontainer{
+	max-width: 1408px;
+	padding: 0 24px;
+	margin: 0 auto;
+}
+.title{
+	font-size: 48px;
+	line-height: 64px;
+	font-weight: bold;
+	letter-spacing: 0.0025em;
+}
+.block-margin{
+	margin-bottom: 160px;
+}
+.slider-block{
+	margin-bottom: 200px;
+}
+.btn-border{
+	border: 1px solid #111111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .3s;
+}
+.btn-greenborder{
+	border: 1px solid #009874;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .3s;
+}
+.btn-green{
+	background: #009874;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #F5F5F5;
+	transition: .3s;
+}
+.overlay{
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(17, 17, 17, 0.5);
+	display: none;
+}
+
+@import 'common/adaptive';
+@import 'common/fonts';
+@import 'common/header';
+@import 'common/footer';
+@import 'common/popup';
+@import 'pages/karta-saita';
+@import 'pages/index';
+@import 'pages/catalog';
+@import 'pages/good';
+@import 'pages/about';
+@import 'pages/help';
+@import 'pages/blog';
+@import 'pages/article';
+@import 'pages/login';
+@import 'pages/basket';
+@import 'pages/lk';
+@import 'pages/textpage';
+
+
+@include w1024{
+	.title{
+		font-size: 32px;
+		line-height: 40px;
+	}
+	.block-margin{
+		margin-bottom: 120px;
+	}
+}
+
+@include w768{
+	.content {
+		padding-top: 128px;
+	}
+}
+
+@include w480{
+	.title{ 
+		font-size: 28px;
+	line-height: 32px;
+	}
+	.mycontainer{
+		padding: 0 16px;
+	}
+	.block-margin{
+		margin-bottom: 80px;
+	}
+}
+
+@include hover{
+	.btn-border{
+		&:hover{
+			background: #009874;
+			border: 1px solid #009874;
+			color: #F5F5F5;
+		}
+		&:active{
+			background: #008C6B;
+			border: 1px solid #008C6B;
+			transition: 0s;
+		}
+	}
+	.btn-greenborder:hover{
+		&:hover{
+			color: #F5F5F5;
+			background: #009874;
+		}
+		&:active{
+			background: #008C6B;
+			border: 1px solid #008C6B;
+			transition: 0s;
+		}
+	}
+	.btn-green:hover{
+		&:hover{
+			background: #008C6B;
+		}
+		&:active{
+			background: #009874;
+			border: 1px solid #009874;
+			transition: 0s;
+		}
+	}
+}
