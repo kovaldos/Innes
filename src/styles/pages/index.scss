@@ -145,6 +145,7 @@
 				color: #111111;
 
 			}
+
 			&__img {
 				margin-bottom: 12px;
 			}
@@ -162,6 +163,7 @@
 			justify-content: space-between;
 			align-items: center;
 			width: 55%;
+
 			.add-quantity {
 				display: flex;
 				justify-content: space-between;
@@ -193,7 +195,7 @@
 					color: #000000;
 					padding: 0 5px;
 					text-align: center;
-					
+
 				}
 			}
 
@@ -210,65 +212,9 @@
 				cursor: pointer;
 			}
 		}
-
-		&-items-item__rating {
-			max-width: 195px;
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			margin-bottom: 20px;
-		}
-
-		.rating-area {
-			overflow: hidden;
-			max-width: 95px;
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			flex-direction: row-reverse;
-		}
-
-		.rating-area:not(:checked)>input {
-			display: none;
-		}
-
-		.rating-area:not(:checked)>label {
-			padding: 0;
-			cursor: pointer;
-			font-size: 20px;
-			line-height: 15px;
-			color: lightgrey;
-			text-shadow: 1px 1px #bbb;
-		}
-
-		.rating-area:not(:checked)>label:before {
-			content: '★';
-		}
-
-		.rating-area>input:checked~label {
-			color: #000000;
-			text-shadow: 1px 1px rgb(48, 48, 48);
-		}
-
-		.rating-area:not(:checked)>label:hover,
-		.rating-area:not(:checked)>label:hover~label {
-			color: #000000;
-		}
-
-		.rating-area>input:checked+label:hover,
-		.rating-area>input:checked+label:hover~label,
-		.rating-area>input:checked~label:hover,
-		.rating-area>input:checked~label:hover~label,
-		.rating-area>label:hover~input:checked~label {
-			color: #000000;
-			text-shadow: 1px 1px rgb(22, 22, 22);
-		}
-
-		.rate-area>label:active {
-			position: relative;
-		}
 	}
+
+
 
 	.good-4items.new {
 		margin-top: 122px;
@@ -472,6 +418,65 @@
 		}
 	}
 
+}
+
+.good-4items-items-item__rating {
+	max-width: 195px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+
+
+	.rating-area {
+		overflow: hidden;
+		max-width: 95px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row-reverse;
+	}
+
+	.rating-area:not(:checked)>input {
+		display: none;
+	}
+
+	.rating-area:not(:checked)>label {
+		padding: 0;
+		cursor: pointer;
+		font-size: 20px;
+		line-height: 15px;
+		color: lightgrey;
+		text-shadow: 1px 1px #bbb;
+	}
+
+	.rating-area:not(:checked)>label:before {
+		content: '★';
+	}
+
+	.rating-area>input:checked~label {
+		color: #000000;
+		text-shadow: 1px 1px rgb(48, 48, 48);
+	}
+
+	.rating-area:not(:checked)>label:hover,
+	.rating-area:not(:checked)>label:hover~label {
+		color: #000000;
+	}
+
+	.rating-area>input:checked+label:hover,
+	.rating-area>input:checked+label:hover~label,
+	.rating-area>input:checked~label:hover,
+	.rating-area>input:checked~label:hover~label,
+	.rating-area>label:hover~input:checked~label {
+		color: #000000;
+		text-shadow: 1px 1px rgb(22, 22, 22);
+	}
+
+	.rate-area>label:active {
+		position: relative;
+	}
 }
 
 

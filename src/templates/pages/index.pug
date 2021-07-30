@@ -1,369 +1,51 @@
 extends ../template
 
 block variables
-	- var title = 'Главная'
+	- var title = 'Карта сайта'
 
 block content
-	.main
-		section.main-banner
-			.main-banner-slider
-				.main-banner-slider-item
-					img(data-lazy="assets/images/banner.jpg" alt="")
-				.main-banner-slider-item
-					img(data-lazy="assets/images/banner.jpg" alt="")
-				.main-banner-slider-item
-					img(data-lazy="assets/images/banner.jpg" alt="")
-				.main-banner-slider-item
-					img(data-lazy="assets/images/banner.jpg" alt="")
-				.main-banner-slider-item
-					img(data-lazy="assets/images/banner.jpg" alt="")
-			.mycontainer
-				.main-banner-info
-					h1.title Забота о себе — это красиво
-					.main-banner-info__text Доверьте её своей интуиции
-					a.main-banner-info__btn(href="#") Смотреть каталог
-		section.good-4items.block-margin
-			.mycontainer
-				h2.title Бестселлеры
-				.good-4items-items
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="#")
-							img.lazy(data-src="assets/images/good-item-img1.jpg" alt="product")
-						h2.good-4items-items-item__series Anti Age
-						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
-						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
-						.good-4items-items-item__rating
-							.rating-area
-								input(type="radio" id="star-5" name="rating" value="5")
-								label(for="star-5" title="Оценка «5»")
-								input(type="radio" id="star-4" name="rating" value="4")
-								label(for="star-4" title="Оценка «4»")
-								input(type="radio" id="star-3" name="rating" value="3")
-								label(for="star-3" title="Оценка «3»")
-								input(type="radio" id="star-2" name="rating" value="2")
-								label(for="star-2" title="Оценка «2»")
-								input(type="radio" id="star-1" name="rating" value="1")
-								label(for="star-1" title="Оценка «1»")
-							p.rating-text 
-								span (
-								span 12 отзывов
-								span )
-						.good-4items-items-item__add-box
-							.good-4items-items-item__price 1250 руб.
-							.good-4items-items-item__add-to-cart
-								.add-quantity
-									button.quantity -
-									input(type="text" placeholder="1")
-									button.quantity +
-								button.cart-btn
-									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
-
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="#")
-							img.lazy(data-src="assets/images/good-item-img2.jpg" alt="product")
-						h2.good-4items-items-item__series Anti Age
-						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
-						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
-						.good-4items-items-item__rating
-							.rating-area
-								input(type="radio" id="star-5" name="rating" value="5")
-								label(for="star-5" title="Оценка «5»")
-								input(type="radio" id="star-4" name="rating" value="4")
-								label(for="star-4" title="Оценка «4»")
-								input(type="radio" id="star-3" name="rating" value="3")
-								label(for="star-3" title="Оценка «3»")
-								input(type="radio" id="star-2" name="rating" value="2")
-								label(for="star-2" title="Оценка «2»")
-								input(type="radio" id="star-1" name="rating" value="1")
-								label(for="star-1" title="Оценка «1»")
-							p.rating-text 
-								span (
-								span 12 отзывов
-								span )
-						.good-4items-items-item__add-box
-							.good-4items-items-item__price 1250 руб.
-							.good-4items-items-item__add-to-cart
-								.add-quantity
-									button.quantity -
-									input(type="text" placeholder="1")
-									button.quantity +
-								button.cart-btn
-									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
-
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="#")
-							img.lazy(data-src="assets/images/good-item-img3.jpg" alt="product")
-						h2.good-4items-items-item__series Anti Age
-						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
-						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
-						.good-4items-items-item__rating
-							.rating-area
-								input(type="radio" id="star-5" name="rating" value="5")
-								label(for="star-5" title="Оценка «5»")
-								input(type="radio" id="star-4" name="rating" value="4")
-								label(for="star-4" title="Оценка «4»")
-								input(type="radio" id="star-3" name="rating" value="3")
-								label(for="star-3" title="Оценка «3»")
-								input(type="radio" id="star-2" name="rating" value="2")
-								label(for="star-2" title="Оценка «2»")
-								input(type="radio" id="star-1" name="rating" value="1")
-								label(for="star-1" title="Оценка «1»")
-							p.rating-text 
-								span (
-								span 12 отзывов
-								span )
-						.good-4items-items-item__add-box
-							.good-4items-items-item__price 1250 руб.
-							.good-4items-items-item__add-to-cart
-								.add-quantity
-									button.quantity -
-									input(type="text" placeholder="1")
-									button.quantity +
-								button.cart-btn
-									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="#")
-							img.lazy(data-src="assets/images/good-item-img1.jpg" alt="product")
-						h2.good-4items-items-item__series Anti Age
-						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
-						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
-						.good-4items-items-item__rating
-							.rating-area
-								input(type="radio" id="star-5" name="rating" value="5")
-								label(for="star-5" title="Оценка «5»")
-								input(type="radio" id="star-4" name="rating" value="4")
-								label(for="star-4" title="Оценка «4»")
-								input(type="radio" id="star-3" name="rating" value="3")
-								label(for="star-3" title="Оценка «3»")
-								input(type="radio" id="star-2" name="rating" value="2")
-								label(for="star-2" title="Оценка «2»")
-								input(type="radio" id="star-1" name="rating" value="1")
-								label(for="star-1" title="Оценка «1»")
-							p.rating-text 
-								span (
-								span 12 отзывов
-								span )
-						.good-4items-items-item__add-box
-							.good-4items-items-item__price 1250 руб.
-							.good-4items-items-item__add-to-cart
-								.add-quantity
-									button.quantity -
-									input(type="text" placeholder="1")
-									button.quantity +
-								button.cart-btn
-									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
-
-		section.good-4items.block-margin.new
-			.mycontainer
-				h2.title Новинки
-				.good-4items-items
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="#")
-							img.lazy(data-src="assets/images/good-item-img1.jpg" alt="product")
-						h2.good-4items-items-item__series Anti Age
-						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
-						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
-						.good-4items-items-item__rating
-							.rating-area
-								input(type="radio" id="star-5" name="rating" value="5")
-								label(for="star-5" title="Оценка «5»")
-								input(type="radio" id="star-4" name="rating" value="4")
-								label(for="star-4" title="Оценка «4»")
-								input(type="radio" id="star-3" name="rating" value="3")
-								label(for="star-3" title="Оценка «3»")
-								input(type="radio" id="star-2" name="rating" value="2")
-								label(for="star-2" title="Оценка «2»")
-								input(type="radio" id="star-1" name="rating" value="1")
-								label(for="star-1" title="Оценка «1»")
-							p.rating-text 
-								span (
-								span 12 отзывов
-								span )
-						.good-4items-items-item__add-box
-							.good-4items-items-item__price 1250 руб.
-							.good-4items-items-item__add-to-cart
-								.add-quantity
-									button.quantity -
-									input(type="text" placeholder="1")
-									button.quantity +
-								button.cart-btn
-									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
-
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="#")
-							img.lazy(data-src="assets/images/good-item-img2.jpg" alt="product")
-						h2.good-4items-items-item__series Anti Age
-						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
-						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
-						.good-4items-items-item__rating
-							.rating-area
-								input(type="radio" id="star-5" name="rating" value="5")
-								label(for="star-5" title="Оценка «5»")
-								input(type="radio" id="star-4" name="rating" value="4")
-								label(for="star-4" title="Оценка «4»")
-								input(type="radio" id="star-3" name="rating" value="3")
-								label(for="star-3" title="Оценка «3»")
-								input(type="radio" id="star-2" name="rating" value="2")
-								label(for="star-2" title="Оценка «2»")
-								input(type="radio" id="star-1" name="rating" value="1")
-								label(for="star-1" title="Оценка «1»")
-							p.rating-text 
-								span (
-								span 12 отзывов
-								span )
-						.good-4items-items-item__add-box
-							.good-4items-items-item__price 1250 руб.
-							.good-4items-items-item__add-to-cart
-								.add-quantity
-									button.quantity -
-									input(type="text" placeholder="1")
-									button.quantity +
-								button.cart-btn
-									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
-
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="#")
-							img.lazy(data-src="assets/images/good-item-img3.jpg" alt="product")
-						h2.good-4items-items-item__series Anti Age
-						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
-						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
-						.good-4items-items-item__rating
-							.rating-area
-								input(type="radio" id="star-5" name="rating" value="5")
-								label(for="star-5" title="Оценка «5»")
-								input(type="radio" id="star-4" name="rating" value="4")
-								label(for="star-4" title="Оценка «4»")
-								input(type="radio" id="star-3" name="rating" value="3")
-								label(for="star-3" title="Оценка «3»")
-								input(type="radio" id="star-2" name="rating" value="2")
-								label(for="star-2" title="Оценка «2»")
-								input(type="radio" id="star-1" name="rating" value="1")
-								label(for="star-1" title="Оценка «1»")
-							p.rating-text 
-								span (
-								span 12 отзывов
-								span )
-						.good-4items-items-item__add-box
-							.good-4items-items-item__price 1250 руб.
-							.good-4items-items-item__add-to-cart
-								.add-quantity
-									button.quantity -
-									input(type="text" placeholder="1")
-									button.quantity +
-								button.cart-btn
-									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="#")
-							img.lazy(data-src="assets/images/good-item-img1.jpg" alt="product")
-						h2.good-4items-items-item__series Anti Age
-						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
-						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
-						.good-4items-items-item__rating
-							.rating-area
-								input(type="radio" id="star-5" name="rating" value="5")
-								label(for="star-5" title="Оценка «5»")
-								input(type="radio" id="star-4" name="rating" value="4")
-								label(for="star-4" title="Оценка «4»")
-								input(type="radio" id="star-3" name="rating" value="3")
-								label(for="star-3" title="Оценка «3»")
-								input(type="radio" id="star-2" name="rating" value="2")
-								label(for="star-2" title="Оценка «2»")
-								input(type="radio" id="star-1" name="rating" value="1")
-								label(for="star-1" title="Оценка «1»")
-							p.rating-text 
-								span (
-								span 12 отзывов
-								span )
-						.good-4items-items-item__add-box
-							.good-4items-items-item__price 1250 руб.
-							.good-4items-items-item__add-to-cart
-								.add-quantity
-									button.quantity -
-									input(type="text" placeholder="1")
-									button.quantity +
-								button.cart-btn
-									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
-		section.main-promo-banner
-			.mycontainer
-				a.main-promo-banner__link(href="#")
-					img(src="assets/images/promo-banner.jpg" alt="blush-image")
-		section.main-catalog 
-			.mycontainer
-				.main-catalog-box 
-					.main-catalog-item 
-						img.lazy(data-src="assets/images/main-catalog-img1.jpg" alt="product-image")
-						h3.main-catalog-title Название линейки 
-						button.main-catalog-btn Купить
-					.main-catalog-item 
-						img.lazy(data-src="assets/images/main-catalog-img2.jpg" alt="product-image")
-						h3.main-catalog-title Название линейки 
-						button.main-catalog-btn Купить
-					.main-catalog-item 
-						img.lazy(data-src="assets/images/main-catalog-img3.jpg" alt="product-image")
-						h3.main-catalog-title Название линейки 
-						button.main-catalog-btn Купить
-					.main-catalog-item 
-						img.lazy(data-src="assets/images/main-catalog-img2.jpg" alt="product-image")
-						h3.main-catalog-title Название линейки 
-						button.main-catalog-btn Купить
-					.main-catalog-item 
-						img.lazy(data-src="assets/images/main-catalog-img3.jpg" alt="product-image")
-						h3.main-catalog-title Название линейки 
-						button.main-catalog-btn Купить
-					.main-catalog-item 
-						img.lazy(data-src="assets/images/main-catalog-img1.jpg" alt="product-image")
-						h3.main-catalog-title Название линейки 
-						button.main-catalog-btn Купить
-					.main-catalog-item 
-						img.lazy(data-src="assets/images/main-catalog-img3.jpg" alt="product-image")
-						h3.main-catalog-title Название линейки 
-						button.main-catalog-btn Купить
-					.main-catalog-item 
-						img.lazy(data-src="assets/images/main-catalog-img2.jpg" alt="product-image")
-						h3.main-catalog-title Название линейки 
-						button.main-catalog-btn Купить
-					.main-catalog-item 
-						img.lazy(data-src="assets/images/main-catalog-img1.jpg" alt="product-image")
-						h3.main-catalog-title Название линейки 
-						button.main-catalog-btn Купить		
-		section.main-made.block-margin
-			h2.title Сделано в России с любовью			
-		section.main-subscribe.block-margin
-			.mycontainer
-				.main-subscribe-form
-					.form-item
-						h2.form-item-title Подпишитесь на рассылку
-						p.form-item-sub-title Узнавайте первыми об акциях и эксклюзивных предложениях и будьте в курсе последних новинок
-					.form-item.item-right
-						.main-subscribe-input-box
-							input.main-subscribe-input(type="email" pattern=".+@." required placeholder="Введите ваш e-mail")
-							button.main-subscribe-btn Подписаться
-						p.main-subscribe-agree Нажимая на кнопку “Подписаться” Вы соглашаеткесь с Правилами обработки персональных данных	
-		section.main-our-inst.block-margin
-			.mycontainer
-				.main-our-inst-heading
-					h2.main-our-inst-title Наш Instagram
-					h2.main-our-inst-sub-title @innes.ru
-				.main-our-inst-items
-					a.main-our-inst-items-item(href="#")
-						.main-our-inst-items-item__img
-							img.lazy(data-src="assets/images/our-inst-img1.jpg" alt="")
-					a.main-our-inst-items-item(href="#")
-						.main-our-inst-items-item__img
-							img.lazy(data-src="assets/images/our-inst-img2.jpg" alt="")
-					a.main-our-inst-items-item(href="#")
-						.main-our-inst-items-item__img
-							img.lazy(data-src="assets/images/our-inst-img3.jpg" alt="")
-					a.main-our-inst-items-item(href="#")
-						.main-our-inst-items-item__img
-							img.lazy(data-src="assets/images/our-inst-img2.jpg" alt="")
-					a.main-our-inst-items-item(href="#")
-						.main-our-inst-items-item__img
-							img.lazy(data-src="assets/images/our-inst-img4.jpg" alt="")
-					a.main-our-inst-items-item(href="#")
-						.main-our-inst-items-item__img
-							img.lazy(data-src="assets/images/our-inst-img5.jpg" alt="")
-
-
-
-
+	.map
+		.mycontainer
+			.map-logo
+				img(src="assets/images/logo.svg")
+			table.map-table
+				tbody
+					tr
+						td
+							a.map-table__link(href="home.html" target="_blank") Главная
+					tr
+						td
+							a.map-table__link(href="catalog.html" target="_blank") Каталог
+						td
+							a.map-table__link(href="good.html" target="_blank") Страница товара
+					tr
+						td
+							a.map-table__link(href="about.html" target="_blank") О компании
+					tr
+						td
+							a.map-table__link(href="help.html" target="_blank") Помощь
+					tr
+						td
+							a.map-table__link(href="blog.html" target="_blank") Блог
+						td
+							a.map-table__link(href="article.html" target="_blank") Статья
+					tr
+						td
+							a.map-table__link(href="register.html" target="_blank") Регистрация
+						td
+							a.map-table__link(href="login.html" target="_blank") Вход
+					tr
+						td
+							a.map-table__link(href="basket.html" target="_blank") Корзина
+					tr
+						td
+							a.map-table__link(href="textpage.html" target="_blank") Текстовая страница
+					//tr
+						td
+							a.map-table__link(href="profile.html" target="_blank") Профиль
+						td
+							a.map-table__link(href="profile.html" target="_blank") Заказы
+						td
+							a.map-table__link(href="profile.html" target="_blank") Избранное
+						td
+							a.map-table__link(href="profile.html" target="_blank") Отзывы
