@@ -37,3 +37,26 @@
 	font-weight: bold;
 	font-style: normal;
 }
+
+@font-face {
+    font-family: 'mr_HamiltoneG';
+    src: url('../fonts/mr_HamiltoneG.eot');
+    src: url('../fonts/mr_HamiltoneG.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/mr_HamiltoneG.woff2') format('woff2'),
+        url('../fonts/mr_HamiltoneG.woff') format('woff'),
+        url('../fonts/mr_HamiltoneG.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mr_HamiltoneG';
+    src: url('../fonts/mr_HamiltoneG.eot');
+    src: url('../fonts/mr_HamiltoneG.eot') format('embedded-opentype'),
+         url('../fonts/mr_HamiltoneG.woff2') format('woff2'),
+         url('../fonts/mr_HamiltoneG.woff') format('woff'),
+         url('../fonts/mr_HamiltoneG.ttf') format('truetype'),
+         url('../fonts/mr_HamiltoneG.svg#mr_HamiltoneG') format('svg');
+}
+

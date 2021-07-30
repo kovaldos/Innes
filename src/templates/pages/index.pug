@@ -8,113 +8,362 @@ block content
 		section.main-banner
 			.main-banner-slider
 				.main-banner-slider-item
-					img(data-lazy="assets/images/banner.jpg", alt="")
+					img(data-lazy="assets/images/banner.jpg" alt="")
 				.main-banner-slider-item
-					img(data-lazy="assets/images/banner.jpg", alt="")
+					img(data-lazy="assets/images/banner.jpg" alt="")
 				.main-banner-slider-item
-					img(data-lazy="assets/images/banner.jpg", alt="")
+					img(data-lazy="assets/images/banner.jpg" alt="")
 				.main-banner-slider-item
-					img(data-lazy="assets/images/banner.jpg", alt="")
+					img(data-lazy="assets/images/banner.jpg" alt="")
 				.main-banner-slider-item
-					img(data-lazy="assets/images/banner.jpg", alt="")
+					img(data-lazy="assets/images/banner.jpg" alt="")
 			.mycontainer
 				.main-banner-info
 					h1.title Забота о себе — это красиво
 					.main-banner-info__text Доверьте её своей интуиции
 					a.main-banner-info__btn(href="#") Смотреть каталог
-
 		section.good-4items.block-margin
 			.mycontainer
-				.title Бестселлеры
+				h2.title Бестселлеры
 				.good-4items-items
 					.good-4items-items-item
 						a.good-4items-items-item__img(href="#")
-							img.lazy(data-src="assets/images/good1.png", alt="")
-						.good-4items-items-item__company Anti Age
-						.good-4items-items-item__name Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
-						.good-4items-items-item__price 250 руб.
+							img.lazy(data-src="assets/images/good-item-img1.jpg" alt="product")
+						h2.good-4items-items-item__series Anti Age
+						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
+						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
+						.good-4items-items-item__rating
+							.rating-area
+								input(type="radio" id="star-5" name="rating" value="5")
+								label(for="star-5" title="Оценка «5»")
+								input(type="radio" id="star-4" name="rating" value="4")
+								label(for="star-4" title="Оценка «4»")
+								input(type="radio" id="star-3" name="rating" value="3")
+								label(for="star-3" title="Оценка «3»")
+								input(type="radio" id="star-2" name="rating" value="2")
+								label(for="star-2" title="Оценка «2»")
+								input(type="radio" id="star-1" name="rating" value="1")
+								label(for="star-1" title="Оценка «1»")
+							p.rating-text 
+								span (
+								span 12 отзывов
+								span )
+						.good-4items-items-item__add-box
+							.good-4items-items-item__price 1250 руб.
+							.good-4items-items-item__add-to-cart
+								.add-quantity
+									button.quantity -
+									input(type="text" placeholder="1")
+									button.quantity +
+								button.cart-btn
+									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
+
 					.good-4items-items-item
 						a.good-4items-items-item__img(href="#")
-							img.lazy(data-src="assets/images/good2.png", alt="")
-						.good-4items-items-item__company Intense Smoothing
-						.good-4items-items-item__name Шампунь из морских ежей, 250 мл
-						.good-4items-items-item__price 250 руб.
+							img.lazy(data-src="assets/images/good-item-img2.jpg" alt="product")
+						h2.good-4items-items-item__series Anti Age
+						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
+						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
+						.good-4items-items-item__rating
+							.rating-area
+								input(type="radio" id="star-5" name="rating" value="5")
+								label(for="star-5" title="Оценка «5»")
+								input(type="radio" id="star-4" name="rating" value="4")
+								label(for="star-4" title="Оценка «4»")
+								input(type="radio" id="star-3" name="rating" value="3")
+								label(for="star-3" title="Оценка «3»")
+								input(type="radio" id="star-2" name="rating" value="2")
+								label(for="star-2" title="Оценка «2»")
+								input(type="radio" id="star-1" name="rating" value="1")
+								label(for="star-1" title="Оценка «1»")
+							p.rating-text 
+								span (
+								span 12 отзывов
+								span )
+						.good-4items-items-item__add-box
+							.good-4items-items-item__price 1250 руб.
+							.good-4items-items-item__add-to-cart
+								.add-quantity
+									button.quantity -
+									input(type="text" placeholder="1")
+									button.quantity +
+								button.cart-btn
+									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
+
 					.good-4items-items-item
 						a.good-4items-items-item__img(href="#")
-							img.lazy(data-src="assets/images/good3.png", alt="")
-						.good-4items-items-item__company Anti Age
-						.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
-						.good-4items-items-item__price 1 890 руб.
+							img.lazy(data-src="assets/images/good-item-img3.jpg" alt="product")
+						h2.good-4items-items-item__series Anti Age
+						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
+						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
+						.good-4items-items-item__rating
+							.rating-area
+								input(type="radio" id="star-5" name="rating" value="5")
+								label(for="star-5" title="Оценка «5»")
+								input(type="radio" id="star-4" name="rating" value="4")
+								label(for="star-4" title="Оценка «4»")
+								input(type="radio" id="star-3" name="rating" value="3")
+								label(for="star-3" title="Оценка «3»")
+								input(type="radio" id="star-2" name="rating" value="2")
+								label(for="star-2" title="Оценка «2»")
+								input(type="radio" id="star-1" name="rating" value="1")
+								label(for="star-1" title="Оценка «1»")
+							p.rating-text 
+								span (
+								span 12 отзывов
+								span )
+						.good-4items-items-item__add-box
+							.good-4items-items-item__price 1250 руб.
+							.good-4items-items-item__add-to-cart
+								.add-quantity
+									button.quantity -
+									input(type="text" placeholder="1")
+									button.quantity +
+								button.cart-btn
+									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
 					.good-4items-items-item
 						a.good-4items-items-item__img(href="#")
-							img.lazy(data-src="assets/images/good4.png", alt="")
-						.good-4items-items-item__company Intense Smoothing
-						.good-4items-items-item__name Шампунь из морских ежей, 250 мл
-						.good-4items-items-item__price 250 руб.
+							img.lazy(data-src="assets/images/good-item-img1.jpg" alt="product")
+						h2.good-4items-items-item__series Anti Age
+						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
+						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
+						.good-4items-items-item__rating
+							.rating-area
+								input(type="radio" id="star-5" name="rating" value="5")
+								label(for="star-5" title="Оценка «5»")
+								input(type="radio" id="star-4" name="rating" value="4")
+								label(for="star-4" title="Оценка «4»")
+								input(type="radio" id="star-3" name="rating" value="3")
+								label(for="star-3" title="Оценка «3»")
+								input(type="radio" id="star-2" name="rating" value="2")
+								label(for="star-2" title="Оценка «2»")
+								input(type="radio" id="star-1" name="rating" value="1")
+								label(for="star-1" title="Оценка «1»")
+							p.rating-text 
+								span (
+								span 12 отзывов
+								span )
+						.good-4items-items-item__add-box
+							.good-4items-items-item__price 1250 руб.
+							.good-4items-items-item__add-to-cart
+								.add-quantity
+									button.quantity -
+									input(type="text" placeholder="1")
+									button.quantity +
+								button.cart-btn
+									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
 
-		section.main-new.block-margin
+		section.good-4items.block-margin.new
 			.mycontainer
-				a.main-new__img(href="#")
-					img.lazy(data-src="assets/images/main-new1.jpg", alt="")
-				.main-new-info
-					.title Новый шампунь в продаже
-					.main-new-info__text Шампунь для блеска волос на базе ингредиентов растительного происхождения. Разработан специально для преображения тусклых и безжизненных волос.
+				h2.title Новинки
+				.good-4items-items
+					.good-4items-items-item
+						a.good-4items-items-item__img(href="#")
+							img.lazy(data-src="assets/images/good-item-img1.jpg" alt="product")
+						h2.good-4items-items-item__series Anti Age
+						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
+						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
+						.good-4items-items-item__rating
+							.rating-area
+								input(type="radio" id="star-5" name="rating" value="5")
+								label(for="star-5" title="Оценка «5»")
+								input(type="radio" id="star-4" name="rating" value="4")
+								label(for="star-4" title="Оценка «4»")
+								input(type="radio" id="star-3" name="rating" value="3")
+								label(for="star-3" title="Оценка «3»")
+								input(type="radio" id="star-2" name="rating" value="2")
+								label(for="star-2" title="Оценка «2»")
+								input(type="radio" id="star-1" name="rating" value="1")
+								label(for="star-1" title="Оценка «1»")
+							p.rating-text 
+								span (
+								span 12 отзывов
+								span )
+						.good-4items-items-item__add-box
+							.good-4items-items-item__price 1250 руб.
+							.good-4items-items-item__add-to-cart
+								.add-quantity
+									button.quantity -
+									input(type="text" placeholder="1")
+									button.quantity +
+								button.cart-btn
+									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
 
-		section.main-blogslider.block-margin.slider-block
-			.mycontainer 
-				.main-blogslider-info
-					.title Вдохновляйтесь
-					.main-blogslider-info__text Тысячи идей по использованию косметики для твоего ритма жизни, всё в Ваших руках. Смотрите и читайте о наших новинках
-					a.main-blogslider-info__btn.btn-border(href="#") Почитать наш блог
-				.main-blogslider-slider
-					a.main-blogslider-slider-item(href="#")
-						.main-blogslider-slider-item__img
-							img(src="assets/images/main-blog1.jpg", alt="")
-						.main-blogslider-slider-item__title Коллекция для большого города
-						.main-blogslider-slider-item__text С 1969 года завод марки располагается примерно в 5 км от нашего бесценного сокровища — термальных источников
-					a.main-blogslider-slider-item(href="#")
-						.main-blogslider-slider-item__img
-							img(src="assets/images/main-blog2.jpg", alt="")
-						.main-blogslider-slider-item__title Коллекция для большого города
-						.main-blogslider-slider-item__text С 1969 года завод марки располагается примерно в 5 км от нашего бесценного сокровища — термальных источников
+					.good-4items-items-item
+						a.good-4items-items-item__img(href="#")
+							img.lazy(data-src="assets/images/good-item-img2.jpg" alt="product")
+						h2.good-4items-items-item__series Anti Age
+						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
+						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
+						.good-4items-items-item__rating
+							.rating-area
+								input(type="radio" id="star-5" name="rating" value="5")
+								label(for="star-5" title="Оценка «5»")
+								input(type="radio" id="star-4" name="rating" value="4")
+								label(for="star-4" title="Оценка «4»")
+								input(type="radio" id="star-3" name="rating" value="3")
+								label(for="star-3" title="Оценка «3»")
+								input(type="radio" id="star-2" name="rating" value="2")
+								label(for="star-2" title="Оценка «2»")
+								input(type="radio" id="star-1" name="rating" value="1")
+								label(for="star-1" title="Оценка «1»")
+							p.rating-text 
+								span (
+								span 12 отзывов
+								span )
+						.good-4items-items-item__add-box
+							.good-4items-items-item__price 1250 руб.
+							.good-4items-items-item__add-to-cart
+								.add-quantity
+									button.quantity -
+									input(type="text" placeholder="1")
+									button.quantity +
+								button.cart-btn
+									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
 
-		section.main-about.block-margin
+					.good-4items-items-item
+						a.good-4items-items-item__img(href="#")
+							img.lazy(data-src="assets/images/good-item-img3.jpg" alt="product")
+						h2.good-4items-items-item__series Anti Age
+						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
+						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
+						.good-4items-items-item__rating
+							.rating-area
+								input(type="radio" id="star-5" name="rating" value="5")
+								label(for="star-5" title="Оценка «5»")
+								input(type="radio" id="star-4" name="rating" value="4")
+								label(for="star-4" title="Оценка «4»")
+								input(type="radio" id="star-3" name="rating" value="3")
+								label(for="star-3" title="Оценка «3»")
+								input(type="radio" id="star-2" name="rating" value="2")
+								label(for="star-2" title="Оценка «2»")
+								input(type="radio" id="star-1" name="rating" value="1")
+								label(for="star-1" title="Оценка «1»")
+							p.rating-text 
+								span (
+								span 12 отзывов
+								span )
+						.good-4items-items-item__add-box
+							.good-4items-items-item__price 1250 руб.
+							.good-4items-items-item__add-to-cart
+								.add-quantity
+									button.quantity -
+									input(type="text" placeholder="1")
+									button.quantity +
+								button.cart-btn
+									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
+					.good-4items-items-item
+						a.good-4items-items-item__img(href="#")
+							img.lazy(data-src="assets/images/good-item-img1.jpg" alt="product")
+						h2.good-4items-items-item__series Anti Age
+						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
+						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
+						.good-4items-items-item__rating
+							.rating-area
+								input(type="radio" id="star-5" name="rating" value="5")
+								label(for="star-5" title="Оценка «5»")
+								input(type="radio" id="star-4" name="rating" value="4")
+								label(for="star-4" title="Оценка «4»")
+								input(type="radio" id="star-3" name="rating" value="3")
+								label(for="star-3" title="Оценка «3»")
+								input(type="radio" id="star-2" name="rating" value="2")
+								label(for="star-2" title="Оценка «2»")
+								input(type="radio" id="star-1" name="rating" value="1")
+								label(for="star-1" title="Оценка «1»")
+							p.rating-text 
+								span (
+								span 12 отзывов
+								span )
+						.good-4items-items-item__add-box
+							.good-4items-items-item__price 1250 руб.
+							.good-4items-items-item__add-to-cart
+								.add-quantity
+									button.quantity -
+									input(type="text" placeholder="1")
+									button.quantity +
+								button.cart-btn
+									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
+		section.main-promo-banner
 			.mycontainer
-				.main-about__img
-					img.lazy(data-src="assets/images/main-about1.jpg", alt="")
-				.main-about__img
-					img.lazy(data-src="assets/images/main-about2.jpg", alt="")
-				.main-about-info
-					.main-about-info__subtitle Об innes
-					.title Сделано в России с любовью
-					.main-about-info__text Интенсивный ритм современного мегаполиса оставляет свой отпечаток на твоём образе жизни. Ты стараешься успеть всё, не забыв при этом и о себе. Тебе важно, чтобы тебя понимали, не задавая лишних вопросов. Всегда интуитивно понимаешь, что лучше для тебя.
-					a.main-about-info__btn.btn-border(href="#") Наша история
-
-		section.main-promo.block-margin
+				a.main-promo-banner__link(href="#")
+					img(src="assets/images/promo-banner.jpg" alt="blush-image")
+		section.main-catalog 
 			.mycontainer
-				.main-promo-content
-					.title 10% скидка на первый заказ
-					.main-promo-content__text По промокоду Welcome
-
-		section.main-bloggrid.block-margin
+				.main-catalog-box 
+					.main-catalog-item 
+						img.lazy(data-src="assets/images/main-catalog-img1.jpg" alt="product-image")
+						h3.main-catalog-title Название линейки 
+						button.main-catalog-btn Купить
+					.main-catalog-item 
+						img.lazy(data-src="assets/images/main-catalog-img2.jpg" alt="product-image")
+						h3.main-catalog-title Название линейки 
+						button.main-catalog-btn Купить
+					.main-catalog-item 
+						img.lazy(data-src="assets/images/main-catalog-img3.jpg" alt="product-image")
+						h3.main-catalog-title Название линейки 
+						button.main-catalog-btn Купить
+					.main-catalog-item 
+						img.lazy(data-src="assets/images/main-catalog-img2.jpg" alt="product-image")
+						h3.main-catalog-title Название линейки 
+						button.main-catalog-btn Купить
+					.main-catalog-item 
+						img.lazy(data-src="assets/images/main-catalog-img3.jpg" alt="product-image")
+						h3.main-catalog-title Название линейки 
+						button.main-catalog-btn Купить
+					.main-catalog-item 
+						img.lazy(data-src="assets/images/main-catalog-img1.jpg" alt="product-image")
+						h3.main-catalog-title Название линейки 
+						button.main-catalog-btn Купить
+					.main-catalog-item 
+						img.lazy(data-src="assets/images/main-catalog-img3.jpg" alt="product-image")
+						h3.main-catalog-title Название линейки 
+						button.main-catalog-btn Купить
+					.main-catalog-item 
+						img.lazy(data-src="assets/images/main-catalog-img2.jpg" alt="product-image")
+						h3.main-catalog-title Название линейки 
+						button.main-catalog-btn Купить
+					.main-catalog-item 
+						img.lazy(data-src="assets/images/main-catalog-img1.jpg" alt="product-image")
+						h3.main-catalog-title Название линейки 
+						button.main-catalog-btn Купить		
+		section.main-made.block-margin
+			h2.title Сделано в России с любовью			
+		section.main-subscribe.block-margin
 			.mycontainer
-				.main-bloggrid-items
-					a.main-bloggrid-items-item(href="#")
-						.main-bloggrid-items-item__img
-							img.lazy(data-src="assets/images/main-blog-bot1.jpg", alt="")
-						.main-bloggrid-items-item__title Сила цвета
-						.main-bloggrid-items-item__text Оттеночные средства Davines
-					a.main-bloggrid-items-item(href="#")
-						.main-bloggrid-items-item__img
-							img.lazy(data-src="assets/images/main-blog-bot2.jpg", alt="")
-						.main-bloggrid-items-item__title Раздражённая кожа. Как ей помочь?
-						.main-bloggrid-items-item__text Средства и приёмы, которые ей помогут
-					a.main-bloggrid-items-item(href="#")
-						.main-bloggrid-items-item__img
-							img.lazy(data-src="assets/images/main-blog-bot3.jpg", alt="")
-						.main-bloggrid-items-item__title COOLA
-						.main-bloggrid-items-item__text Эксперт по защите от солнца
-				a.main-bloggrid__btn.btn-border(href="#") Показать ещё
+				.main-subscribe-form
+					.form-item
+						h2.form-item-title Подпишитесь на рассылку
+						p.form-item-sub-title Узнавайте первыми об акциях и эксклюзивных предложениях и будьте в курсе последних новинок
+					.form-item.item-right
+						.main-subscribe-input-box
+							input.main-subscribe-input(type="email" pattern=".+@." required placeholder="Введите ваш e-mail")
+							button.main-subscribe-btn Подписаться
+						p.main-subscribe-agree Нажимая на кнопку “Подписаться” Вы соглашаеткесь с Правилами обработки персональных данных	
+		section.main-our-inst.block-margin
+			.mycontainer
+				.main-our-inst-heading
+					h2.main-our-inst-title Наш Instagram
+					h2.main-our-inst-sub-title @innes.ru
+				.main-our-inst-items
+					a.main-our-inst-items-item(href="#")
+						.main-our-inst-items-item__img
+							img.lazy(data-src="assets/images/our-inst-img1.jpg" alt="")
+					a.main-our-inst-items-item(href="#")
+						.main-our-inst-items-item__img
+							img.lazy(data-src="assets/images/our-inst-img2.jpg" alt="")
+					a.main-our-inst-items-item(href="#")
+						.main-our-inst-items-item__img
+							img.lazy(data-src="assets/images/our-inst-img3.jpg" alt="")
+					a.main-our-inst-items-item(href="#")
+						.main-our-inst-items-item__img
+							img.lazy(data-src="assets/images/our-inst-img2.jpg" alt="")
+					a.main-our-inst-items-item(href="#")
+						.main-our-inst-items-item__img
+							img.lazy(data-src="assets/images/our-inst-img4.jpg" alt="")
+					a.main-our-inst-items-item(href="#")
+						.main-our-inst-items-item__img
+							img.lazy(data-src="assets/images/our-inst-img5.jpg" alt="")
 
 
-				
+
+
