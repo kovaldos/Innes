@@ -60,17 +60,37 @@ block content
 							option(value="1000") 1000 мл
 							option(value="500") 500 мл
 							option(value="250") 250 мл
-						.good-4items-items-item__add-to-cart
+					.good-content-col-row__add-box
+						.good-content-col__price Цена:  1 390 руб.
+						.good-content-col-row__add-to-cart
 							.add-quantity
 								button.quantity -
 								input(type="text" placeholder="1")
 								button.quantity +
-							a.cart-btn
-								img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
-					.good-content-col__price Цена:  1 390 руб.
+							a.cart-btn(href="#") Добавить в корзину
+		section.good-about
+			.mycontainer
+				h2.title О продукте
+				.good-about-row
+					article.good-about-row-col
+						h3.good-about-row-col__title Описание
+						.good-about-row-col__text-box
+							p.good-about-row-col__text Увлажняющий крем с шелковистой текстурой, который поддерживает и улучшает защитные функции кожи. Крем восполняет недостаток необходимых веществ в коже, помогая защитить ее от внешних воздействий и раздражения. Не содержит ароматизаторов, красителей, эфирных масел.
+					article.good-about-row-col
+						h3.good-about-row-col__title Активные компоненты
+						.good-about-row-col__text-box
+							p.good-about-row-col__text — Лизат лактобактерий. Фрагменты пробиотиков — полезных бактерий, которые помогают поддерживать здоровый микробиом кожи. 
+							p.good-about-row-col__text — Натуральный увлажняющий фактор. Аминокислоты, Sodium PCA, Молочная кислота, Гиалуроновая кислота, Мочевина. Основные компоненты натурального увлажняющего фактора — комплекса, который содержится в коже и отвечает за ее увлаж...
+						details.good-about-row-col__details 
+							summary Состав
+							p.good-about-row-col__details_text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quae nostrum doloremque tempora commodi, maiores corrupti obcaecati omnis eaque quia!
+					article.good-about-row-col
+						h3.good-about-row-col__title Способ применения
+						.good-about-row-col__text-box
+							p.good-about-row-col__text Увлажняющий крем с шелковистой текстурой, который поддерживает и улучшает защитные функции кожи. Крем восполняет недостаток необходимых веществ в коже, помогая защитить ее от внешних воздействий и раздражения. Не содержит ароматизаторов, красителей, эфирных масел.
 		section.good-reviews.block-margin
 			.mycontainer
-				.title Отзывы
+				h2.title Отзывы
 				.good-reviews-row
 					.good-reviews-row-slider
 						a.good-reviews-row-slider-item(href="#")

@@ -47,9 +47,13 @@ $(document).ready(function () {
 
 	$(document).find('.good-content-col-thumbs').slick({
 		lazyLoad: 'ondemand',
-		vertical: true,
-		verticalSwiping: true,
+		arrows: false,
+		vertical: false,
+		verticalSwiping: false,
 		slidesToShow: 4,
+		centerMode: false,
+		initialSlide: 1,
+		variableWidth: true,
 		focusOnSelect: true,
 		asNavFor: '.good-content-col-slider',
 		responsive: [
@@ -66,7 +70,7 @@ $(document).ready(function () {
 				settings: {
 					vertical: false,
 					verticalSwiping: false,
-					slidesToShow: 1,
+					slidesToShow: 2,
 					variableWidth: true,
 					lazyLoad: 'progressive'
 				}
