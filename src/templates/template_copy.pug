@@ -23,7 +23,7 @@ html
 		.wrapper
 			.overlay
 			include common/header.pug
-			.content
+			.content.home
 				.breadcrumbs
 					a.breadcrumbs__item(href="#") Главная
 					span /
@@ -31,7 +31,7 @@ html
 					span /
 					.breadcrumbs__item Крем
 				block content
-			include common/footer_copy.pug
+			include common/footer_home.pug
 			include common/popup.pug
 		script(src="https://kit.fontawesome.com/5eef817402.js" crossorigin="anonymous")
 		script(src="assets/scripts/jquery.js")
