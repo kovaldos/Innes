@@ -5,61 +5,148 @@ block variables
 
 block content
 	.article
-		
+
 		section.article-main
 			.mycontainer
 				h1.title Сила цвета
 				.article-main__date 30.10.2019
 				.article-main__banner
-					img.lazy(data-src="assets/images/main-blog-bot1.jpg", alt="")
+					img.lazy(data-src="assets/images/main-blog-bot1.jpg" alt="")
 				.article-main-content
 					.article-main-content-text
 						p Две главные проблемы окрашенных волос — это ухудшение структуры и изменение цвета. У Davines есть линейка средств, которая восстанавливает волосы и помогает поддерживать яркость и нужный тон оттенка. Подберите пару «шампунь-кондиционер» своего цвета — от пепельного блонда до насыщенного черного. Рассказываем о некоторых продуктах оттеночной линейки Davines «Алхимик».
 						.article-main-content-text__title Как сохранить цвет волос?
-						img.lazy(data-src="assets/images/article-img.png", alt="")
+						img.lazy(data-src="assets/images/article-img.png" alt="")
 						.article-main-content-text__img Оттеночный шампунь «Алхимик» серебро
 						p Благодаря синему пигменту, шампунь убирает с осветленных волос желтизну, которая появляется со временем. Шампунь не содержит сульфатов, мягко очищает, увлажняет и питает волосы. Подходит для любого типа волос и частого применения.
 
 					.article-main-content-side
 						.article-main-content-side__img
-							img.lazy(data-src="assets/images/article-ava.jpg", alt="")
+							img.lazy(data-src="assets/images/article-ava.jpg" alt="")
 						.article-main-content-side-wrap
 							.article-main-content-side__name Вика Лобанова
 							.article-main-content-side__text хочет сохранить цвет волос
 
-			
 		section.good-4items.block-margin
 			.mycontainer
 				.good-4items-items
 					.good-4items-items-item
-						a.good-4items-items-item__img(href="good.html")
-							img.lazy(data-src="assets/images/good1.png", alt="")
-						.good-4items-items-item__company Anti Age
-						.good-4items-items-item__name Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
-						.good-4items-items-item__price 250 руб.
-						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
+						a.good-4items-items-item__img(href="#")
+							img.lazy(data-src="assets/images/good-item-img3.jpg" alt="product")
+						h2.good-4items-items-item__series Anti Age
+						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
+						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
+						.rating.rating_set
+							.rating__body
+								.rating__active
+								.rating__items
+									input.rating__item(type="radio" name="rating" value="1")
+									input.rating__item(type="radio" name="rating" value="2")
+									input.rating__item(type="radio" name="rating" value="3")
+									input.rating__item(type="radio" name="rating" value="4")
+									input.rating__item(type="radio" name="rating" value="5")
+							.rating__value 4.5		
+							p.rating-text 
+								span (
+								span 12 отзывов
+								span )
+						.good-4items-items-item__add-box
+							.good-4items-items-item__price 1250 руб.
+							.good-4items-items-item__add-to-cart
+								.add-quantity
+									button.quantity -
+									input(type="text" placeholder="1")
+									button.quantity +
+								a.cart-btn
+									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
 					.good-4items-items-item
-						a.good-4items-items-item__img(href="good.html")
-							img.lazy(data-src="assets/images/good2.png", alt="")
-						.good-4items-items-item__company Intense Smoothing
-						.good-4items-items-item__name Шампунь из морских ежей, 250 мл
-						.good-4items-items-item__price 250 руб.
-						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
+						a.good-4items-items-item__img(href="#")
+							img.lazy(data-src="assets/images/good-item-img2.jpg" alt="product")
+						h2.good-4items-items-item__series Anti Age
+						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
+						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
+						.rating.rating_set
+							.rating__body
+								.rating__active
+								.rating__items
+									input.rating__item(type="radio" name="rating" value="1")
+									input.rating__item(type="radio" name="rating" value="2")
+									input.rating__item(type="radio" name="rating" value="3")
+									input.rating__item(type="radio" name="rating" value="4")
+									input.rating__item(type="radio" name="rating" value="5")
+							.rating__value 4.5		
+							p.rating-text 
+								span (
+								span 12 отзывов
+								span )
+						.good-4items-items-item__add-box
+							.good-4items-items-item__price 1250 руб.
+							.good-4items-items-item__add-to-cart
+								.add-quantity
+									button.quantity -
+									input(type="text" placeholder="1")
+									button.quantity +
+								a.cart-btn
+									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
 					.good-4items-items-item
-						a.good-4items-items-item__img(href="good.html")
-							img.lazy(data-src="assets/images/good3.png", alt="")
-						.good-4items-items-item__company Anti Age
-						.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
-						.good-4items-items-item__price 1 890 руб.
-						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
+						a.good-4items-items-item__img(href="#")
+							img.lazy(data-src="assets/images/good-item-img1.jpg" alt="product")
+						h2.good-4items-items-item__series Anti Age
+						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
+						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
+						.rating.rating_set
+							.rating__body
+								.rating__active
+								.rating__items
+									input.rating__item(type="radio" name="rating" value="1")
+									input.rating__item(type="radio" name="rating" value="2")
+									input.rating__item(type="radio" name="rating" value="3")
+									input.rating__item(type="radio" name="rating" value="4")
+									input.rating__item(type="radio" name="rating" value="5")
+							.rating__value 4.5		
+							p.rating-text 
+								span (
+								span 12 отзывов
+								span )
+						.good-4items-items-item__add-box
+							.good-4items-items-item__price 1250 руб.
+							.good-4items-items-item__add-to-cart
+								.add-quantity
+									button.quantity -
+									input(type="text" placeholder="1")
+									button.quantity +
+								a.cart-btn
+									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
 					.good-4items-items-item
-						a.good-4items-items-item__img(href="good.html")
-							img.lazy(data-src="assets/images/good4.png", alt="")
-						.good-4items-items-item__company Intense Smoothing
-						.good-4items-items-item__name Шампунь из морских ежей, 250 мл
-						.good-4items-items-item__price 250 руб.
-						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
-		
+						a.good-4items-items-item__img(href="#")
+							img.lazy(data-src="assets/images/good-item-img4.jpg" alt="product")
+						h2.good-4items-items-item__series Anti Age
+						h2.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
+						p.good-4items-items-item__short-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptas!
+						.rating.rating_set
+							.rating__body
+								.rating__active
+								.rating__items
+									input.rating__item(type="radio" name="rating" value="1")
+									input.rating__item(type="radio" name="rating" value="2")
+									input.rating__item(type="radio" name="rating" value="3")
+									input.rating__item(type="radio" name="rating" value="4")
+									input.rating__item(type="radio" name="rating" value="5")
+							.rating__value 4.5		
+							p.rating-text 
+								span (
+								span 12 отзывов
+								span )
+						.good-4items-items-item__add-box
+							.good-4items-items-item__price 1250 руб.
+							.good-4items-items-item__add-to-cart
+								.add-quantity
+									button.quantity -
+									input(type="text" placeholder="1")
+									button.quantity +
+								a.cart-btn
+									img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
+
 		.article-share
 			.mycontainer
 				span Поделиться:
@@ -72,16 +159,16 @@ block content
 				.main-bloggrid-items
 					a.main-bloggrid-items-item(href="#")
 						.main-bloggrid-items-item__img
-							img.lazy(data-src="assets/images/main-blog-bot1.jpg", alt="")
+							img.lazy(data-src="assets/images/main-blog-bot1.jpg" alt="")
 						.main-bloggrid-items-item__title Сила цвета
 						.main-bloggrid-items-item__text Оттеночные средства Davines
 					a.main-bloggrid-items-item(href="#")
 						.main-bloggrid-items-item__img
-							img.lazy(data-src="assets/images/main-blog-bot2.jpg", alt="")
+							img.lazy(data-src="assets/images/main-blog-bot2.jpg" alt="")
 						.main-bloggrid-items-item__title Раздражённая кожа. Как ей помочь?
 						.main-bloggrid-items-item__text Средства и приёмы, которые ей помогут
 					a.main-bloggrid-items-item(href="#")
 						.main-bloggrid-items-item__img
-							img.lazy(data-src="assets/images/main-blog-bot3.jpg", alt="")
+							img.lazy(data-src="assets/images/main-blog-bot3.jpg" alt="")
 						.main-bloggrid-items-item__title COOLA
 						.main-bloggrid-items-item__text Эксперт по защите от солнца
