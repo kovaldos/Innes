@@ -241,6 +241,7 @@
       grid-auto-columns: auto;
       grid-template-columns: 25% 31% 31%;
       grid-column-gap: 6.5%;
+      grid-auto-rows: minmax(250px, auto);
     }
     &-row-col__title {
       font-weight: 600;
@@ -249,12 +250,12 @@
       color: #111111;
       margin-bottom: 23px;
     }
-    &-row-col__text-box {
-      height: 152px;
-      overflow-y: auto;
-      scrollbar-color: #707070 #b6b5b5; //for firefox
-      scrollbar-width: thin; //for firefox
-    }
+    // &-row-col__text-box {
+    //   height: 152px;
+    //   overflow-y: auto;
+    //   scrollbar-color: #707070 #b6b5b5; //for firefox
+    //   scrollbar-width: thin; //for firefox
+    // }
     &-row-col__text {
       font-size: 16px;
       line-height: 19px;
@@ -280,7 +281,6 @@
     ::-webkit-scrollbar-thumb {
       background-color: #707070;
       border-radius: 9em;
-      box-shadow: inset 1px 1px 10px #f3faf7;
     }
 
     ::-webkit-scrollbar-thumb:hover {
@@ -345,13 +345,12 @@
     &-row {
       &-items {
         margin-top: 70px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
       }
       &-item {
-        width: 25%;
+        width: 100%;
         .rating {
           font-size: 21px;
         }
@@ -413,7 +412,7 @@
           margin-right: 40px;
         }
         .rating-links {
-          max-width: 200px;
+          max-width: 198px;
         }
         &__price {
           margin-right: 25px;
@@ -447,7 +446,13 @@
     &-content-col.sliders {
       margin-right: 50px;
     }
-
+    &-reviews {
+      &-row{
+        &-items {
+          grid-template-columns: repeat(2, 2fr);
+        }
+      }
+    }    
 	}
 }
 
@@ -519,6 +524,11 @@
 				}
 			}
 		}
+    &-about {
+      &-row {
+        grid-template-columns: none;
+      }
+    }
 		&-reviews{
 			.title{
 				margin-bottom: 32px;
@@ -557,6 +567,10 @@
 						}
 					}
 				}
+        &-items {
+          grid-template-columns: none;
+          grid-gap: 2em;
+        }
 			}
 		}
 		&-4items{
@@ -701,4 +715,35 @@
 			}
 		}
 	}
+}
+
+@include w576 {
+  .good {
+    &-content {
+      &-col-row__add-to-cart {
+        width: 100%;
+      }
+    }
+    &-about {
+      &-row {
+        grid-row-gap: 2em;
+      }
+    }
+    &-reviews {
+      .rating__body {
+        font-size: 25px;
+      }
+      .rating-text {
+        margin-right: 15px;
+      }
+    }
+  }
+  .rating {
+    margin: 0;
+    flex-wrap: wrap;
+    &__body,
+    &-links {
+      margin: 10px 0;
+    } 
+  }
 }
