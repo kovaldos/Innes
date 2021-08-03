@@ -452,3 +452,13 @@
 		}
 	}
 }
+
+@include w320 {
+	.good-4items-items-item {
+		padding: 0 10px;
+	}
+	.catalog-main-content .good-4items-items-item {
+		margin: 60px 0 0 0;
+		padding: 0 10px;
+	}
+}

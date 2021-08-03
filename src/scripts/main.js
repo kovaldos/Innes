@@ -71,7 +71,8 @@ $(document).ready(function () {
 				settings: {
 					vertical: false,
 					verticalSwiping: false,
-					slidesToShow: 3
+					slidesToShow: 3,
+					variableWidth: true
 				}
 			},
 			{
