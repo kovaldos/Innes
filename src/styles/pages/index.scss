@@ -8,7 +8,7 @@
     position: relative;
     color: #f5f5f5;
     margin-bottom: 120px;
-    margin-top: -185px;
+    margin-top: -160px;
 
     .mycontainer {
       height: 100%;
@@ -88,7 +88,8 @@
 
     &-info {
       &__title {
-        margin-bottom: 24px;
+        margin: 0 0 29px 0;
+        border: none;
       }
 
       &__text {
@@ -163,7 +164,7 @@
   }
 
   &-made {
-    background: url("../images/from-Russia-with-love-bg1.jpg") center no-repeat;
+    background: url("../images/from-Russia-with-love-bg1.jpg") left no-repeat;
     background-size: cover;
     max-width: 1920px;
     width: 100%;
@@ -483,6 +484,15 @@
   }
 }
 
+@include w1440 {
+  .main-made {
+    &-title {
+      padding: 15px;
+      margin: 300px 100px 0 0;
+    }
+  }
+}
+
 @include w1366 {
   .main {
     &-about {
@@ -494,6 +504,12 @@
         max-width: none;
         margin-top: 24px;
       }
+    }
+  }
+  .main-made {
+    align-items: flex-end;
+    &-title {
+      margin: 0 50px 0 0;
     }
   }
 }
@@ -516,6 +532,25 @@
           width: 460px;
         }
       }
+    }
+    &-our-inst {
+      padding: 0;
+    }
+  }
+  .subscribe {
+    &-form {
+      flex-direction: column;
+      padding: 0 10px;
+      .form-item {
+        margin: 15px;
+      }
+    }
+    &-input-box {
+      flex-direction: column;
+    }
+    &-btn {
+      max-width: unset;
+      margin-top: 15px;
     }
   }
 }
@@ -649,7 +684,7 @@
       }
 
       &-info {
-        margin-top: 150px;
+        margin-top: 185px;
 
         .title {
           font-size: 32px;
@@ -765,6 +800,13 @@
         height: 40px;
         width: 100%;
       }
+    }
+  }
+}
+@include w576 {
+  .main-made {
+    &-title {
+      margin: 0 auto;
     }
   }
 }

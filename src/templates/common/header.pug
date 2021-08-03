@@ -3,6 +3,11 @@ header.header
 		.mycontainer
 			.header-row.row-top
 				.row-left-box
+					.header__icon.icon-burger
+						svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+							line(y1="1" x2="18" y2="1" stroke="#111111" stroke-width="2")
+							line(y1="9" x2="18" y2="9" stroke="#111111" stroke-width="2")
+							line(y1="17" x2="18" y2="17" stroke="#111111" stroke-width="2")
 					a.header__link.phone-link(href="tel:88006000001") 8&nbsp;800&nbsp;600&nbsp;00&nbsp;01
 					.social-box
 						a.social-link(href="https://www.instagram.com/" target="_blanc")
@@ -16,11 +21,11 @@ header.header
 							img(src="./assets/images/logo1.svg" alt="logo")
 						.logo-text Intuitive Cosmetics
 				.header__icon-box 
-					.header__search#header-popup-menu
+					.header__search.header__icon.icon-search
 						img(src="./assets/images/header_search.svg" alt="search-icon")
-					.header__log-in 
+					.header__log-in.header__icon 
 						img(src="./assets/images/log_in.svg" alt="log_in-icon")
-					.header__cart
+					.header__cart.header__icon
 						img(src="./assets/images/header_cart.svg", alt="cart-icon")
 			.header-row.row-bottom
 				a.header__link.active(href="#") Бестселлеры
