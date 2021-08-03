@@ -11,6 +11,15 @@ $(document).ready(function () {
 	if (document.title == 'О компании') {
 		$('.breadcrumbs').hide();
 	}
+	if (document.title == 'Регистрация') {
+		$('.breadcrumbs').hide();
+	}
+	if (document.title == 'Вход') {
+		$('.breadcrumbs').hide();
+	}
+	if (document.title == 'Текстовая страница') {
+		$('.breadcrumbs').hide();
+	}
 	/*Def скрипты Конец*/
 
 	var lazyLoadInstance = new LazyLoad({
