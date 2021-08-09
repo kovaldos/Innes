@@ -3,6 +3,7 @@
     text-align: center;
     margin-bottom: 64px;
     margin-left: 0;
+    text-transform: uppercase;
   }
   &-content {
     margin-bottom: 120px;
@@ -44,11 +45,14 @@
       &-tab {
         display: none;
         &.active {
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
+          display: block;
         }
+      }
+      &-tab-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
       }
     }
   }
@@ -227,6 +231,77 @@
   }
 }
 
+.custom-select {
+  position: relative;
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid rgba(17, 17, 17, 0.25);
+    box-sizing: border-box;
+    flex: 0 0 25%;
+    cursor: pointer;
+    padding: 15px 16px;
+  }
+  &__current {
+    font-size: 16px;
+    line-height: 18px;
+    color: #111111;
+  }
+  &__icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5px;
+    height: 9px;
+    margin-right: 6px;
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 100%;
+      background: #111111;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.3s ease 0s;
+    }
+    &::after {
+      transform: rotate(45deg);
+      left: 100%;
+    }
+  }
+  &__body {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 1px solid rgba(17, 17, 17, 0.25);
+    border-top: none;
+    background: #ffffff;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+  }
+  &__item {
+    padding: 15px 16px;
+    cursor: pointer;
+    &:hover {
+      background: #f5f5f5;
+    }
+  }
+}
+.custom-select.active .custom-select__body {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
 @include w1366 {
   .basket {
     &-content {
@@ -283,7 +358,7 @@
       margin-bottom: 40px;
     }
     &-content {
-      &-tabs-tab {
+      &-tabs-tab-box {
         flex-direction: column;
       }
       &-goods {
@@ -355,25 +430,25 @@
           position: relative;
           width: 100%;
           padding-bottom: 58px;
-          &:first-child {
-            .basket-content-goods-item__price {
-              top: 0;
-            }
-          }
+          // &:first-child {
+          //   .basket-content-goods-item__price {
+          //     top: 10px;
+          //   }
+          // }
           &__img {
             flex: 0 0 60px;
             margin-right: 8px;
           }
           &-name {
             margin-top: 24px;
-            flex: 1;
+            flex: 0 0 62%;
           }
           &-input {
             display: flex;
             align-items: center;
             position: absolute;
             left: 68px;
-            bottom: 0;
+            bottom: 15px;
             p {
               white-space: nowrap;
               margin: 0;
@@ -382,12 +457,24 @@
           }
           &__price {
             position: absolute;
-            top: 24px;
+            top: 10px;
             left: 68px;
             margin-top: 0;
           }
+          &__price_discount {
+            position: absolute;
+            top: 10px;
+            right: 0;
+          }
+          &__price_quantity {
+            position: absolute;
+            top: 30px;
+            right: 0;
+          }
           &-btns {
-            margin-left: auto;
+            position: absolute;
+            top: 50%;
+            left: 90%;
           }
         }
       }
@@ -396,6 +483,7 @@
         flex: auto;
         &-wrap {
           width: 100%;
+          margin: 30px 0;
           &-row {
             display: block;
           }
@@ -424,4 +512,29 @@
       }
     }
   }
+}
+
+@include w576 {
+  .basket {
+    .title {
+      margin: 0 auto 25px;
+      font-size: 24px;
+    }
+    &-content {
+      &-tabs {
+        &-navigation__item {
+          margin-right: 0;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.row_personal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 33.333333%;
 }

@@ -244,7 +244,7 @@ $(document).ready(function () {
 
 /*Табы*/
 $(document).on('click', '.tabs-navigation-item', function (e) {
-	e.preventDefault();
+	// e.preventDefault();
 	let tabContainers = $(this).closest('.tabs').find('.tabs-tab');
 	tabContainers.hide();
 	tabContainers.filter(this.hash).show();

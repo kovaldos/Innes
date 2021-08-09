@@ -1,0 +1,207 @@
+extends ../template
+
+block variables
+	- var title = 'Доставка'
+
+block content
+	section.basket
+		.mycontainer
+			.title Оформление заказа
+			.basket-content.block-margin
+				//- Не смущаемся названий классов. Изначально было сделано табами, потом переделано на отдельные страницы
+				.basket-content-tabs.tabs
+					.basket-content-tabs-navigation
+						a.basket-content-tabs-navigation__item.tabs-navigation-item(href="basket.html") 1. Корзина
+						a.basket-content-tabs-navigation__item.tabs-navigation-item.active(href="basket_delivery.html") 2. Доставка
+						a.basket-content-tabs-navigation__item.tabs-navigation-item(href="basket_payment.html") 3. Оплата
+					
+						//- Если понадобятся табы Старт // If we need tabs Start
+
+							//- .basket-content-tabs-tab.tabs-tab#tab1
+							//- 	.basket-content-tabs-tab-box
+							//- 		.basket-content-goods
+							//- 			.basket-content-goods-item
+							//- 				.basket-content-goods-item__img
+							//- 					img(src="assets/images/basket1.jpg" alt="")
+							//- 				.basket-content-goods-item-name
+							//- 					h2.good-4items-items-item__series Anti Age
+							//- 					h2.good-4items-items-item__name Day cream
+							//- 					h2.basket-content-goods-item-name__title Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
+							//- 					//- .basket-content-goods-item-name__status В наличии
+							//- 				.basket-content-goods-item-input
+							//- 					.add-quantity
+							//- 						button.quantity -
+							//- 						input(type="text" placeholder="1")
+							//- 						button.quantity +
+							//- 				.basket-content-goods-item__price-box
+							//- 					.basket-content-goods-item__price_discount 
+							//- 					.basket-content-goods-item__price 6 100 руб
+							//- 					.basket-content-goods-item__price_quantity 2 х 3 050 руб
+							//- 				.basket-content-goods-item-btns
+							//- 					button.basket-content-goods-item-btn__remove(type="button")
+							//- 						img(src="/assets/images/remove_good_from_cart_btn.svg" alt="cross")
+
+							//- 			.basket-content-goods-item
+							//- 				.basket-content-goods-item__img
+							//- 					img(src="assets/images/basket1.jpg" alt="")
+							//- 				.basket-content-goods-item-name
+							//- 					h2.good-4items-items-item__series Anti Age
+							//- 					h2.good-4items-items-item__name Day cream
+							//- 					h2.basket-content-goods-item-name__title Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
+							//- 					//- .basket-content-goods-item-name__status В наличии
+							//- 				.basket-content-goods-item-input
+							//- 					.add-quantity
+							//- 						button.quantity -
+							//- 						input(type="text" placeholder="1")
+							//- 						button.quantity +
+							//- 				.basket-content-goods-item__price-box
+							//- 					.basket-content-goods-item__price_discount 6 710 руб (-10%)
+							//- 					.basket-content-goods-item__price 6 100 руб
+							//- 					.basket-content-goods-item__price_quantity 2 х 3 050 руб
+							//- 				.basket-content-goods-item-btns
+							//- 					button.basket-content-goods-item-btn__remove(type="button")
+							//- 						img(src="/assets/images/remove_good_from_cart_btn.svg" alt="cross")
+							//- 		.basket-content-side
+							//- 			.basket-content-side-wrap-row.basket-content-side-wrap-row_grid
+							//- 				.basket-content-side__title Ваш заказ
+							//- 				.basket-content-side-wrap.basket-content-side-wrap_grid
+							//- 					.basket-content-side-row
+							//- 						span Товары (2)
+							//- 						span 2 200 руб
+							//- 					.basket-content-side-row
+							//- 						span Доставка
+							//- 						span 350 руб
+							//- 					.basket-content-side-row
+							//- 						span Промокод
+							//- 						span -500 руб
+							//- 				.basket-content-side-promo
+							//- 					input(type="text" placeholder="Промокод на скидку")
+							//- 					button Применить
+							//- 			.basket-content-side-wrap-row
+							//- 				.basket-content-side-wrap
+							//- 					.basket-content-side-bot
+							//- 						.basket-content-side-row
+							//- 							span Итого
+							//- 							.basket-content-side-bot__price 3 050 руб
+							//- 						a.basket-content-side-bot__btn(href="#") Продолжить
+							//- 						p Нажимая на кнопку, Вы соглашаетесь с условиями использования сайта.
+							//- Если понадобятся табы Конец // If we need tabs End
+
+					.basket-content-tabs-tab.tabs-tab.active
+						form(action="basket_payment.html").basket-content-tabs-tab-box
+							.basket-content-delivery
+								.basket-content-delivery-block
+									.basket-content-delivery-row.row_way
+										h2.basket-content-delivery-row_title Способ доставки
+										.basket-content-delivery-row__block
+											.basket-content-delivery-row-col
+												label.custom-radio
+													input(type="radio" name="way of delivery" value="1")
+													p.basket-content-delivery-row-col__title Курьером
+													p.basket-content-delivery-row-col__text В удобные для Вас день и время
+													p.basket-content-delivery-row-col__date-price 
+														span.basket-content-delivery-row-col__span с 04.04
+														span.basket-content-delivery-row-col__span 500 руб
+											.basket-content-delivery-row-col
+												label.custom-radio
+													input(type="radio" name="way of delivery" value="1")
+													p.basket-content-delivery-row-col__title Самовывоз
+													p.basket-content-delivery-row-col__text Из нашего офиса на Большой Пушкарской 22
+													p.basket-content-delivery-row-col__date-price 
+														span.basket-content-delivery-row-col__span с 04.04
+														span.basket-content-delivery-row-col__span Бесплатно
+											.basket-content-delivery-row-col
+												label.custom-radio
+													input(type="radio" name="way of delivery" value="1")
+													p.basket-content-delivery-row-col__title Почтой
+													p.basket-content-delivery-row-col__text В ближайшее отделение Почты России
+													p.basket-content-delivery-row-col__date-price
+														span.basket-content-delivery-row-col__span с 07.04
+														span.basket-content-delivery-row-col__span 350 руб
+
+										h3.basket-content-delivery-row_sub-title Дата и время доставки
+										.basket-content-delivery-row-block
+											.custom-select
+												.custom-select__head
+													span.custom-select__current вторник, 10 августа
+													.custom-select__icon
+												.custom-select__body
+													.custom-select__item вторник, 10 августа
+													.custom-select__item среда, 11 августа
+													.custom-select__item четверг, 12 августа
+													.custom-select__item пятница, 13 августа
+													.custom-select__item суббота, 14 августа
+													.custom-select__item воскресенье, 15 августа
+										p.basket-content-delivery-info Курьер поднимется на этаж, если понадобится
+									.basket-content-delivery-row.row_personal
+										h2.basket-content-delivery-row_title Личные данные
+										.basket-content-delivery-row-block
+								.basket-content-goods
+									h2.basket-content-delivery-row_title Ваша корзина
+									.basket-content-goods-item
+										.basket-content-goods-item__img
+											img(src="assets/images/basket1.jpg" alt="")
+										.basket-content-goods-item-name
+											h2.good-4items-items-item__series Anti Age
+											h2.good-4items-items-item__name Day cream
+											h2.basket-content-goods-item-name__title Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
+											//- .basket-content-goods-item-name__status В наличии
+										.basket-content-goods-item-input
+											.add-quantity
+												button.quantity -
+												input(type="text" placeholder="1")
+												button.quantity +
+										.basket-content-goods-item__price-box
+											.basket-content-goods-item__price_discount 
+											.basket-content-goods-item__price 6 100 руб
+											.basket-content-goods-item__price_quantity 2 х 3 050 руб
+										.basket-content-goods-item-btns
+											button.basket-content-goods-item-btn__remove(type="button")
+												img(src="/assets/images/remove_good_from_cart_btn.svg" alt="cross")
+
+									.basket-content-goods-item
+										.basket-content-goods-item__img
+											img(src="assets/images/basket1.jpg" alt="")
+										.basket-content-goods-item-name
+											h2.good-4items-items-item__series Anti Age
+											h2.good-4items-items-item__name Day cream
+											h2.basket-content-goods-item-name__title Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
+											//- .basket-content-goods-item-name__status В наличии
+										.basket-content-goods-item-input
+											.add-quantity
+												button.quantity -
+												input(type="text" placeholder="1")
+												button.quantity +
+										.basket-content-goods-item__price-box
+											.basket-content-goods-item__price_discount 6 710 руб (-10%)
+											.basket-content-goods-item__price 6 100 руб
+											.basket-content-goods-item__price_quantity 2 х 3 050 руб
+										.basket-content-goods-item-btns
+											button.basket-content-goods-item-btn__remove(type="button")
+												img(src="/assets/images/remove_good_from_cart_btn.svg" alt="cross")
+							.basket-content-side
+								.basket-content-side-wrap-row.basket-content-side-wrap-row_grid
+									.basket-content-side__title Ваш заказ
+									.basket-content-side-wrap.basket-content-side-wrap_grid
+										.basket-content-side-row
+											span Товары (2)
+											span 2 200 руб
+										.basket-content-side-row
+											span Доставка
+											span 350 руб
+										.basket-content-side-row
+											span Промокод
+											span -500 руб
+									.basket-content-side-promo
+										input(type="text" placeholder="Промокод на скидку")
+										button Применить
+								.basket-content-side-wrap-row
+									.basket-content-side-wrap
+										.basket-content-side-bot
+											.basket-content-side-row
+												span Итого
+												.basket-content-side-bot__price 3 050 руб
+											button.basket-content-side-bot__btn(type="submit") Продолжить
+											p Нажимая на кнопку, Вы соглашаетесь с условиями использования сайта.
+
+											

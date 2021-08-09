@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Карта сайта</title>
+    <title>Доставка</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -118,54 +118,148 @@
         <div class="breadcrumbs"><a class="breadcrumbs__item" href="#">Главная</a><span>/</span><a class="breadcrumbs__item" href="#">Для лица</a><span>/</span>
           <div class="breadcrumbs__item">Крем</div>
         </div>
-        <div class="map">
+        <section class="basket">
           <div class="mycontainer">
-            <div class="map-logo"><img src="assets/images/logo.svg"></div>
-            <table class="map-table">
-              <tbody>
-                <tr>
-                  <td><a class="map-table__link" href="home.html" target="_blank">Главная</a></td>
-                </tr>
-                <tr>
-                  <td><a class="map-table__link" href="catalog.html" target="_blank">Каталог</a></td>
-                  <td><a class="map-table__link" href="good.html" target="_blank">Страница товара</a></td>
-                </tr>
-                <tr>
-                  <td><a class="map-table__link" href="about.html" target="_blank">О компании</a></td>
-                </tr>
-                <tr>
-                  <td><a class="map-table__link" href="help.html" target="_blank">Помощь</a></td>
-                </tr>
-                <tr>
-                  <td><a class="map-table__link" href="blog.html" target="_blank">Блог</a></td>
-                  <td><a class="map-table__link" href="article.html" target="_blank">Статья</a></td>
-                </tr>
-                <tr>
-                  <td><a class="map-table__link" href="register.html" target="_blank">Регистрация</a></td>
-                  <td><a class="map-table__link" href="login.html" target="_blank">Вход</a></td>
-                </tr>
-                <tr>
-                  <td><a class="map-table__link" href="basket.html" target="_blank">Корзина</a></td>
-                  <td><a class="map-table__link" href="basket_delivery.html" target="_blank">Доставка</a></td>
-                  <td><a class="map-table__link" href="basket_payment.html" target="_blank">Оплата		</a></td>
-                </tr>
-                <tr>
-                  <td><a class="map-table__link" href="textpage.html" target="_blank">Текстовая страница</a></td>
-                </tr>
-                <!--tr
-                td
-                	a.map-table__link(href="profile.html" target="_blank") Профиль
-                td
-                	a.map-table__link(href="profile.html" target="_blank") Заказы
-                td
-                	a.map-table__link(href="profile.html" target="_blank") Избранное
-                td
-                	a.map-table__link(href="profile.html" target="_blank") Отзывы
-                -->
-              </tbody>
-            </table>
+            <div class="title">Оформление заказа</div>
+            <div class="basket-content block-margin">
+              <div class="basket-content-tabs tabs">
+                <div class="basket-content-tabs-navigation"><a class="basket-content-tabs-navigation__item tabs-navigation-item" href="basket.html">1. Корзина</a><a class="basket-content-tabs-navigation__item tabs-navigation-item active" href="basket_delivery.html">2. Доставка</a><a class="basket-content-tabs-navigation__item tabs-navigation-item" href="basket_payment.html">3. Оплата</a></div>
+                <div class="basket-content-tabs-tab tabs-tab active">
+                  <form class="basket-content-tabs-tab-box" action="basket_payment.html">
+                    <div class="basket-content-delivery">
+                      <div class="basket-content-delivery-block">
+                        <div class="basket-content-delivery-row row_way">
+                          <h2 class="basket-content-delivery-row_title">Способ доставки</h2>
+                          <div class="basket-content-delivery-row__block">
+                            <div class="basket-content-delivery-row-col">
+                              <label class="custom-radio">
+                                <input type="radio" name="way of delivery" value="1">
+                                <p class="basket-content-delivery-row-col__title">Курьером</p>
+                                <p class="basket-content-delivery-row-col__text">В удобные для Вас день и время</p>
+                                <p class="basket-content-delivery-row-col__date-price"> <span class="basket-content-delivery-row-col__span">с 04.04</span><span class="basket-content-delivery-row-col__span">500 руб</span></p>
+                              </label>
+                            </div>
+                            <div class="basket-content-delivery-row-col">
+                              <label class="custom-radio">
+                                <input type="radio" name="way of delivery" value="1">
+                                <p class="basket-content-delivery-row-col__title">Самовывоз</p>
+                                <p class="basket-content-delivery-row-col__text">Из нашего офиса на Большой Пушкарской 22</p>
+                                <p class="basket-content-delivery-row-col__date-price"> <span class="basket-content-delivery-row-col__span">с 04.04</span><span class="basket-content-delivery-row-col__span">Бесплатно</span></p>
+                              </label>
+                            </div>
+                            <div class="basket-content-delivery-row-col">
+                              <label class="custom-radio">
+                                <input type="radio" name="way of delivery" value="1">
+                                <p class="basket-content-delivery-row-col__title">Почтой</p>
+                                <p class="basket-content-delivery-row-col__text">В ближайшее отделение Почты России</p>
+                                <p class="basket-content-delivery-row-col__date-price"><span class="basket-content-delivery-row-col__span">с 07.04</span><span class="basket-content-delivery-row-col__span">350 руб</span></p>
+                              </label>
+                            </div>
+                          </div>
+                          <h3 class="basket-content-delivery-row_sub-title">Дата и время доставки</h3>
+                          <div class="basket-content-delivery-row-block">
+                            <div class="custom-select">
+                              <div class="custom-select__head"><span class="custom-select__current">вторник, 10 августа</span>
+                                <div class="custom-select__icon"></div>
+                              </div>
+                              <div class="custom-select__body">
+                                <div class="custom-select__item">вторник, 10 августа</div>
+                                <div class="custom-select__item">среда, 11 августа</div>
+                                <div class="custom-select__item">четверг, 12 августа</div>
+                                <div class="custom-select__item">пятница, 13 августа</div>
+                                <div class="custom-select__item">суббота, 14 августа</div>
+                                <div class="custom-select__item">воскресенье, 15 августа</div>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="basket-content-delivery-info">Курьер поднимется на этаж, если понадобится</p>
+                        </div>
+                        <div class="basket-content-delivery-row row_personal">
+                          <h2 class="basket-content-delivery-row_title">Личные данные</h2>
+                          <div class="basket-content-delivery-row-block"></div>
+                        </div>
+                      </div>
+                      <div class="basket-content-goods">
+                        <h2 class="basket-content-delivery-row_title">Ваша корзина</h2>
+                        <div class="basket-content-goods-item">
+                          <div class="basket-content-goods-item__img"><img src="assets/images/basket1.jpg" alt=""></div>
+                          <div class="basket-content-goods-item-name">
+                            <h2 class="good-4items-items-item__series">Anti Age</h2>
+                            <h2 class="good-4items-items-item__name">Day cream</h2>
+                            <h2 class="basket-content-goods-item-name__title">Гидрофильный бальзам для умывания и снятия макияжа, 100 мл</h2>
+                          </div>
+                          <div class="basket-content-goods-item-input">
+                            <div class="add-quantity">
+                              <button class="quantity">-</button>
+                              <input type="text" placeholder="1">
+                              <button class="quantity">+</button>
+                            </div>
+                          </div>
+                          <div class="basket-content-goods-item__price-box">
+                            <div class="basket-content-goods-item__price_discount"> </div>
+                            <div class="basket-content-goods-item__price">6 100 руб</div>
+                            <div class="basket-content-goods-item__price_quantity">2 х 3 050 руб</div>
+                          </div>
+                          <div class="basket-content-goods-item-btns">
+                            <button class="basket-content-goods-item-btn__remove" type="button"><img src="/assets/images/remove_good_from_cart_btn.svg" alt="cross"></button>
+                          </div>
+                        </div>
+                        <div class="basket-content-goods-item">
+                          <div class="basket-content-goods-item__img"><img src="assets/images/basket1.jpg" alt=""></div>
+                          <div class="basket-content-goods-item-name">
+                            <h2 class="good-4items-items-item__series">Anti Age</h2>
+                            <h2 class="good-4items-items-item__name">Day cream</h2>
+                            <h2 class="basket-content-goods-item-name__title">Гидрофильный бальзам для умывания и снятия макияжа, 100 мл</h2>
+                          </div>
+                          <div class="basket-content-goods-item-input">
+                            <div class="add-quantity">
+                              <button class="quantity">-</button>
+                              <input type="text" placeholder="1">
+                              <button class="quantity">+</button>
+                            </div>
+                          </div>
+                          <div class="basket-content-goods-item__price-box">
+                            <div class="basket-content-goods-item__price_discount">6 710 руб (-10%)</div>
+                            <div class="basket-content-goods-item__price">6 100 руб</div>
+                            <div class="basket-content-goods-item__price_quantity">2 х 3 050 руб</div>
+                          </div>
+                          <div class="basket-content-goods-item-btns">
+                            <button class="basket-content-goods-item-btn__remove" type="button"><img src="/assets/images/remove_good_from_cart_btn.svg" alt="cross"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket-content-side">
+                      <div class="basket-content-side-wrap-row basket-content-side-wrap-row_grid">
+                        <div class="basket-content-side__title">Ваш заказ</div>
+                        <div class="basket-content-side-wrap basket-content-side-wrap_grid">
+                          <div class="basket-content-side-row"><span>Товары (2)</span><span>2 200 руб</span></div>
+                          <div class="basket-content-side-row"><span>Доставка</span><span>350 руб</span></div>
+                          <div class="basket-content-side-row"><span>Промокод</span><span>-500 руб</span></div>
+                        </div>
+                        <div class="basket-content-side-promo">
+                          <input type="text" placeholder="Промокод на скидку">
+                          <button>Применить</button>
+                        </div>
+                      </div>
+                      <div class="basket-content-side-wrap-row">
+                        <div class="basket-content-side-wrap">
+                          <div class="basket-content-side-bot">
+                            <div class="basket-content-side-row"><span>Итого</span>
+                              <div class="basket-content-side-bot__price">3 050 руб</div>
+                            </div>
+                            <button class="basket-content-side-bot__btn" type="submit">Продолжить</button>
+                            <p>Нажимая на кнопку, Вы соглашаетесь с условиями использования сайта.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
       <footer class="footer footer_main">
         <section class="subscribe block-margin">
