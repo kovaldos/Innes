@@ -1,1 +1,1 @@
-# https://jedenkoor.github.io/Innes/build/karta-saita.html
+# https://kovaldos.github.io/Innes/build/index.html

@@ -11,6 +11,15 @@ $(document).ready(function () {
 	if (document.title == 'О компании') {
 		$('.breadcrumbs').hide();
 	}
+	if (document.title == 'Регистрация') {
+		$('.breadcrumbs').hide();
+	}
+	if (document.title == 'Вход') {
+		$('.breadcrumbs').hide();
+	}
+	if (document.title == 'Текстовая страница') {
+		$('.breadcrumbs').hide();
+	}
 	/*Def скрипты Конец*/
 
 	var lazyLoadInstance = new LazyLoad({
@@ -47,9 +56,13 @@ $(document).ready(function () {
 
 	$(document).find('.good-content-col-thumbs').slick({
 		lazyLoad: 'ondemand',
-		vertical: true,
-		verticalSwiping: true,
+		arrows: false,
+		vertical: false,
+		verticalSwiping: false,
 		slidesToShow: 4,
+		centerMode: false,
+		initialSlide: 1,
+		variableWidth: true,
 		focusOnSelect: true,
 		asNavFor: '.good-content-col-slider',
 		responsive: [
@@ -58,7 +71,8 @@ $(document).ready(function () {
 				settings: {
 					vertical: false,
 					verticalSwiping: false,
-					slidesToShow: 3
+					slidesToShow: 3,
+					variableWidth: true
 				}
 			},
 			{
@@ -66,7 +80,7 @@ $(document).ready(function () {
 				settings: {
 					vertical: false,
 					verticalSwiping: false,
-					slidesToShow: 1,
+					slidesToShow: 2,
 					variableWidth: true,
 					lazyLoad: 'progressive'
 				}
@@ -230,7 +244,7 @@ $(document).ready(function () {
 
 /*Табы*/
 $(document).on('click', '.tabs-navigation-item', function (e) {
-	e.preventDefault();
+	// e.preventDefault();
 	let tabContainers = $(this).closest('.tabs').find('.tabs-tab');
 	tabContainers.hide();
 	tabContainers.filter(this.hash).show();
@@ -393,3 +407,81 @@ $(document).on('click', '.catalog-top-mobilesort-category__title, .catalog-main-
 	$(this).next().slideToggle();
 });
 /*Фильтры и Сортировка на мобиле Конец*/
+
+/*Рэйтинг Начало*/
+
+const ratings = document.querySelectorAll('.rating');
+if(ratings.length > 0) {
+	initRatings();
+}
+// Main function Главная функция
+function initRatings() {
+	let ratingActive, ratingValue;
+	for(let index = 0; index < ratings.length; index++) {
+		const rating = ratings[index];
+		initRating(rating);
+	}
+
+
+	// init current rating Инициализация конкретного рейтинга
+	function initRating(rating) {
+		initRatingVars(rating);
+		setRatingActiveWidth();
+
+		if(rating.classList.contains('rating_set')) {
+			setRating(rating);
+		}
+	}
+
+	// init vars Инициализация переменных
+	function initRatingVars(rating) {
+		ratingActive = rating.querySelector('.rating__active');
+		ratingValue = rating.querySelector('.rating__value');
+	}
+
+	// take an active stars width Измерение ширины активных звезд
+	function setRatingActiveWidth(index = ratingValue.innerHTML) {
+		const ratingActiveWidth = index/0.05;
+		ratingActive.style.width = `${ratingActiveWidth}%`;
+	}
+	// ability to rate Возможность устанавливать рэйтинг
+	function setRating(rating) {
+		const ratingItems = rating.querySelectorAll('.rating__item');
+		
+		for (let index = 0; index < ratingItems.length; index++) {
+			const ratingItem = ratingItems[index];
+			
+			ratingItem.addEventListener("mouseenter", function (e) {
+				// updating vars обновление переменных
+				
+				initRatingVars(rating);
+				// updating active stars обновление активных звезд
+				setRatingActiveWidth(ratingItem.value);
+			});
+			ratingItem.addEventListener("mouseleave", function (e) {
+				// updating active stars обновление активных звезд
+				setRatingActiveWidth();
+			});
+			ratingItem.addEventListener("click", function (e) {
+				// updating vars обновление переменных
+				initRatingVars(rating);
+
+				//if (rating.dataset.ajax) {
+					// "send to" server "Отправить" на сервер
+				//	setRatingValue(ratingItem.value, rating);
+				//} else {
+					// show current rate Отобразить указанную оценку
+					ratingValue.innerHTML = index + 1;
+					setRatingActiveWidth();
+				//}
+			});
+		}
+	}
+
+}
+
+
+
+
+
+/*Рэйтинг Конец*/

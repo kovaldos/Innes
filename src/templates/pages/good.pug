@@ -34,23 +34,20 @@ block content
 					.good-content-col__series Superdefence
 					h1.title Don’t Touch my Moisturizer
 					.good-content-col__text Увлажняющий крем для всех типов кожи, 50 мл
-					.good-4items-items-item__rating.good__rating
-						.rating-area-box
-							.rating-area
-								input(type="radio" id="star-5" name="rating" value="5")
-								label(for="star-5" title="Оценка «5»")
-								input(type="radio" id="star-4" name="rating" value="4")
-								label(for="star-4" title="Оценка «4»")
-								input(type="radio" id="star-3" name="rating" value="3")
-								label(for="star-3" title="Оценка «3»")
-								input(type="radio" id="star-2" name="rating" value="2")
-								label(for="star-2" title="Оценка «2»")
-								input(type="radio" id="star-1" name="rating" value="1")
-								label(for="star-1" title="Оценка «1»")
-							p.rating-text
-								span (
-								span 12 отзывов
-								span )
+					.rating.rating_set
+						.rating__body
+							.rating__active
+							.rating__items
+								input.rating__item(type="radio" name="rating" value="1")
+								input.rating__item(type="radio" name="rating" value="2")
+								input.rating__item(type="radio" name="rating" value="3")
+								input.rating__item(type="radio" name="rating" value="4")
+								input.rating__item(type="radio" name="rating" value="5")
+						.rating__value 4.5		
+						p.rating-text 
+							span (
+							span 12 отзывов
+							span )
 						.rating-links
 							a(href="#").rating-link Добавить отзыв 
 							a(href="#").rating-link Читать отзывы
@@ -60,154 +57,137 @@ block content
 							option(value="1000") 1000 мл
 							option(value="500") 500 мл
 							option(value="250") 250 мл
-						.good-4items-items-item__add-to-cart
+					.good-content-col-row__add-box
+						.good-content-col__price Цена:  1 390 руб.
+						.good-content-col-row__add-to-cart
 							.add-quantity
 								button.quantity -
 								input(type="text" placeholder="1")
 								button.quantity +
-							a.cart-btn
-								img.lazy(data-src="assets/images/item-cart.svg" alt="cart")
-					.good-content-col__price Цена:  1 390 руб.
+							a.cart-btn(href="#") Добавить в корзину
+		section.good-about
+			.mycontainer
+				h2.title О продукте
+				.good-about-row
+					article.good-about-row-col
+						h3.good-about-row-col__title Описание
+						.good-about-row-col__text-box
+							p.good-about-row-col__text Увлажняющий крем с шелковистой текстурой, который поддерживает и улучшает защитные функции кожи. Крем восполняет недостаток необходимых веществ в коже, помогая защитить ее от внешних воздействий и раздражения. Не содержит ароматизаторов, красителей, эфирных масел.
+					article.good-about-row-col
+						h3.good-about-row-col__title Активные компоненты
+						.good-about-row-col__text-box
+							p.good-about-row-col__text — Лизат лактобактерий. Фрагменты пробиотиков — полезных бактерий, которые помогают поддерживать здоровый микробиом кожи. 
+							p.good-about-row-col__text — Натуральный увлажняющий фактор. Аминокислоты, Sodium PCA, Молочная кислота, Гиалуроновая кислота, Мочевина. Основные компоненты натурального увлажняющего фактора — комплекса, который содержится в коже и отвечает за ее увлаж...
+						details.good-about-row-col__details 
+							summary Состав
+							p.good-about-row-col__details_text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quae nostrum doloremque tempora commodi, maiores corrupti obcaecati omnis eaque quia!
+					article.good-about-row-col
+						h3.good-about-row-col__title Способ применения
+						.good-about-row-col__text-box
+							p.good-about-row-col__text Увлажняющий крем с шелковистой текстурой, который поддерживает и улучшает защитные функции кожи. Крем восполняет недостаток необходимых веществ в коже, помогая защитить ее от внешних воздействий и раздражения. Не содержит ароматизаторов, красителей, эфирных масел.
 		section.good-reviews.block-margin
 			.mycontainer
-				.title Отзывы
+				h2.title Отзывы
+				.rating.rating_set
+					.rating__body
+						.rating__active
+						.rating__items
+							input.rating__item(type="radio" name="rating" value="1")
+							input.rating__item(type="radio" name="rating" value="2")
+							input.rating__item(type="radio" name="rating" value="3")
+							input.rating__item(type="radio" name="rating" value="4")
+							input.rating__item(type="radio" name="rating" value="5")
+					.rating__value 4.5		
+					p.rating-text 
+						span (
+						span 12 отзывов
+						span )
+					.rating-links
+						a(href="#").rating-link Добавить отзыв
 				.good-reviews-row
-					.good-reviews-row-slider
-						a.good-reviews-row-slider-item(href="#")
-							.good-reviews-row-slider-item-top
-								.good-reviews-row-slider-item-top-col
-									.good-reviews-row-slider-item-top-col__ava
-										img(data-lazy="assets/images/ava.png" alt="")
-									.good-reviews-row-slider-item-top-col-info
-										.good-reviews-row-slider-item-top-col-info__name Ксения
-										.good-reviews-row-slider-item-top-col-info__date 20.02.2020
-								.good-reviews-row-slider-item-top-col
-									.good-reviews-row-slider-item-top-col__img
-										img(data-lazy="assets/images/review-photo-preview1.png" alt="")
-									.good-reviews-row-slider-item-top-col__img
-										img(data-lazy="assets/images/review-photo-preview2.png" alt="")
-									.good-reviews-row-slider-item-top-col__img
-										img(data-lazy="assets/images/review-photo-preview3.png" alt="")
-										.good-reviews-row-slider-item-top-col__value +20 фото
-							.good-reviews-row-slider-item__content
-								p
-									b Комфортный крем
-								p Пользуюсь кремом Don’t touch my skin уже неделю. У меня всегда были проблемы с кремами - одни делали кожу блестящей и жирной на вид, но при этом под слоем блестящего жира ощущение стянутости и обезвоженности.
-								p Пользуюсь кремом Don’t touch my skin уже неделю. У меня всегда были проблемы с кремами - одни делали кожу блестящей и жирной на вид, но при этом под слоем блестящего жира ощущение стянутости и обезвоженности.
-							.good-reviews-row-slider-item__btn.btn-border Читать подробнее
-						a.good-reviews-row-slider-item(href="#")
-							.good-reviews-row-slider-item-top
-								.good-reviews-row-slider-item-top-col
-									.good-reviews-row-slider-item-top-col__ava
-										img(data-lazy="assets/images/ava.png" alt="")
-									.good-reviews-row-slider-item-top-col-info
-										.good-reviews-row-slider-item-top-col-info__name Ксения
-										.good-reviews-row-slider-item-top-col-info__date 20.02.2020
-								.good-reviews-row-slider-item-top-col
-									.good-reviews-row-slider-item-top-col__img
-										img(data-lazy="assets/images/review-photo-preview1.png" alt="")
-									.good-reviews-row-slider-item-top-col__img
-										img(data-lazy="assets/images/review-photo-preview2.png" alt="")
-									.good-reviews-row-slider-item-top-col__img
-										img(data-lazy="assets/images/review-photo-preview3.png" alt="")
-										.good-reviews-row-slider-item-top-col__value +20 фото
-							.good-reviews-row-slider-item__content
-								p
-									b Комфортный крем
-								p Пользуюсь кремом Don’t touch my skin уже неделю. У меня всегда были проблемы с кремами - одни делали кожу блестящей и жирной на вид, но при этом под слоем блестящего жира ощущение стянутости и обезвоженности.
-							.good-reviews-row-slider-item__btn.btn-border Читать подробнее
-					.good-reviews-row-current
-						.good-reviews-row-current-info
-							.good-reviews-row-current-info__img
-								img.lazy(data-src="assets/images/good.png" alt="")
-							.good-reviews-row-current-info-content
-								.good-reviews-row-current-info-content-wrap
-									.good-reviews-row-current-info-content__company Superdefence
-									.good-reviews-row-current-info-content__name Don’t Touch my Moisturizer
-								.good-reviews-row-current-info-content-wrap
-									.good-reviews-row-current-info-content-rating
-										.good-reviews-row-current-info-content-rating-graf
-											.good-reviews-row-current-info-content-rating-graf__value 4
-											input.good-reviews-row-current-info-content-rating-graf__bar.bar(type="text" value="4" data-linecap="round" data-fgColor="#0F4C81" data-bgColor="transparent" data-thickness=".15" data-width="48" data-height="48" data-displayInput="false" data-min="0" data-max="5" data-step="0.1" readonly)
-										.good-reviews-row-current-info-content-rating-col
-											.good-reviews-row-current-info-content-rating-col__title Общая оценка
-											.good-reviews-row-current-info-content-rating-col__text по 78 отзывам
-									.good-reviews-row-current-info-content-row
-										span Эффективность
-										span 5
-									.good-reviews-row-current-info-content-row
-										span Комфорт
-										span 5
-									.good-reviews-row-current-info-content-row
-										span Текстура
-										span 5
-						.good-reviews-row-current-bot
-							a.good-reviews-row-current-bot__btn.btn-border(href="#") Написать отзыв
-							a.good-reviews-row-current-bot__link(href="#") Читать все отзывы (78)
-
-		section.good-4items.block-margin
-			.mycontainer
-				.title С этим товаром покупают
-				.good-4items-items
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="good.html")
-							img.lazy(data-src="assets/images/good1.png" alt="")
-						.good-4items-items-item__company Anti Age
-						.good-4items-items-item__name Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
-						.good-4items-items-item__price 250 руб.
-						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="good.html")
-							img.lazy(data-src="assets/images/good2.png" alt="")
-						.good-4items-items-item__company Intense Smoothing
-						.good-4items-items-item__name Шампунь из морских ежей, 250 мл
-						.good-4items-items-item__price 250 руб.
-						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="good.html")
-							img.lazy(data-src="assets/images/good3.png" alt="")
-						.good-4items-items-item__company Anti Age
-						.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
-						.good-4items-items-item__price 1 890 руб.
-						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="good.html")
-							img.lazy(data-src="assets/images/good4.png" alt="")
-						.good-4items-items-item__company Intense Smoothing
-						.good-4items-items-item__name Шампунь из морских ежей, 250 мл
-						.good-4items-items-item__price 250 руб.
-						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
-
-		section.good-4items.block-margin
-			.mycontainer
-				.title Выбор редакции
-				.good-4items-items
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="good.html")
-							img.lazy(data-src="assets/images/good1.png" alt="")
-						.good-4items-items-item__company Anti Age
-						.good-4items-items-item__name Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
-						.good-4items-items-item__price 250 руб.
-						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="good.html")
-							img.lazy(data-src="assets/images/good2.png" alt="")
-						.good-4items-items-item__company Intense Smoothing
-						.good-4items-items-item__name Шампунь из морских ежей, 250 мл
-						.good-4items-items-item__price 250 руб.
-						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="good.html")
-							img.lazy(data-src="assets/images/good3.png" alt="")
-						.good-4items-items-item__company Anti Age
-						.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
-						.good-4items-items-item__price 1 890 руб.
-						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
-					.good-4items-items-item
-						a.good-4items-items-item__img(href="good.html")
-							img.lazy(data-src="assets/images/good4.png" alt="")
-						.good-4items-items-item__company Intense Smoothing
-						.good-4items-items-item__name Шампунь из морских ежей, 250 мл
-						.good-4items-items-item__price 250 руб.
-						a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
+					.good-reviews-row-items
+						.good-reviews-row-item
+							.good-reviews-row-item-user
+								span.user-name Ксения
+								span.user-age 27 лет
+								span.user-from Санкт-Петербург
+							.rating.rating_set
+								.rating__body
+									.rating__active
+									.rating__items
+										input.rating__item(type="radio" name="rating" value="1")
+										input.rating__item(type="radio" name="rating" value="2")
+										input.rating__item(type="radio" name="rating" value="3")
+										input.rating__item(type="radio" name="rating" value="4")
+										input.rating__item(type="radio" name="rating" value="5")
+								.rating__value 4.5
+							article.good-reviews-row-item-review-box
+								h3.good-reviews-row-item-title Комфортный крем
+								p.good-reviews-row-item-text Пользуюсь кремом Don’t touch my skin уже неделю. У меня всегда были проблемы с кремами - одни делали кожу блестящей и жирной на вид, но при этом под слоем блестящего жира ощущение стянутости и обезвоженности.
+							article.good-reviews-row-item-response
+								h3.good-reviews-row-item-title innes
+								p.good-reviews-row-item-text Большое спасибо за отзыв!	
+						.good-reviews-row-item
+							.good-reviews-row-item-user
+								span.user-name Ксения
+								span.user-age 27 лет
+								span.user-from Санкт-Петербург
+							.rating.rating_set
+								.rating__body
+									.rating__active
+									.rating__items
+										input.rating__item(type="radio" name="rating" value="1")
+										input.rating__item(type="radio" name="rating" value="2")
+										input.rating__item(type="radio" name="rating" value="3")
+										input.rating__item(type="radio" name="rating" value="4")
+										input.rating__item(type="radio" name="rating" value="5")
+								.rating__value 4.5
+							article.good-reviews-row-item-review-box
+								h3.good-reviews-row-item-title Комфортный крем
+								p.good-reviews-row-item-text Пользуюсь кремом Don’t touch my skin уже неделю. У меня всегда были проблемы с кремами - одни делали кожу блестящей и жирной на вид, но при этом под слоем блестящего жира ощущение стянутости и обезвоженности.
+							article.good-reviews-row-item-response
+								h3.good-reviews-row-item-title innes
+								p.good-reviews-row-item-text Большое спасибо за отзыв!
+						.good-reviews-row-item
+							.good-reviews-row-item-user
+								span.user-name Ксения
+								span.user-age 27 лет
+								span.user-from Санкт-Петербург
+							.rating.rating_set
+								.rating__body
+									.rating__active
+									.rating__items
+										input.rating__item(type="radio" name="rating" value="1")
+										input.rating__item(type="radio" name="rating" value="2")
+										input.rating__item(type="radio" name="rating" value="3")
+										input.rating__item(type="radio" name="rating" value="4")
+										input.rating__item(type="radio" name="rating" value="5")
+								.rating__value 4.5
+							article.good-reviews-row-item-review-box
+								h3.good-reviews-row-item-title Комфортный крем
+								p.good-reviews-row-item-text Пользуюсь кремом Don’t touch my skin уже неделю. У меня всегда были проблемы с кремами - одни делали кожу блестящей и жирной на вид, но при этом под слоем блестящего жира ощущение стянутости и обезвоженности.
+							article.good-reviews-row-item-response
+								h3.good-reviews-row-item-title innes
+								p.good-reviews-row-item-text Большое спасибо за отзыв!
+						.good-reviews-row-item
+							.good-reviews-row-item-user
+								span.user-name Ксения
+								span.user-age 27 лет
+								span.user-from Санкт-Петербург
+							.rating.rating_set
+								.rating__body
+									.rating__active
+									.rating__items
+										input.rating__item(type="radio" name="rating" value="1")
+										input.rating__item(type="radio" name="rating" value="2")
+										input.rating__item(type="radio" name="rating" value="3")
+										input.rating__item(type="radio" name="rating" value="4")
+										input.rating__item(type="radio" name="rating" value="5")
+								.rating__value 4.5
+							article.good-reviews-row-item-review-box
+								h3.good-reviews-row-item-title Комфортный крем
+								p.good-reviews-row-item-text Пользуюсь кремом Don’t touch my skin уже неделю. У меня всегда были проблемы с кремами - одни делали кожу блестящей и жирной на вид, но при этом под слоем блестящего жира ощущение стянутости и обезвоженности.
+							article.good-reviews-row-item-response
+								h3.good-reviews-row-item-title innes
+								p.good-reviews-row-item-text Большое спасибо за отзыв!						
 

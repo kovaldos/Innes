@@ -432,7 +432,6 @@ headerLogo.addEventListener('mouseout', onMenuMouseOut);
 
 /* Ковер лого Конец */
 
-
 /*Рэйтинг Начало*/
 
 const ratings = document.querySelectorAll('.rating');
