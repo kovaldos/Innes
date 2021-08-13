@@ -408,6 +408,30 @@ $(document).on('click', '.catalog-top-mobilesort-category__title, .catalog-main-
 });
 /*Фильтры и Сортировка на мобиле Конец*/
 
+
+/* Ковер лого Начало */
+
+const headerLogo = document.querySelector('.logo-box');
+const headerMenuLinks = document.querySelectorAll('.header__link');
+
+const onMenuMouseOver = ({target}) => {
+	target.classList.add('show-cover');
+};
+
+const onMenuMouseOut = ({target}) => {
+	target.classList.remove('show-cover');
+};
+
+headerMenuLinks.forEach((link) => {
+	link.addEventListener('mouseenter', onMenuMouseOver);
+	link.addEventListener('mouseleave', onMenuMouseOut);
+});
+
+headerLogo.addEventListener('mouseenter', onMenuMouseOver);
+headerLogo.addEventListener('mouseleave', onMenuMouseOut);
+
+/* Ковер лого Конец */
+
 /*Рэйтинг Начало*/
 
 const ratings = document.querySelectorAll('.rating');
