@@ -416,6 +416,7 @@ const headerMenuLinks = document.querySelectorAll('.header__link');
 
 const onMenuMouseOver = ({target}) => {
 	target.classList.add('show-cover');
+	console.log(target);
 };
 
 const onMenuMouseOut = ({target}) => {

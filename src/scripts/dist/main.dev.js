@@ -428,6 +428,7 @@ var headerMenuLinks = document.querySelectorAll('.header__link');
 var onMenuMouseOver = function onMenuMouseOver(_ref) {
   var target = _ref.target;
   target.classList.add('show-cover');
+  console.log(target);
 };
 
 var onMenuMouseOut = function onMenuMouseOut(_ref2) {
