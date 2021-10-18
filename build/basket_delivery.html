@@ -125,62 +125,104 @@
               <div class="basket-content-tabs tabs">
                 <div class="basket-content-tabs-navigation"><a class="basket-content-tabs-navigation__item tabs-navigation-item" href="basket.html">1. Корзина</a><a class="basket-content-tabs-navigation__item tabs-navigation-item active" href="basket_delivery.html">2. Доставка</a><a class="basket-content-tabs-navigation__item tabs-navigation-item" href="basket_payment.html">3. Оплата</a></div>
                 <div class="basket-content-tabs-tab tabs-tab active">
-                  <form class="basket-content-tabs-tab-box" action="basket_payment.html">
+                  <form class="cart-form" action="basket_payment.html">
                     <div class="basket-content-delivery">
                       <div class="basket-content-delivery-block">
-                        <div class="basket-content-delivery-row row_way">
-                          <h2 class="basket-content-delivery-row_title">Способ доставки</h2>
+                        <div class="basket-content-delivery-row row__way">
+                          <h2 class="basket-content-delivery-row__title">Способ доставки</h2>
                           <div class="basket-content-delivery-row__block">
                             <div class="basket-content-delivery-row-col">
                               <label class="custom-radio">
-                                <input type="radio" name="way of delivery" value="1">
                                 <p class="basket-content-delivery-row-col__title">Курьером</p>
                                 <p class="basket-content-delivery-row-col__text">В удобные для Вас день и время</p>
-                                <p class="basket-content-delivery-row-col__date-price"> <span class="basket-content-delivery-row-col__span">с 04.04</span><span class="basket-content-delivery-row-col__span">500 руб</span></p>
+                                <input type="checkbox" name="сourier" value="1">
+                                <div class="basket-content-delivery-row-col__date-price"> 
+                                  <p class="basket-content-delivery-row-col__span">с 04.04</p>
+                                  <p class="basket-content-delivery-row-col__span">500 руб</p>
+                                </div>
                               </label>
                             </div>
                             <div class="basket-content-delivery-row-col">
                               <label class="custom-radio">
-                                <input type="radio" name="way of delivery" value="1">
                                 <p class="basket-content-delivery-row-col__title">Самовывоз</p>
                                 <p class="basket-content-delivery-row-col__text">Из нашего офиса на Большой Пушкарской 22</p>
-                                <p class="basket-content-delivery-row-col__date-price"> <span class="basket-content-delivery-row-col__span">с 04.04</span><span class="basket-content-delivery-row-col__span">Бесплатно</span></p>
+                                <input type="checkbox" name="pickup" value="2">
+                                <div class="basket-content-delivery-row-col__date-price"> 
+                                  <p class="basket-content-delivery-row-col__span">с 04.04</p>
+                                  <p class="basket-content-delivery-row-col__span">Бесплатно</p>
+                                </div>
                               </label>
                             </div>
                             <div class="basket-content-delivery-row-col">
                               <label class="custom-radio">
-                                <input type="radio" name="way of delivery" value="1">
                                 <p class="basket-content-delivery-row-col__title">Почтой</p>
                                 <p class="basket-content-delivery-row-col__text">В ближайшее отделение Почты России</p>
-                                <p class="basket-content-delivery-row-col__date-price"><span class="basket-content-delivery-row-col__span">с 07.04</span><span class="basket-content-delivery-row-col__span">350 руб</span></p>
+                                <input type="checkbox" name="mail" value="3">
+                                <div class="basket-content-delivery-row-col__date-price">
+                                  <p class="basket-content-delivery-row-col__span">с 07.04</p>
+                                  <p class="basket-content-delivery-row-col__span">350 руб</p>
+                                </div>
                               </label>
                             </div>
                           </div>
-                          <h3 class="basket-content-delivery-row_sub-title">Дата и время доставки</h3>
-                          <div class="basket-content-delivery-row-block">
-                            <div class="custom-select">
-                              <div class="custom-select__head"><span class="custom-select__current">вторник, 10 августа</span>
-                                <div class="custom-select__icon"></div>
+                          <h3 class="basket-content-delivery-row__sub-title">Дата и время доставки</h3>
+                          <div class="basket-content-delivery-row__block">
+                            <div class="select">
+                              <div class="select-wrapper">
+                                <select class="select-date" id="select-date" name="select-date">
+                                  <option value="1">вторник, 26 октября</option>
+                                  <option value="2">среда, 27 октября</option>
+                                  <option value="3">четверг, 28 октября</option>
+                                  <option value="4">вторник, 29 октября</option>
+                                  <option value="5">вторник, 30 октября</option>
+                                </select>
+                                <div class="select-icon"></div>
                               </div>
-                              <div class="custom-select__body">
-                                <div class="custom-select__item">вторник, 10 августа</div>
-                                <div class="custom-select__item">среда, 11 августа</div>
-                                <div class="custom-select__item">четверг, 12 августа</div>
-                                <div class="custom-select__item">пятница, 13 августа</div>
-                                <div class="custom-select__item">суббота, 14 августа</div>
-                                <div class="custom-select__item">воскресенье, 15 августа</div>
+                            </div>
+                            <div class="select">
+                              <div class="select-wrapper">
+                                <select class="select-date" id="select-date" name="select-date">
+                                  <option value="1">с 10:00 до 18:00, бесплатно</option>
+                                  <option value="2">с 14:00 до 22:00, бесплатно</option>
+                                  <option value="3">с 08:00 до 16:00, бесплатно</option>
+                                </select>
+                                <div class="select-icon"></div>
                               </div>
                             </div>
                           </div>
                           <p class="basket-content-delivery-info">Курьер поднимется на этаж, если понадобится</p>
                         </div>
-                        <div class="basket-content-delivery-row row_personal">
-                          <h2 class="basket-content-delivery-row_title">Личные данные</h2>
-                          <div class="basket-content-delivery-row-block"></div>
+                        <div class="basket-content-delivery-row row__personal">
+                          <h2 class="basket-content-delivery-row__title">Личные данные</h2>
+                          <div class="basket-content-delivery-row__block">
+                            <div class="cart-form-personal-box">
+                              <label class="cart-form-label">Имя
+                                <input type="text" placeholder="Имя" name="firstname" data-required>
+                              </label>
+                              <label class="cart-form-label">Фамилия
+                                <input type="text" placeholder="Фамилия" name="lastname" data-required>
+                              </label>
+                              <label class="cart-form-label">Телефон
+                                <input type="tel" placeholder="Номер телефона" name="phone" data-required data-regexp data-type="tel">
+                              </label>
+                              <label class="cart-form-label cart-form-label-address">Адрес
+                                <input type="text" placeholder="Адрес" name="address" data-required>
+                              </label>
+                              <label class="cart-form-label">Квартира / Офис
+                                <input type="text" placeholder="Квартира / Офис" name="apartment">
+                              </label>
+                              <label class="cart-form-label cart-form-label-email">E-mail
+                                <input type="email" name="email" data-required data-regexp data-type="email">
+                              </label>
+                              <label class="cart-form-label cart-form-label-comment">Комментарий к заказу
+                                <input type="text" name="comment">
+                              </label>
+                            </div>
+                          </div>
                         </div>
                       </div>
                       <div class="basket-content-goods">
-                        <h2 class="basket-content-delivery-row_title">Ваша корзина</h2>
+                        <h2 class="basket-content-delivery-row__title">Ваша корзина</h2>
                         <div class="basket-content-goods-item">
                           <div class="basket-content-goods-item__img"><img src="assets/images/basket1.jpg" alt=""></div>
                           <div class="basket-content-goods-item-name">
@@ -229,32 +271,31 @@
                         </div>
                       </div>
                     </div>
-                    <div class="basket-content-side">
-                      <div class="basket-content-side-wrap-row basket-content-side-wrap-row_grid">
-                        <div class="basket-content-side__title">Ваш заказ</div>
-                        <div class="basket-content-side-wrap basket-content-side-wrap_grid">
-                          <div class="basket-content-side-row"><span>Товары (2)</span><span>2 200 руб</span></div>
-                          <div class="basket-content-side-row"><span>Доставка</span><span>350 руб</span></div>
-                          <div class="basket-content-side-row"><span>Промокод</span><span>-500 руб</span></div>
-                        </div>
-                        <div class="basket-content-side-promo">
-                          <input type="text" placeholder="Промокод на скидку">
-                          <button>Применить</button>
-                        </div>
+                  </form>
+                  <div class="basket-content-side">
+                    <div class="basket-content-side-wrap-row basket-content-side-wrap-row_grid">
+                      <div class="basket-content-side__title">Ваш заказ</div>
+                      <div class="basket-content-side-wrap basket-content-side-wrap_grid">
+                        <div class="basket-content-side-row"><span>Товары (2)</span><span>2 200 руб</span></div>
+                        <div class="basket-content-side-row"><span>Доставка</span><span>350 руб</span></div>
+                        <div class="basket-content-side-row"><span>Промокод</span><span>-500 руб</span></div>
                       </div>
-                      <div class="basket-content-side-wrap-row">
-                        <div class="basket-content-side-wrap">
-                          <div class="basket-content-side-bot">
-                            <div class="basket-content-side-row"><span>Итого</span>
-                              <div class="basket-content-side-bot__price">3 050 руб</div>
-                            </div>
-                            <button class="basket-content-side-bot__btn" type="submit">Продолжить</button>
-                            <p>Нажимая на кнопку, Вы соглашаетесь с условиями использования сайта.</p>
-                          </div>
+                      <div class="basket-content-side-promo">
+                        <input type="text" placeholder="Промокод на скидку">
+                        <button>Применить</button>
+                      </div>
+                    </div>
+                    <div class="basket-content-side-wrap-row">
+                      <div class="basket-content-side-wrap">
+                        <div class="basket-content-side-bot">
+                          <div class="basket-content-side-row"><span>Итого</span>
+                            <div class="basket-content-side-bot__price">3 050 руб</div>
+                          </div><a class="basket-content-side-bot__btn" href="basket_payment.html">Перейти к оплате</a>
+                          <p>Нажимая на кнопку, Вы соглашаетесь с условиями использования сайта.</p>
                         </div>
                       </div>
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -327,6 +368,7 @@
     <script src="assets/scripts/fancybox/jquery.fancybox.min.js"></script>
     <script src="assets/scripts/validation.js"></script>
     <script src="assets/scripts/lazyload.js"></script>
+    <script src="assets/scripts/select.js"></script>
     <script src="assets/scripts/main.js"></script>
   </body>
 </html>

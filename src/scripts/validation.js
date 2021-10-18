@@ -16,10 +16,19 @@ $(document).ready(function () {
 	})
 });
 
-var pattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
+var pattern = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
 /********************** Убирая фокус с текстовых инпутов без data-required подсвечиваем бордер, если заполнено. Убираем подсветку, если пусто *************/
-$(document).on('blur', 'input:not(input[data-type="tel"]):not(input[data-type="email"]), textarea', function () {
+// $(document).on('blur', 'input:not(input[data-type="tel"]):not(input[data-type="email"]), textarea', function () {
+$(document).on('blur', '.review__popup-form input:not(input[data-type="tel"]):not(input[data-type="email"]):not(input[class="rating__item"]), textarea', function () {
+	if ($(this).val() != '') {
+		$(this).addClass('input-border');
+	} else {
+		$(this).removeClass('input-border');
+	}
+});
+
+$(document).on('blur', '.cart-form input:not(input[data-type="tel"]):not(input[data-type="email"]):not(input[class="rating__item"]), textarea', function () {
 	if ($(this).val() != '') {
 		$(this).addClass('input-border');
 	} else {

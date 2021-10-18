@@ -14,285 +14,44 @@ block content
 						a.basket-content-tabs-navigation__item.tabs-navigation-item(href="busket.html") 1. Корзина
 						a.basket-content-tabs-navigation__item.tabs-navigation-item.active(href="basket_delivery.html") 2. Доставка
 						a.basket-content-tabs-navigation__item.tabs-navigation-item(href="basket_payment.html") 3. Оплата
-						//- a.good-content-col-tabs-navigation__item.tabs-navigation-item(href="#tab4") Доставка
-					.basket-content-tabs-tab.tabs-tab#tab1
-						.basket-content-tabs-tab-box
-							.basket-content-goods
-								.basket-content-goods-item
-									.basket-content-goods-item__img
-										img(src="assets/images/basket1.jpg" alt="")
-									.basket-content-goods-item-name
-										h2.good-4items-items-item__series Anti Age
-										h2.good-4items-items-item__name Day cream
-										h2.basket-content-goods-item-name__title Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
-										//- .basket-content-goods-item-name__status В наличии
-									.basket-content-goods-item-input
-										.add-quantity
-											button.quantity -
-											input(type="text" placeholder="1")
-											button.quantity +
-									.basket-content-goods-item__price-box
-										.basket-content-goods-item__price_discount 
-										.basket-content-goods-item__price 6 100 руб
-										.basket-content-goods-item__price_quantity 2 х 3 050 руб
-									.basket-content-goods-item-btns
-										button.basket-content-goods-item-btn__remove(type="button")
-											img(src="/assets/images/remove_good_from_cart_btn.svg" alt="cross")
-
-								.basket-content-goods-item
-									.basket-content-goods-item__img
-										img(src="assets/images/basket1.jpg" alt="")
-									.basket-content-goods-item-name
-										h2.good-4items-items-item__series Anti Age
-										h2.good-4items-items-item__name Day cream
-										h2.basket-content-goods-item-name__title Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
-										//- .basket-content-goods-item-name__status В наличии
-									.basket-content-goods-item-input
-										.add-quantity
-											button.quantity -
-											input(type="text" placeholder="1")
-											button.quantity +
-									.basket-content-goods-item__price-box
-										.basket-content-goods-item__price_discount 6 710 руб (-10%)
-										.basket-content-goods-item__price 6 100 руб
-										.basket-content-goods-item__price_quantity 2 х 3 050 руб
-									.basket-content-goods-item-btns
-										button.basket-content-goods-item-btn__remove(type="button")
-											img(src="/assets/images/remove_good_from_cart_btn.svg" alt="cross")
-							.basket-content-side
-								.basket-content-side-wrap-row.basket-content-side-wrap-row_grid
-									.basket-content-side__title Ваш заказ
-									.basket-content-side-wrap.basket-content-side-wrap_grid
+						//- .basket-content-tabs-tab.tabs-tab#tab1
+						//- 	.basket-content-tabs-tab-box
+					.basket-content-tabs-tab.tabs-tab.active
+						form.payment-form(action="#")
+							.basket-content-delivery-row.row__way
+								h2.basket-content-delivery-row__title Способ оплаты
+								.basket-content-delivery-row__block
+									.basket-content-delivery-row-col
+										label.custom-radio
+											p.basket-content-delivery-row-col__title Картой онлайн
+											p.basket-content-delivery-row-col__text Мы внимательно следим за безопасностью обработки ваших данных
+											input(type="checkbox" name="сourier" value="1")
+									.basket-content-delivery-row-col
+										label.custom-radio
+											p.basket-content-delivery-row-col__title Наличными при получении
+											p.basket-content-delivery-row-col__text Доставка не будет бесконтактной
+											input(type="checkbox" name="pickup" value="2")
+						.basket-content-side
+							.basket-content-side-wrap-row.basket-content-side-wrap-row_grid
+								.basket-content-side__title Ваш заказ
+								.basket-content-side-wrap.basket-content-side-wrap_grid
+									.basket-content-side-row
+										span Товары (2)
+										span 2 200 руб
+									.basket-content-side-row
+										span Доставка
+										span 350 руб
+									.basket-content-side-row
+										span Промокод
+										span -500 руб
+								.basket-content-side-promo
+									input(type="text" placeholder="Промокод на скидку")
+									button Применить
+							.basket-content-side-wrap-row
+								.basket-content-side-wrap
+									.basket-content-side-bot
 										.basket-content-side-row
-											span Товары (2)
-											span 2 200 руб
-										.basket-content-side-row
-											span Доставка
-											span 350 руб
-										.basket-content-side-row
-											span Промокод
-											span -500 руб
-									.basket-content-side-promo
-										input(type="text" placeholder="Промокод на скидку")
-										button Применить
-								.basket-content-side-wrap-row
-									.basket-content-side-wrap
-										.basket-content-side-bot
-											.basket-content-side-row
-												span Итого
-												.basket-content-side-bot__price 3 050 руб
-											a.basket-content-side-bot__btn(href="#") Продолжить
-											p Нажимая на кнопку, Вы соглашаетесь с условиями использования сайта.
-
-					.basket-content-tabs-tab.tabs-tab.active#tab2
-						.basket-content-tabs-tab-box
-							.basket-content-delivery
-								.basket-content-delivery-block
-									.basket-content-delivery-row.row_way
-										h2.basket-content-delivery-row_title Способ доставки
-										.basket-content-delivery-row-block
-											.basket-content-delivery-row-col
-												h3.basket-content-delivery-row-col__title Курьером
-												p.basket-content-delivery-row-col__text В удобные для Вас день и время
-												p.basket-content-delivery-row-col__date-price 
-													span.basket-content-delivery-row-col__span с 04.04
-													span.basket-content-delivery-row-col__span 500 руб
-											.basket-content-delivery-row-col
-												h3.basket-content-delivery-row-col__title Самовывоз
-												p.basket-content-delivery-row-col__text Из нашего офиса на Большой Пушкарской 22
-												p.basket-content-delivery-row-col__date-price 
-													span.basket-content-delivery-row-col__span с 04.04
-													span.basket-content-delivery-row-col__span Бесплатно
-											.basket-content-delivery-row-col
-												h3.basket-content-delivery-row-col__title Почтой
-												p.basket-content-delivery-row-col__text В ближайшее отделение Почты России
-												p.basket-content-delivery-row-col__date-price 
-													span.basket-content-delivery-row-col__span с 07.04
-													span.basket-content-delivery-row-col__span 500 руб
-
-											.basket-content-delivery-row-col
-											.basket-content-delivery-row-col
-										h3.basket-content-delivery-row_sub-title Дата и время доставки
-										.basket-content-delivery-row-block
-										p.basket-content-delivery-info Курьер поднимется на этаж, если понадобится
-									.basket-content-delivery-row.row_personal
-										h2.basket-content-delivery-row_title Личные данные
-										.basket-content-delivery-row-block
-								.basket-content-goods
-									h2.basket-content-delivery-row_title Ваша корзина
-									.basket-content-goods-item
-										.basket-content-goods-item__img
-											img(src="assets/images/basket1.jpg" alt="")
-										.basket-content-goods-item-name
-											h2.good-4items-items-item__series Anti Age
-											h2.good-4items-items-item__name Day cream
-											h2.basket-content-goods-item-name__title Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
-											//- .basket-content-goods-item-name__status В наличии
-										.basket-content-goods-item-input
-											.add-quantity
-												button.quantity -
-												input(type="text" placeholder="1")
-												button.quantity +
-										.basket-content-goods-item__price-box
-											.basket-content-goods-item__price_discount 
-											.basket-content-goods-item__price 6 100 руб
-											.basket-content-goods-item__price_quantity 2 х 3 050 руб
-										.basket-content-goods-item-btns
-											button.basket-content-goods-item-btn__remove(type="button")
-												img(src="/assets/images/remove_good_from_cart_btn.svg" alt="cross")
-
-									.basket-content-goods-item
-										.basket-content-goods-item__img
-											img(src="assets/images/basket1.jpg" alt="")
-										.basket-content-goods-item-name
-											h2.good-4items-items-item__series Anti Age
-											h2.good-4items-items-item__name Day cream
-											h2.basket-content-goods-item-name__title Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
-											//- .basket-content-goods-item-name__status В наличии
-										.basket-content-goods-item-input
-											.add-quantity
-												button.quantity -
-												input(type="text" placeholder="1")
-												button.quantity +
-										.basket-content-goods-item__price-box
-											.basket-content-goods-item__price_discount 6 710 руб (-10%)
-											.basket-content-goods-item__price 6 100 руб
-											.basket-content-goods-item__price_quantity 2 х 3 050 руб
-										.basket-content-goods-item-btns
-											button.basket-content-goods-item-btn__remove(type="button")
-												img(src="/assets/images/remove_good_from_cart_btn.svg" alt="cross")
-							.basket-content-side
-								.basket-content-side-wrap-row.basket-content-side-wrap-row_grid
-									.basket-content-side__title Ваш заказ
-									.basket-content-side-wrap.basket-content-side-wrap_grid
-										.basket-content-side-row
-											span Товары (2)
-											span 2 200 руб
-										.basket-content-side-row
-											span Доставка
-											span 350 руб
-										.basket-content-side-row
-											span Промокод
-											span -500 руб
-									.basket-content-side-promo
-										input(type="text" placeholder="Промокод на скидку")
-										button Применить
-								.basket-content-side-wrap-row
-									.basket-content-side-wrap
-										.basket-content-side-bot
-											.basket-content-side-row
-												span Итого
-												.basket-content-side-bot__price 3 050 руб
-											a.basket-content-side-bot__btn(href="#") Продолжить
-											p Нажимая на кнопку, Вы соглашаетесь с условиями использования сайта.
-					.basket-content-tabs-tab.tabs-tab#tab3
-						p
-							b Ключевые ингредиенты:
-						p — Лизат лактобактерий. Фрагменты пробиотиков — полезных бактерий, которые помогают поддерживать здоровый микробиом кожи.</br>— Натуральный увлажняющий фактор. Аминокислоты, Sodium PCA, Молочная кислота, Гиалуроновая кислота, Мочевина. Основные компоненты натурального увлажняющего фактора — комплекса, который содержится в коже и отвечает за ее увлажненность.</br>— Ниацинамид. Борется с раздражениями и помогает коже производить больше защитных липидов (церамидов). Снижает выработку кожного сала, уменьшая жирность кожи.</br>— Сквалан. Нейтральное масло, которое получают из оливок. Родственный коже ингредиент, компонент себума.</br>— Фосфолипиды. Компоненты эпидермальных жиров. Делают кожу мягкой, гладкой и поддерживают ее увлажнённость.
-					//- .good-content-col-tabs-tab.tabs-tab#tab4
-					//- 	p
-					//- 		b Ключевые ингредиенты:
-					//- 	p — Лизат лактобактерий. Фрагменты пробиотиков — полезных бактерий, которые помогают поддерживать здоровый микробиом кожи.</br>— Натуральный увлажняющий фактор. Аминокислоты, Sodium PCA, Молочная кислота, Гиалуроновая кислота, Мочевина. Основные компоненты натурального увлажняющего фактора — комплекса, который содержится в коже и отвечает за ее увлажненность.</br>— Ниацинамид. Борется с раздражениями и помогает коже производить больше защитных липидов (церамидов). Снижает выработку кожного сала, уменьшая жирность кожи.</br>— Сквалан. Нейтральное масло, которое получают из оливок. Родственный коже ингредиент, компонент себума.</br>— Фосфолипиды. Компоненты эпидермальных жиров. Делают кожу мягкой, гладкой и поддерживают ее увлажнённость.
-					//- 			.basket-content-goods
-					//- 				.basket-content-goods-item
-					//- 					.basket-content-goods-item__img
-					//- 						img(src="assets/images/basket1.jpg" alt="")
-					//- 					.basket-content-goods-item-name
-					//- 						.basket-content-goods-item-name__title Морской шампунь, 250 мл ой шампунь, 250 мл
-					//- 						.basket-content-goods-item-name__status В наличии
-					//- 					.basket-content-goods-item-input
-					//- 						.basket-content-goods-item-input-row
-					//- 							span -
-					//- 							input(type="text" value="1")
-					//- 							span +
-					//- 						p 1 100 руб/шт.
-					//- 					.basket-content-goods-item__price 2 200 руб
-					//- 					.basket-content-goods-item-btns
-					//- 						a.basket-content-goods-item-btns__fav(href="#")
-					//- 							<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-					//- 								<path d="M17.9298 2.41452C17.4815 1.96607 16.9493 1.61034 16.3636 1.36763C15.7778 1.12492 15.15 1 14.516 1C13.8819 1 13.2541 1.12492 12.6683 1.36763C12.0826 1.61034 11.5504 1.96607 11.1022 2.41452L10.1719 3.34476L9.24167 2.41452C8.33627 1.50912 7.10828 1.00047 5.82786 1.00047C4.54743 1.00047 3.31945 1.50912 2.41405 2.41452C1.50865 3.31992 1 4.5479 1 5.82833C1 7.10875 1.50865 8.33674 2.41405 9.24214L3.34429 10.1724L10.1719 17L16.9995 10.1724L17.9298 9.24214C18.3782 8.79391 18.7339 8.26171 18.9767 7.67596C19.2194 7.0902 19.3443 6.46237 19.3443 5.82833C19.3443 5.19428 19.2194 4.56645 18.9767 3.9807C18.7339 3.39494 18.3782 2.86275 17.9298 2.41452V2.41452Z" stroke="#4D4D4D" stroke-width="2" stroke-linecap="square"/>
-					//- 							</svg>
-					//- 						a.basket-content-goods-item-btns__del(href="#")
-					//- 							<svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-					//- 								<path d="M4 5V3C4 2.46957 4.21071 1.96086 4.58579 1.58579C4.96086 1.21071 5.46957 1 6 1H10C10.5304 1 11.0391 1.21071 11.4142 1.58579C11.7893 1.96086 12 2.46957 12 3V5M15 5V19C15 19.5304 14.7893 20.0391 14.4142 20.4142C14.0391 20.7893 13.5304 21 13 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V5H15Z" stroke="#4D4D4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-					//- 							</svg>
-					//- 				.basket-content-goods-item
-					//- 					.basket-content-goods-item__img
-					//- 						img(src="assets/images/basket2.jpg" alt="")
-					//- 					.basket-content-goods-item-name
-					//- 						.basket-content-goods-item-name__title Морской шампунь, 250 мл
-					//- 						.basket-content-goods-item-name__status В наличии
-					//- 					.basket-content-goods-item-input
-					//- 						.basket-content-goods-item-input-row
-					//- 							span -
-					//- 							input(type="text" value="1")
-					//- 							span +
-					//- 						p 1 100 руб/шт.
-					//- 					.basket-content-goods-item__price 21 200 руб
-					//- 					.basket-content-goods-item-btns
-					//- 						a.basket-content-goods-item-btns__fav(href="#")
-					//- 							<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-					//- 								<path d="M17.9298 2.41452C17.4815 1.96607 16.9493 1.61034 16.3636 1.36763C15.7778 1.12492 15.15 1 14.516 1C13.8819 1 13.2541 1.12492 12.6683 1.36763C12.0826 1.61034 11.5504 1.96607 11.1022 2.41452L10.1719 3.34476L9.24167 2.41452C8.33627 1.50912 7.10828 1.00047 5.82786 1.00047C4.54743 1.00047 3.31945 1.50912 2.41405 2.41452C1.50865 3.31992 1 4.5479 1 5.82833C1 7.10875 1.50865 8.33674 2.41405 9.24214L3.34429 10.1724L10.1719 17L16.9995 10.1724L17.9298 9.24214C18.3782 8.79391 18.7339 8.26171 18.9767 7.67596C19.2194 7.0902 19.3443 6.46237 19.3443 5.82833C19.3443 5.19428 19.2194 4.56645 18.9767 3.9807C18.7339 3.39494 18.3782 2.86275 17.9298 2.41452V2.41452Z" stroke="#4D4D4D" stroke-width="2" stroke-linecap="square"/>
-					//- 							</svg>
-					//- 						a.basket-content-goods-item-btns__del(href="#")
-					//- 							<svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-					//- 								<path d="M4 5V3C4 2.46957 4.21071 1.96086 4.58579 1.58579C4.96086 1.21071 5.46957 1 6 1H10C10.5304 1 11.0391 1.21071 11.4142 1.58579C11.7893 1.96086 12 2.46957 12 3V5M15 5V19C15 19.5304 14.7893 20.0391 14.4142 20.4142C14.0391 20.7893 13.5304 21 13 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V5H15Z" stroke="#4D4D4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-					//- 							</svg>
-
-					//- 			.basket-content-side
-					//- 				.basket-content-side-wrap-row
-					//- 					.basket-content-side__title Ваш заказ
-					//- 					.basket-content-side-promo
-					//- 						input(type="text" placeholder="Промокод на скидку")
-					//- 						button Применить
-					//- 				.basket-content-side-wrap-row
-					//- 					.basket-content-side-wrap
-					//- 						.basket-content-side-row
-					//- 							span Товары (2)
-					//- 							span 2 200 руб
-					//- 						.basket-content-side-row
-					//- 							span Доставка
-					//- 							span Промокод
-					//- 						.basket-content-side-row
-					//- 							span 350 руб
-					//- 							span -500 руб
-					//- 					.basket-content-side-wrap
-					//- 						.basket-content-side-bot
-					//- 							.basket-content-side-row
-					//- 								span Итого
-					//- 								.basket-content-side-bot__price 3 050 руб
-					//- 							a.basket-content-side-bot__btn.btn-green(href="#") Перейти к оформлению
-					//- 							p Это займёт не более 5 минут.
-
-					//- section.good-4items.block-margin
-					//- 	.mycontainer
-					//- 		h2.title Выбор редакции
-					//- 		.good-4items-items
-					//- 			.good-4items-items-item
-					//- 				a.good-4items-items-item__img(href="good.html")
-					//- 					img(src="assets/images/good1.png" alt="")
-					//- 				.good-4items-items-item__company Anti Age
-					//- 				.good-4items-items-item__name Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
-					//- 				.good-4items-items-item__price 250 руб.
-					//- 				a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
-					//- 			.good-4items-items-item
-					//- 				a.good-4items-items-item__img(href="good.html")
-					//- 					img(src="assets/images/good2.png" alt="")
-					//- 				.good-4items-items-item__company Intense Smoothing
-					//- 				.good-4items-items-item__name Шампунь из морских ежей, 250 мл
-					//- 				.good-4items-items-item__price 250 руб.
-					//- 				a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
-					//- 			.good-4items-items-item
-					//- 				a.good-4items-items-item__img(href="good.html")
-					//- 					img(src="assets/images/good3.png" alt="")
-					//- 				.good-4items-items-item__company Anti Age
-					//- 				.good-4items-items-item__name Сыворотка с ретинолом, 30 мл
-					//- 				.good-4items-items-item__price 1 890 руб.
-					//- 				a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
-					//- 			.good-4items-items-item
-					//- 				a.good-4items-items-item__img(href="good.html")
-					//- 					img(src="assets/images/good4.png" alt="")
-					//- 				.good-4items-items-item__company Intense Smoothing
-					//- 				.good-4items-items-item__name Шампунь из морских ежей, 250 мл
-					//- 				.good-4items-items-item__price 250 руб.
-					//- 				a.good-4items-items-item__btn.btn-greenborder(href="#") Добавить в корзину
+											span Итого
+											.basket-content-side-bot__price 3 050 руб
+										a.basket-content-side-bot__btn.btn-green(href="#") Оформить заказ
+										p Нажимая на кнопку, Вы соглашаетесь с условиями использования сайта.

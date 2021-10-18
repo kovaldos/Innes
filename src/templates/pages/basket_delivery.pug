@@ -8,136 +8,89 @@ block content
 		.mycontainer
 			.title Оформление заказа
 			.basket-content.block-margin
-				//- Не смущаемся названий классов. Изначально было сделано табами, потом переделано на отдельные страницы
+				//- Изначально было сделано табами, потом переделано на отдельные страницы
 				.basket-content-tabs.tabs
 					.basket-content-tabs-navigation
 						a.basket-content-tabs-navigation__item.tabs-navigation-item(href="basket.html") 1. Корзина
 						a.basket-content-tabs-navigation__item.tabs-navigation-item.active(href="basket_delivery.html") 2. Доставка
 						a.basket-content-tabs-navigation__item.tabs-navigation-item(href="basket_payment.html") 3. Оплата
 					
-						//- Если понадобятся табы Старт // If we need tabs Start
-
-							//- .basket-content-tabs-tab.tabs-tab#tab1
-							//- 	.basket-content-tabs-tab-box
-							//- 		.basket-content-goods
-							//- 			.basket-content-goods-item
-							//- 				.basket-content-goods-item__img
-							//- 					img(src="assets/images/basket1.jpg" alt="")
-							//- 				.basket-content-goods-item-name
-							//- 					h2.good-4items-items-item__series Anti Age
-							//- 					h2.good-4items-items-item__name Day cream
-							//- 					h2.basket-content-goods-item-name__title Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
-							//- 					//- .basket-content-goods-item-name__status В наличии
-							//- 				.basket-content-goods-item-input
-							//- 					.add-quantity
-							//- 						button.quantity -
-							//- 						input(type="text" placeholder="1")
-							//- 						button.quantity +
-							//- 				.basket-content-goods-item__price-box
-							//- 					.basket-content-goods-item__price_discount 
-							//- 					.basket-content-goods-item__price 6 100 руб
-							//- 					.basket-content-goods-item__price_quantity 2 х 3 050 руб
-							//- 				.basket-content-goods-item-btns
-							//- 					button.basket-content-goods-item-btn__remove(type="button")
-							//- 						img(src="/assets/images/remove_good_from_cart_btn.svg" alt="cross")
-
-							//- 			.basket-content-goods-item
-							//- 				.basket-content-goods-item__img
-							//- 					img(src="assets/images/basket1.jpg" alt="")
-							//- 				.basket-content-goods-item-name
-							//- 					h2.good-4items-items-item__series Anti Age
-							//- 					h2.good-4items-items-item__name Day cream
-							//- 					h2.basket-content-goods-item-name__title Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
-							//- 					//- .basket-content-goods-item-name__status В наличии
-							//- 				.basket-content-goods-item-input
-							//- 					.add-quantity
-							//- 						button.quantity -
-							//- 						input(type="text" placeholder="1")
-							//- 						button.quantity +
-							//- 				.basket-content-goods-item__price-box
-							//- 					.basket-content-goods-item__price_discount 6 710 руб (-10%)
-							//- 					.basket-content-goods-item__price 6 100 руб
-							//- 					.basket-content-goods-item__price_quantity 2 х 3 050 руб
-							//- 				.basket-content-goods-item-btns
-							//- 					button.basket-content-goods-item-btn__remove(type="button")
-							//- 						img(src="/assets/images/remove_good_from_cart_btn.svg" alt="cross")
-							//- 		.basket-content-side
-							//- 			.basket-content-side-wrap-row.basket-content-side-wrap-row_grid
-							//- 				.basket-content-side__title Ваш заказ
-							//- 				.basket-content-side-wrap.basket-content-side-wrap_grid
-							//- 					.basket-content-side-row
-							//- 						span Товары (2)
-							//- 						span 2 200 руб
-							//- 					.basket-content-side-row
-							//- 						span Доставка
-							//- 						span 350 руб
-							//- 					.basket-content-side-row
-							//- 						span Промокод
-							//- 						span -500 руб
-							//- 				.basket-content-side-promo
-							//- 					input(type="text" placeholder="Промокод на скидку")
-							//- 					button Применить
-							//- 			.basket-content-side-wrap-row
-							//- 				.basket-content-side-wrap
-							//- 					.basket-content-side-bot
-							//- 						.basket-content-side-row
-							//- 							span Итого
-							//- 							.basket-content-side-bot__price 3 050 руб
-							//- 						a.basket-content-side-bot__btn(href="#") Продолжить
-							//- 						p Нажимая на кнопку, Вы соглашаетесь с условиями использования сайта.
-							//- Если понадобятся табы Конец // If we need tabs End
+						//- Если понадобятся табы Старт // If need tabs Start
+						//- .basket-content-tabs-tab.tabs-tab#tab2
+						//- 	.basket-content-tabs-tab-box
+						//- Если понадобятся табы Конец // If need tabs End
 
 					.basket-content-tabs-tab.tabs-tab.active
-						form(action="basket_payment.html").basket-content-tabs-tab-box
+						form(action="basket_payment.html").cart-form
 							.basket-content-delivery
 								.basket-content-delivery-block
-									.basket-content-delivery-row.row_way
-										h2.basket-content-delivery-row_title Способ доставки
+									.basket-content-delivery-row.row__way
+										h2.basket-content-delivery-row__title Способ доставки
 										.basket-content-delivery-row__block
 											.basket-content-delivery-row-col
 												label.custom-radio
-													input(type="radio" name="way of delivery" value="1")
 													p.basket-content-delivery-row-col__title Курьером
 													p.basket-content-delivery-row-col__text В удобные для Вас день и время
-													p.basket-content-delivery-row-col__date-price 
-														span.basket-content-delivery-row-col__span с 04.04
-														span.basket-content-delivery-row-col__span 500 руб
+													input(type="checkbox" name="сourier" value="1")
+													.basket-content-delivery-row-col__date-price 
+														p.basket-content-delivery-row-col__span с 04.04
+														p.basket-content-delivery-row-col__span 500 руб
 											.basket-content-delivery-row-col
 												label.custom-radio
-													input(type="radio" name="way of delivery" value="1")
 													p.basket-content-delivery-row-col__title Самовывоз
 													p.basket-content-delivery-row-col__text Из нашего офиса на Большой Пушкарской 22
-													p.basket-content-delivery-row-col__date-price 
-														span.basket-content-delivery-row-col__span с 04.04
-														span.basket-content-delivery-row-col__span Бесплатно
+													input(type="checkbox" name="pickup" value="2")
+													.basket-content-delivery-row-col__date-price 
+														p.basket-content-delivery-row-col__span с 04.04
+														p.basket-content-delivery-row-col__span Бесплатно
 											.basket-content-delivery-row-col
 												label.custom-radio
-													input(type="radio" name="way of delivery" value="1")
 													p.basket-content-delivery-row-col__title Почтой
 													p.basket-content-delivery-row-col__text В ближайшее отделение Почты России
-													p.basket-content-delivery-row-col__date-price
-														span.basket-content-delivery-row-col__span с 07.04
-														span.basket-content-delivery-row-col__span 350 руб
-
-										h3.basket-content-delivery-row_sub-title Дата и время доставки
-										.basket-content-delivery-row-block
-											.custom-select
-												.custom-select__head
-													span.custom-select__current вторник, 10 августа
-													.custom-select__icon
-												.custom-select__body
-													.custom-select__item вторник, 10 августа
-													.custom-select__item среда, 11 августа
-													.custom-select__item четверг, 12 августа
-													.custom-select__item пятница, 13 августа
-													.custom-select__item суббота, 14 августа
-													.custom-select__item воскресенье, 15 августа
+													input(type="checkbox" name="mail" value="3") 
+													//-ToDo remove attribute "checked" before prod
+													.basket-content-delivery-row-col__date-price
+														p.basket-content-delivery-row-col__span с 07.04
+														p.basket-content-delivery-row-col__span 350 руб
+										h3.basket-content-delivery-row__sub-title Дата и время доставки
+										.basket-content-delivery-row__block
+											.select
+												.select-wrapper
+													select.select-date#select-date(name="select-date")
+														option(value="1") вторник, 26 октября
+														option(value="2") среда, 27 октября
+														option(value="3") четверг, 28 октября
+														option(value="4") вторник, 29 октября
+														option(value="5") вторник, 30 октября
+													.select-icon
+											.select
+												.select-wrapper
+													select.select-date#select-date(name="select-date")
+														option(value="1") с 10:00 до 18:00, бесплатно
+														option(value="2") с 14:00 до 22:00, бесплатно
+														option(value="3") с 08:00 до 16:00, бесплатно
+													.select-icon
 										p.basket-content-delivery-info Курьер поднимется на этаж, если понадобится
-									.basket-content-delivery-row.row_personal
-										h2.basket-content-delivery-row_title Личные данные
-										.basket-content-delivery-row-block
+									.basket-content-delivery-row.row__personal
+										h2.basket-content-delivery-row__title Личные данные
+										.basket-content-delivery-row__block
+											.cart-form-personal-box
+												label.cart-form-label Имя
+													input(type="text" placeholder="Имя" name="firstname" data-required)
+												label.cart-form-label Фамилия
+													input(type="text" placeholder="Фамилия" name="lastname" data-required)
+												label.cart-form-label Телефон
+													input(type="tel" placeholder="Номер телефона" name="phone" data-required data-regexp data-type="tel")
+												label.cart-form-label.cart-form-label-address Адрес
+													input(type="text" placeholder="Адрес" name="address" data-required)
+												label.cart-form-label Квартира / Офис
+													input(type="text" placeholder="Квартира / Офис" name="apartment")
+												label.cart-form-label.cart-form-label-email E-mail
+													input(type="email" name="email" data-required data-regexp data-type="email")
+												label.cart-form-label.cart-form-label-comment Комментарий к заказу
+													input(type="text", name="comment")
 								.basket-content-goods
-									h2.basket-content-delivery-row_title Ваша корзина
+									h2.basket-content-delivery-row__title Ваша корзина
 									.basket-content-goods-item
 										.basket-content-goods-item__img
 											img(src="assets/images/basket1.jpg" alt="")
@@ -179,29 +132,27 @@ block content
 										.basket-content-goods-item-btns
 											button.basket-content-goods-item-btn__remove(type="button")
 												img(src="/assets/images/remove_good_from_cart_btn.svg" alt="cross")
-							.basket-content-side
-								.basket-content-side-wrap-row.basket-content-side-wrap-row_grid
-									.basket-content-side__title Ваш заказ
-									.basket-content-side-wrap.basket-content-side-wrap_grid
+						.basket-content-side
+							.basket-content-side-wrap-row.basket-content-side-wrap-row_grid
+								.basket-content-side__title Ваш заказ
+								.basket-content-side-wrap.basket-content-side-wrap_grid
+									.basket-content-side-row
+										span Товары (2)
+										span 2 200 руб
+									.basket-content-side-row
+										span Доставка
+										span 350 руб
+									.basket-content-side-row
+										span Промокод
+										span -500 руб
+								.basket-content-side-promo
+									input(type="text" placeholder="Промокод на скидку")
+									button Применить
+							.basket-content-side-wrap-row
+								.basket-content-side-wrap
+									.basket-content-side-bot
 										.basket-content-side-row
-											span Товары (2)
-											span 2 200 руб
-										.basket-content-side-row
-											span Доставка
-											span 350 руб
-										.basket-content-side-row
-											span Промокод
-											span -500 руб
-									.basket-content-side-promo
-										input(type="text" placeholder="Промокод на скидку")
-										button Применить
-								.basket-content-side-wrap-row
-									.basket-content-side-wrap
-										.basket-content-side-bot
-											.basket-content-side-row
-												span Итого
-												.basket-content-side-bot__price 3 050 руб
-											button.basket-content-side-bot__btn(type="submit") Продолжить
-											p Нажимая на кнопку, Вы соглашаетесь с условиями использования сайта.
-
-											
+											span Итого
+											.basket-content-side-bot__price 3 050 руб
+										a.basket-content-side-bot__btn(href="basket_payment.html") Перейти к оплате
+										p Нажимая на кнопку, Вы соглашаетесь с условиями использования сайта.

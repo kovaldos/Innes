@@ -58,137 +58,32 @@ block content
 									.basket-content-goods-item-btns
 										button.basket-content-goods-item-btn__remove(type="button")
 											img(src="/assets/images/remove_good_from_cart_btn.svg" alt="cross")
-							.basket-content-side
-								.basket-content-side-wrap-row.basket-content-side-wrap-row_grid
-									.basket-content-side__title Ваш заказ
-									.basket-content-side-wrap.basket-content-side-wrap_grid
+						.basket-content-side
+							.basket-content-side-wrap-row.basket-content-side-wrap-row_grid
+								.basket-content-side__title Ваш заказ
+								.basket-content-side-wrap.basket-content-side-wrap_grid
+									.basket-content-side-row
+										span Товары (2)
+										span 2 200 руб
+									.basket-content-side-row
+										span Доставка
+										span 350 руб
+									.basket-content-side-row
+										span Промокод
+										span -500 руб
+								.basket-content-side-promo
+									input(type="text" placeholder="Промокод на скидку")
+									button Применить
+							.basket-content-side-wrap-row
+								.basket-content-side-wrap
+									.basket-content-side-bot
 										.basket-content-side-row
-											span Товары (2)
-											span 2 200 руб
-										.basket-content-side-row
-											span Доставка
-											span 350 руб
-										.basket-content-side-row
-											span Промокод
-											span -500 руб
-									.basket-content-side-promo
-										input(type="text" placeholder="Промокод на скидку")
-										button Применить
-								.basket-content-side-wrap-row
-									.basket-content-side-wrap
-										.basket-content-side-bot
-											.basket-content-side-row
-												span Итого
-												.basket-content-side-bot__price 3 050 руб
-											button.basket-content-side-bot__btn(type="submit") Продолжить
-											p Нажимая на кнопку, Вы соглашаетесь с условиями использования сайта.
+											span Итого
+											.basket-content-side-bot__price 3 050 руб
+										a.basket-content-side-bot__btn(href="basket_delivery.html") Продолжить
+										p Нажимая на кнопку, Вы соглашаетесь с условиями использования сайта.
 
 				//- Если понадобятся табы Старт // If we need tabs Start
-
-					//- .basket-content-tabs-tab.tabs-tab.active#tab2
+					//- .basket-content-tabs-tab.tabs-tab.active#tab1
 					//- 	.basket-content-tabs-tab-box
-					//- 		.basket-content-delivery
-					//- 			.basket-content-delivery-block
-					//- 				.basket-content-delivery-row.row_way
-					//- 					h2.basket-content-delivery-row_title Способ доставки
-					//- 					.basket-content-delivery-row-block
-					//- 						.basket-content-delivery-row-col
-					//- 							h3.basket-content-delivery-row-col__title Курьером
-					//- 							p.basket-content-delivery-row-col__text В удобные для Вас день и время
-					//- 							p.basket-content-delivery-row-col__date-price 
-					//- 								span.basket-content-delivery-row-col__span с 04.04
-					//- 								span.basket-content-delivery-row-col__span 500 руб
-					//- 						.basket-content-delivery-row-col
-					//- 							h3.basket-content-delivery-row-col__title Самовывоз
-					//- 							p.basket-content-delivery-row-col__text Из нашего офиса на Большой Пушкарской 22
-					//- 							p.basket-content-delivery-row-col__date-price 
-					//- 								span.basket-content-delivery-row-col__span с 04.04
-					//- 								span.basket-content-delivery-row-col__span Бесплатно
-					//- 						.basket-content-delivery-row-col
-					//- 							h3.basket-content-delivery-row-col__title Почтой
-					//- 							p.basket-content-delivery-row-col__text В ближайшее отделение Почты России
-					//- 							p.basket-content-delivery-row-col__date-price 
-					//- 								span.basket-content-delivery-row-col__span с 07.04
-					//- 								span.basket-content-delivery-row-col__span 500 руб
-
-					//- 						.basket-content-delivery-row-col
-					//- 						.basket-content-delivery-row-col
-					//- 					h3.basket-content-delivery-row_sub-title Дата и время доставки
-					//- 					.basket-content-delivery-row-block
-					//- 					p.basket-content-delivery-info Курьер поднимется на этаж, если понадобится
-					//- 				.basket-content-delivery-row.row_personal
-					//- 					h2.basket-content-delivery-row_title Личные данные
-					//- 					.basket-content-delivery-row-block
-					//- 			.basket-content-goods
-					//- 				h2.basket-content-delivery-row_title Ваша корзина
-					//- 				.basket-content-goods-item
-					//- 					.basket-content-goods-item__img
-					//- 						img(src="assets/images/basket1.jpg" alt="")
-					//- 					.basket-content-goods-item-name
-					//- 						h2.good-4items-items-item__series Anti Age
-					//- 						h2.good-4items-items-item__name Day cream
-					//- 						h2.basket-content-goods-item-name__title Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
-					//- 						//- .basket-content-goods-item-name__status В наличии
-					//- 					.basket-content-goods-item-input
-					//- 						.add-quantity
-					//- 							button.quantity -
-					//- 							input(type="text" placeholder="1")
-					//- 							button.quantity +
-					//- 					.basket-content-goods-item__price-box
-					//- 						.basket-content-goods-item__price_discount 
-					//- 						.basket-content-goods-item__price 6 100 руб
-					//- 						.basket-content-goods-item__price_quantity 2 х 3 050 руб
-					//- 					.basket-content-goods-item-btns
-					//- 						button.basket-content-goods-item-btn__remove(type="button")
-					//- 							img(src="/assets/images/remove_good_from_cart_btn.svg" alt="cross")
-
-					//- 				.basket-content-goods-item
-					//- 					.basket-content-goods-item__img
-					//- 						img(src="assets/images/basket1.jpg" alt="")
-					//- 					.basket-content-goods-item-name
-					//- 						h2.good-4items-items-item__series Anti Age
-					//- 						h2.good-4items-items-item__name Day cream
-					//- 						h2.basket-content-goods-item-name__title Гидрофильный бальзам для умывания и снятия макияжа, 100 мл
-					//- 						//- .basket-content-goods-item-name__status В наличии
-					//- 					.basket-content-goods-item-input
-					//- 						.add-quantity
-					//- 							button.quantity -
-					//- 							input(type="text" placeholder="1")
-					//- 							button.quantity +
-					//- 					.basket-content-goods-item__price-box
-					//- 						.basket-content-goods-item__price_discount 6 710 руб (-10%)
-					//- 						.basket-content-goods-item__price 6 100 руб
-					//- 						.basket-content-goods-item__price_quantity 2 х 3 050 руб
-					//- 					.basket-content-goods-item-btns
-					//- 						button.basket-content-goods-item-btn__remove(type="button")
-					//- 							img(src="/assets/images/remove_good_from_cart_btn.svg" alt="cross")
-					//- 		.basket-content-side
-					//- 			.basket-content-side-wrap-row.basket-content-side-wrap-row_grid
-					//- 				.basket-content-side__title Ваш заказ
-					//- 				.basket-content-side-wrap.basket-content-side-wrap_grid
-					//- 					.basket-content-side-row
-					//- 						span Товары (2)
-					//- 						span 2 200 руб
-					//- 					.basket-content-side-row
-					//- 						span Доставка
-					//- 						span 350 руб
-					//- 					.basket-content-side-row
-					//- 						span Промокод
-					//- 						span -500 руб
-					//- 				.basket-content-side-promo
-					//- 					input(type="text" placeholder="Промокод на скидку")
-					//- 					button Применить
-					//- 			.basket-content-side-wrap-row
-					//- 				.basket-content-side-wrap
-					//- 					.basket-content-side-bot
-					//- 						.basket-content-side-row
-					//- 							span Итого
-					//- 							.basket-content-side-bot__price 3 050 руб
-					//- 						a.basket-content-side-bot__btn(href="#") Продолжить
-					//- 						p Нажимая на кнопку, Вы соглашаетесь с условиями использования сайта.
-					//- .basket-content-tabs-tab.tabs-tab#tab3
-					//- 	p
-					//- 		b Ключевые ингредиенты:
-					//- 	p — Лизат лактобактерий. Фрагменты пробиотиков — полезных бактерий, которые помогают поддерживать здоровый микробиом кожи.</br>— Натуральный увлажняющий фактор. Аминокислоты, Sodium PCA, Молочная кислота, Гиалуроновая кислота, Мочевина. Основные компоненты натурального увлажняющего фактора — комплекса, который содержится в коже и отвечает за ее увлажненность.</br>— Ниацинамид. Борется с раздражениями и помогает коже производить больше защитных липидов (церамидов). Снижает выработку кожного сала, уменьшая жирность кожи.</br>— Сквалан. Нейтральное масло, которое получают из оливок. Родственный коже ингредиент, компонент себума.</br>— Фосфолипиды. Компоненты эпидермальных жиров. Делают кожу мягкой, гладкой и поддерживают ее увлажнённость.
-
-					//- Если понадобятся табы Конец // If we need tabs End
+				//- Если понадобятся табы Конец // If we need tabs End
