@@ -1,0 +1,61 @@
+extends ../template
+
+block variables
+	- var title = 'Акции'
+
+block content
+	.blog.promotions
+		.mycontainer
+			h1.title Акции
+			.blog-items.promotions-items
+				.blog-items-item.promotions-items-item
+					a.blog-items-item__img.promotions-items-item__img.promotions__popup-link(href="#promotions__popup")
+						img.lazy(data-src="assets/images/main-blog-bot1.jpg", alt="")
+					.blog-items-item-info.promotions-items-item-info
+						.blog-items-item-info__title.promotions-items-item-info__title Сила цвета
+						.blog-items-item-info__text.promotions-items-item-info__text Бестселлер в подарок при покупке от 5000 рублей до 27 июня
+						a.blog-items-item-info__link.promotions-items-item-info__link(href="#") Перейти к покупке
+						a.blog-items-item-info__btn.promotions-items-item-info__btn.promotions__popup-link(href="#promotions__popup") Подробности
+				.blog-items-item.promotions-items-item
+					a.blog-items-item__img.promotions-items-item__img.promotions__popup-link(href="#promotions__popup")
+						img.lazy(data-src="assets/images/main-blog-bot2.jpg", alt="")
+					.blog-items-item-info.promotions-items-item-info
+						.blog-items-item-info__title.promotions-items-item-info__title Раздражённая кожа. Как ей помочь?
+						.blog-items-item-info__text.promotions-items-item-info__text Бестселлер в подарок при покупке от 5000 рублей до 27 июня
+						a.blog-items-item-info__link.promotions-items-item-info__link(href="#") Перейти к покупке
+						a.blog-items-item-info__btn.promotions-items-item-info__btn.promotions__popup-link(href="#promotions__popup") Подробности
+				.blog-items-item.promotions-items-item
+					a.blog-items-item__img.promotions-items-item__img.promotions__popup-link(href="#promotions__popup")
+						img.lazy(data-src="assets/images/main-blog-bot1.jpg", alt="")
+					.blog-items-item-info.promotions-items-item-info
+						.blog-items-item-info__title.promotions-items-item-info__title Сила цвета
+						.blog-items-item-info__text.promotions-items-item-info__text Бестселлер в подарок при покупке от 5000 рублей до 27 июня
+						a.blog-items-item-info__link.promotions-items-item-info__link(href="#") Перейти к покупке
+						a.blog-items-item-info__btn.promotions-items-item-info__btn.promotions__popup-link(href="#promotions__popup") Подробности
+				.blog-items-item.promotions-items-item
+					a.blog-items-item__img.promotions-items-item__img.promotions__popup-link(href="#promotions__popup")
+						img.lazy(data-src="assets/images/main-blog-bot2.jpg", alt="")
+					.blog-items-item-info.promotions-items-item-info
+						.blog-items-item-info__title.promotions-items-item-info__title Раздражённая кожа. Как ей помочь?
+						.blog-items-item-info__text.promotions-items-item-info__text Бестселлер в подарок при покупке от 5000 рублей до 27 июня
+						a.blog-items-item-info__link.promotions-items-item-info__link._hidden(href="#") Перейти к покупке
+						a.blog-items-item-info__btn.promotions-items-item-info__btn.promotions__popup-link(href="#promotions__popup") Подробности						
+
+			.catalog-main-content-pagination.block-margin
+				a.catalog-main-content-pagination__prev(href="#")
+				.catalog-main-content-pagination__page.current 1
+				a.catalog-main-content-pagination__page(href="#") 2
+				a.catalog-main-content-pagination__page(href="#") 3
+				.catalog-main-content-pagination__page.dots(href="#") . . .
+				a.catalog-main-content-pagination__page(href="#") 10
+				a.catalog-main-content-pagination__next(href="#")
+		.promotions__popup#promotions__popup
+			.promotions__popup-body
+				.promotions__popup-content
+					button.promotions__popup-close.close-popup
+					.promotions__popup-text-block
+						h2.promotions__popup-title Сила цвета
+						h3.promotions__popup-sub-title Солевой скраб для тела Франжипани-Монои 490 г
+						p.promotions__popup-text-condition При покупке в интернет-магазине от 5000 руб до 27 июня*
+						p.promotions__popup-text *Предложение действительно при покупке от 5000 руб в интернет-магазине elemis.ru с 23 по 27 июня 2021 г. Пороговая покупка определяется после применения всех скидок. Подарок: Солевой скраб для тела Франжипани-Монои 490 г. Количество подарков ограничено. Компания оставляет за собой право на замену подарка. Подарок может отличаться от изображенного. Не является офертой. Реклама. Товар сертифицирован.
+					

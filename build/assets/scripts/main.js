@@ -408,3 +408,105 @@ $(document).on('click', '.catalog-top-mobilesort-category__title, .catalog-main-
 });
 /*Фильтры и Сортировка на мобиле Конец*/
 
+
+// /* Ковер лого Начало */
+
+// const headerLogo = document.querySelector('.logo-box');
+// const headerMenuLinks = document.querySelectorAll('.header__link');
+
+// const onMenuMouseOver = ({target}) => {
+// 	target.classList.add('show-cover');
+// 	console.log(target);
+// };
+
+// const onMenuMouseOut = ({target}) => {
+// 	target.classList.remove('show-cover');
+// };
+
+// headerMenuLinks.forEach((link) => {
+// 	link.addEventListener('mouseenter', onMenuMouseOver);
+// 	link.addEventListener('mouseleave', onMenuMouseOut);
+// });
+
+// headerLogo.addEventListener('mouseenter', onMenuMouseOver);
+// headerLogo.addEventListener('mouseleave', onMenuMouseOut);
+
+// /* Ковер лого Конец */
+
+// /*Рэйтинг Начало*/
+
+// const ratings = document.querySelectorAll('.rating');
+// if(ratings.length > 0) {
+// 	initRatings();
+// }
+// // Main function Главная функция
+// function initRatings() {
+// 	let ratingActive, ratingValue;
+// 	for(let index = 0; index < ratings.length; index++) {
+// 		const rating = ratings[index];
+// 		initRating(rating);
+// 	}
+
+
+// 	// init current rating Инициализация конкретного рейтинга
+// 	function initRating(rating) {
+// 		initRatingVars(rating);
+// 		setRatingActiveWidth();
+
+// 		if(rating.classList.contains('rating_set')) {
+// 			setRating(rating);
+// 		}
+// 	}
+
+// 	// init vars Инициализация переменных
+// 	function initRatingVars(rating) {
+// 		ratingActive = rating.querySelector('.rating__active');
+// 		ratingValue = rating.querySelector('.rating__value');
+// 	}
+
+// 	// take an active stars width Измерение ширины активных звезд
+// 	function setRatingActiveWidth(index = ratingValue.innerHTML) {
+// 		const ratingActiveWidth = index/0.05;
+// 		ratingActive.style.width = `${ratingActiveWidth}%`;
+// 	}
+// 	// ability to rate Возможность устанавливать рэйтинг
+// 	function setRating(rating) {
+// 		const ratingItems = rating.querySelectorAll('.rating__item');
+		
+// 		for (let index = 0; index < ratingItems.length; index++) {
+// 			const ratingItem = ratingItems[index];
+			
+// 			ratingItem.addEventListener("mouseenter", function (e) {
+// 				// updating vars обновление переменных
+				
+// 				initRatingVars(rating);
+// 				// updating active stars обновление активных звезд
+// 				setRatingActiveWidth(ratingItem.value);
+// 			});
+// 			ratingItem.addEventListener("mouseleave", function (e) {
+// 				// updating active stars обновление активных звезд
+// 				setRatingActiveWidth();
+// 			});
+// 			ratingItem.addEventListener("click", function (e) {
+// 				// updating vars обновление переменных
+// 				initRatingVars(rating);
+
+// 				//if (rating.dataset.ajax) {
+// 					// "send to" server "Отправить" на сервер
+// 				//	setRatingValue(ratingItem.value, rating);
+// 				//} else {
+// 					// show current rate Отобразить указанную оценку
+// 					ratingValue.innerHTML = index + 1;
+// 					setRatingActiveWidth();
+// 				//}
+// 			});
+// 		}
+// 	}
+// }
+
+
+
+
+
+/*Рэйтинг Конец*/
+
